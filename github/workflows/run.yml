@@ -1,1 +1,39 @@
+name: Run V2ray Bot
 
+on:
+  schedule:
+    - cron: '25 * * * *'   # هر ۱ ساعت، دقیقه ۲۵
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  run_bot:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          pip install requests jdatetime pytz beautifulsoup4
+
+      - name: Run Bot
+        run: python bot.py
+        env:
+          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+
+      - name: Save memory files
+        if: always()
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: Update subscription and sent_ips
+          file_pattern: subscription.txt sent_ips.txt
+          commit_user_name: github-actions[bot]
+          commit_user_email: 41898282+github-actions[bot]@users.noreply.github.com
