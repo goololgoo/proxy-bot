@@ -9,10 +9,8 @@ import random
 import time
 import html
 import re
-import socket
 from datetime import datetime
 from bs4 import BeautifulSoup
-from concurrent.futures import ThreadPoolExecutor, as_completed
 
 # ==========================================
 # تنظیمات ربات
@@ -42,7 +40,6 @@ CUSTOM_REMARK = "@goololgoo 🔐 وی‌پی‌ان رایگان | Free Proxy�
 MAX_V2RAY_POST = 5
 MAX_MTPROTO_POST = 12
 MAX_SUB_SIZE = 1000
-BATCH_SIZE = 200
 
 PREFERRED_COUNTRIES = {
     "NL", "DE", "FI", "FR", "SE", "GB", "PL", "IT", "ES", "BE",
@@ -118,16 +115,6 @@ def extract_ip_port(config):
         pass
     return None, None
 
-def check_port(ip, port, timeout=4.0):
-    try:
-        sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        sock.settimeout(timeout)
-        result = sock.connect_ex((ip, int(port)))
-        sock.close()
-        return result == 0
-    except:
-        return False
-
 def get_country_and_flag(ip_list):
     result = {}
     valid_ips = [ip for ip in ip_list if ip and re.match(r'^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$', ip)]
@@ -173,18 +160,6 @@ def change_remark_v2ray(config, new_remark):
 def change_remark_mtproto(link, new_remark):
     clean_link = re.sub(r'&name=[^&]*', '', link)
     return f"{clean_link}&name={urllib.parse.quote(new_remark)}"
-
-def test_single_config(config, sent_ips):
-    if not is_valid_config(config):
-        return None
-    ip, port = extract_ip_port(config)
-    if not ip or not port:
-        return None
-    ip_port_str = f"{ip}:{port}"
-    is_new = ip_port_str not in sent_ips
-    if check_port(ip, port):
-        return {"config": config, "ip_port": ip_port_str, "is_new": is_new, "ip": ip}
-    return None
 
 def get_random_header_footer(post_type, date_str, time_str):
     if post_type == "v2ray":
@@ -456,7 +431,7 @@ def update_subscription():
 
 def get_v2ray_from_sub(sent_ips):
     print("\n" + "="*50)
-    print("مرحله ۲: انتخاب ۵ کانفیگ از ساب (اولویت اروپا)")
+    print("مرحله ۲: انتخاب ۵ کانفیگ از ساب (بدون تست پورت | اولویت اروپا)")
     print("="*50)
 
     sub_configs = load_subscription()
@@ -468,25 +443,29 @@ def get_v2ray_from_sub(sent_ips):
     random.shuffle(sub_configs)
 
     candidates = []
-    used_ips = set()
+    seen = set()
     target_candidates = 20
 
-    for i in range(0, len(sub_configs), BATCH_SIZE):
-        batch = sub_configs[i:i + BATCH_SIZE]
-        print(f"در حال تست دسته {i // BATCH_SIZE + 1} ({len(batch)} کانفیگ)...")
-        with ThreadPoolExecutor(max_workers=40) as executor:
-            futures = {executor.submit(test_single_config, cfg, sent_ips): cfg for cfg in batch}
-            for future in as_completed(futures):
-                result = future.result()
-                if result and result["ip_port"] not in used_ips:
-                    candidates.append(result)
-                    used_ips.add(result["ip_port"])
-                    if len(candidates) >= target_candidates:
-                        break
+    for cfg in sub_configs:
+        if not is_valid_config(cfg):
+            continue
+        ip, port = extract_ip_port(cfg)
+        if not ip or not port:
+            continue
+        ip_port = f"{ip}:{port}"
+        if ip_port in seen:
+            continue
+        seen.add(ip_port)
+        candidates.append({
+            "config": cfg,
+            "ip_port": ip_port,
+            "is_new": ip_port not in sent_ips,
+            "ip": ip
+        })
         if len(candidates) >= target_candidates:
             break
 
-    print(f"تعداد کاندیدای سالم: {len(candidates)}")
+    print(f"تعداد کاندیدا: {len(candidates)}")
     if not candidates:
         return []
 
@@ -586,7 +565,7 @@ def main():
             sent_ips.add(item["ip_port"])
         send_post(configs_to_post, "v2ray")
     else:
-        print("هیچ کانفیگ V2Ray زنده‌ای پیدا نشد.")
+        print("هیچ کانفیگ V2Ray پیدا نشد.")
 
     between_delay = random.randint(180, 720)
     print(f"\n⏳ فاصله رندم بین دو پست: {between_delay // 60} دقیقه و {between_delay % 60} ثانیه...")
