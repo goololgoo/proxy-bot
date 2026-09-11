@@ -115,25 +115,44 @@ def extract_ip_port(config):
         pass
     return None, None
 
+def get_flag_from_remark(config):
+    """پرچم اول اسم کانفیگ را برمی‌گرداند (بدون نیاز به API)"""
+    try:
+        remark = ""
+        if config.startswith("vmess://"):
+            b64_str = config.replace("vmess://", "")
+            b64_str += '=' * (-len(b64_str) % 4)
+            json_data = json.loads(base64.b64decode(b64_str).decode('utf-8'))
+            remark = json_data.get("ps", "")
+        elif "#" in config:
+            remark = urllib.parse.unquote(config.split("#", 1)[1])
+        m = re.match(r'^([\U0001F1E6-\U0001F1FF]{2}|🌐)', remark)
+        return m.group(1) if m else ""
+    except:
+        return ""
+
 def get_country_and_flag(ip_list):
     result = {}
     valid_ips = [ip for ip in ip_list if ip and re.match(r'^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$', ip)]
     if not valid_ips:
         return {ip: {"code": "", "flag": "🌐"} for ip in ip_list}
 
-    try:
-        payload = [{"query": ip, "fields": "query,countryCode"} for ip in valid_ips]
-        res = requests.post("http://ip-api.com/batch", json=payload, timeout=12).json()
-        for item in res:
-            ip = item.get("query")
-            code = item.get("countryCode", "") or ""
-            if len(code) == 2:
-                flag = chr(0x1F1E6 + ord(code[0]) - ord('A')) + chr(0x1F1E6 + ord(code[1]) - ord('A'))
-            else:
-                flag = "🌐"
-            result[ip] = {"code": code, "flag": flag}
-    except:
-        pass
+    # ip-api حداکثر ۱۰۰ کوئری در هر درخواست batch قبول می‌کند
+    for j in range(0, len(valid_ips), 100):
+        chunk = valid_ips[j:j + 100]
+        try:
+            payload = [{"query": ip, "fields": "query,countryCode"} for ip in chunk]
+            res = requests.post("http://ip-api.com/batch", json=payload, timeout=12).json()
+            for item in res:
+                ip = item.get("query")
+                code = item.get("countryCode", "") or ""
+                if len(code) == 2:
+                    flag = chr(0x1F1E6 + ord(code[0]) - ord('A')) + chr(0x1F1E6 + ord(code[1]) - ord('A'))
+                else:
+                    flag = "🌐"
+                result[ip] = {"code": code, "flag": flag}
+        except Exception as e:
+            print(f"  ⚠️ خطا در دریافت پرچم کشورها: {e}")
 
     for ip in ip_list:
         if ip not in result:
@@ -379,37 +398,35 @@ def update_subscription():
     print("مرحله ۱: ساخت / به‌روزرسانی ساب")
     print("="*50)
 
-    all_configs = []
+    kept_old = []       # کانفیگ‌های قدیمی که پرچم دارند → بدون API
+    need_flag = []      # کانفیگ‌هایی که پرچم ندارند → نیاز به API
     seen = set()
 
+    def add_new_config(cfg):
+        """کانفیگ تازه از کانال/ساب → ریمارک ساده، پرچم بعداً گرفته می‌شود"""
+        if not is_valid_config(cfg):
+            return False
+        ip, port = extract_ip_port(cfg)
+        key = f"{ip}:{port}" if ip else cfg[:80]
+        if key in seen:
+            return False
+        seen.add(key)
+        need_flag.append(change_remark_v2ray(cfg, CUSTOM_REMARK))
+        return True
+
+    total_found = 0
     for ch in SOURCE_CHANNELS:
         print(f"→ در حال دریافت از کانال @{ch} ...")
         configs = collect_from_channel(ch)
-        added = 0
-        for cfg in configs:
-            if is_valid_config(cfg):
-                ip, port = extract_ip_port(cfg)
-                key = f"{ip}:{port}" if ip else cfg[:80]
-                if key not in seen:
-                    seen.add(key)
-                    modified = change_remark_v2ray(cfg, CUSTOM_REMARK)
-                    all_configs.append(modified)
-                    added += 1
+        added = sum(1 for cfg in configs if add_new_config(cfg))
+        total_found += len(configs)
         print(f"  پیدا شد: {len(configs)} | اضافه شد: {added}")
 
     for sub_url in SOURCE_SUBS:
         print(f"→ در حال دریافت از لینک ساب ...")
         configs = collect_from_sub(sub_url)
-        added = 0
-        for cfg in configs:
-            if is_valid_config(cfg):
-                ip, port = extract_ip_port(cfg)
-                key = f"{ip}:{port}" if ip else cfg[:80]
-                if key not in seen:
-                    seen.add(key)
-                    modified = change_remark_v2ray(cfg, CUSTOM_REMARK)
-                    all_configs.append(modified)
-                    added += 1
+        added = sum(1 for cfg in configs if add_new_config(cfg))
+        total_found += len(configs)
         print(f"  پیدا شد: {len(configs)} | اضافه شد: {added}")
 
     old_sub = load_subscription()
@@ -417,11 +434,38 @@ def update_subscription():
     for cfg in old_sub:
         ip, port = extract_ip_port(cfg)
         key = f"{ip}:{port}" if ip else cfg[:80]
-        if key not in seen:
-            seen.add(key)
-            all_configs.append(cfg)
-            kept += 1
-    print(f"→ از ساب قبلی نگه داشته شد: {kept}")
+        if key in seen:
+            continue
+        seen.add(key)
+        if get_flag_from_remark(cfg):
+            kept_old.append(cfg)      # پرچم دارد → همان را نگه می‌داریم
+        else:
+            need_flag.append(cfg)     # پرچم ندارد → باید پرچم بگیرد
+        kept += 1
+    print(f"→ از ساب قبلی نگه داشته شد: {kept} (بدون نیاز به API: {len(kept_old)} | نیازمند پرچم: {kept - len(kept_old)})")
+
+    # 🏳️ پرچم فقط برای کانفیگ‌های فاقد پرچم (معمولاً تازه‌ها) → فقط ۱-۲ درخواست API
+    if need_flag:
+        unique_ips = []
+        seen_ip = set()
+        for cfg in need_flag:
+            ip, _ = extract_ip_port(cfg)
+            if ip and ip not in seen_ip:
+                seen_ip.add(ip)
+                unique_ips.append(ip)
+        print(f"→ در حال دریافت پرچم برای {len(need_flag)} کانفیگ جدید ({len(unique_ips)} IP یکتا) ...")
+        country_info = get_country_and_flag(unique_ips)
+        new_flagged = []
+        for cfg in need_flag:
+            ip, _ = extract_ip_port(cfg)
+            flag = country_info.get(ip, {}).get("flag", "🌐") if ip else "🌐"
+            new_flagged.append(change_remark_v2ray(cfg, f"{flag} {CUSTOM_REMARK}"))
+        print(f"  ✅ پرچم اضافه شد")
+    else:
+        new_flagged = []
+
+    # ترتیب: کانفیگ‌های تازه اول، قدیمی‌ها بعد (مثل نسخه اولیه)
+    all_configs = new_flagged + kept_old
 
     if len(all_configs) > MAX_SUB_SIZE:
         all_configs = all_configs[-MAX_SUB_SIZE:]
