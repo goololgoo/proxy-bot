@@ -25,8 +25,7 @@ SOURCE_CHANNELS = [
     "ConfigsHUB",
     "ConfigsHUB2",
     "proxy_mtm",
-    "mehrosaboran",
-    "makvaslim"
+    "mehrosaboran"
 ]
 
 SOURCE_SUBS = [
@@ -364,6 +363,13 @@ def collect_from_channel(channel):
             matches = re.findall(pattern, raw_html, flags=re.IGNORECASE | re.MULTILINE)
             found.extend(matches)
 
+            # 5. بازسازی کانفیگ‌های چندخطی (UUID شکسته روی چند خط + لیست شماره‌دار)
+            text_no_nums = re.sub(r'(?m)^\s*[\d۰-۹]+\.\s*$', '', full_text)
+            joined_text = re.sub(r'\s+', '', text_no_nums)
+            joined_text = re.sub(r'(?i)(vless|vmess|trojan|ss)://', r' \1://', joined_text)
+            matches = re.findall(pattern, joined_text, flags=re.IGNORECASE | re.MULTILINE)
+            found.extend(matches)
+
     except Exception as e:
         print(f"خطا در کانال {channel}: {e}")
 
@@ -371,7 +377,9 @@ def collect_from_channel(channel):
     for item in found:
         item = item.strip().strip('"').strip("'")
         if is_valid_config(item):
-            cleaned.append(item)
+            ip, port = extract_ip_port(item)
+            if ip and port:
+                cleaned.append(item)
 
     return list(dict.fromkeys(cleaned))
 
