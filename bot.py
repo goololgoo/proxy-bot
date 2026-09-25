@@ -23,7 +23,10 @@ SOURCE_CHANNELS = [
     "daily_configs",
     "v2rayNG_Matsuri",
     "ConfigsHUB",
-    "ConfigsHUB2",
+    "FreakConfig",
+    "Capoit",
+    "meliproxyy",
+    "prrofile_purple",
     "proxy_mtm",
     "mehrosaboran"
 ]
