@@ -1388,7 +1388,7 @@ def collect_from_sub(url):
                 extract_configs_from_text(
                     text
                 )
-
+            )
             for a in soup.find_all(
                 "a",
                 href=True
