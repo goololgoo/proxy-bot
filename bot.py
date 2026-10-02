@@ -107,7 +107,7 @@ def extract_ip_port(config):
             b64_str += '=' * (-len(b64_str) % 4)
             json_data = json.loads(base64.b64decode(b64_str).decode('utf-8'))
             return json_data.get("add", ""), str(json_data.get("port", ""))
-        elif config.startswith(("vless://", "trojan://", "ss://")):
+        elif config.startswith(("vless://", "trojan://", "ss://", "hysteria2://")):
             match = re.search(r'@([^:]+):(\d+)', config)
             if match:
                 return match.group(1), match.group(2)
@@ -344,8 +344,7 @@ def collect_from_channel(channel):
 
         soup = BeautifulSoup(resp.text, 'html.parser')
         messages = soup.find_all('div', class_='tgme_widget_message')[-30:]
-        pattern = r'(?:^|[\s\n\r\"\'>]|\d+\.\s*)((?:vless|vmess|trojan|ss)://[^\s<>"\']+)'
-
+        pattern = r'(?:^|[\s\n\r\"\'>]|\d+\.\s*)((?:vless|vmess|trojan|ss|hysteria2)://[^\s<>"\']+)'
         for msg in messages:
             # 1. متن کامل پیام (شامل quote و collapse)
             full_text = msg.get_text(separator="\n")
@@ -361,7 +360,7 @@ def collect_from_channel(channel):
             # 3. لینک‌های مستقیم
             for a in msg.find_all('a', href=True):
                 href = a.get('href', '')
-                if any(href.lower().startswith(p) for p in ("vless://", "vmess://", "trojan://", "ss://")):
+                if any(href.lower().startswith(p) for p in ("vless://", "vmess://", "trojan://", "ss://", "hysteria2://")):
                     found.append(href)
 
             # 4. خود HTML خام
@@ -372,7 +371,7 @@ def collect_from_channel(channel):
             # 5. بازسازی کانفیگ‌های چندخطی (UUID شکسته روی چند خط + لیست شماره‌دار)
             text_no_nums = re.sub(r'(?m)^\s*[\d۰-۹]+\.\s*$', '', full_text)
             joined_text = re.sub(r'\s+', '', text_no_nums)
-            joined_text = re.sub(r'(?i)(vless|vmess|trojan|ss)://', r' \1://', joined_text)
+            joined_text = re.sub(r'(?i)(vless|vmess|trojan|ss|hysteria2)://', r' \1://', joined_text)
             matches = re.findall(pattern, joined_text, flags=re.IGNORECASE | re.MULTILINE)
             found.extend(matches)
 
