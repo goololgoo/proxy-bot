@@ -98,7 +98,7 @@ def is_valid_config(config: str) -> bool:
     if not config or not isinstance(config, str):
         return False
     config = config.strip()
-    return config.startswith(("vless://", "vmess://", "trojan://", "ss://"))
+    return config.startswith(("vless://", "vmess://","hysteria2://" , "trojan://", "ss://"))
 
 def extract_ip_port(config):
     try:
