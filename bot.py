@@ -12,9 +12,11 @@ import re
 from datetime import datetime
 from bs4 import BeautifulSoup
 
+
 # ==========================================
 # تنظیمات ربات
 # ==========================================
+
 BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
 CHANNEL_USERNAME = "@goololgoo"
 
@@ -58,10 +60,6 @@ PREFERRED_COUNTRIES = {
     "AT", "CH", "NO", "DK", "CZ", "RO", "HU", "IE", "PT", "GR"
 }
 
-# ==========================================
-# فایل‌های ذخیره‌سازی
-# ==========================================
-
 SENT_IPS_FILE = "sent_ips.txt"
 SUBSCRIPTION_FILE = "subscription.txt"
 
@@ -72,14 +70,14 @@ SUBSCRIPTION_FILE = "subscription.txt"
 
 def to_persian_digits(text):
     mapping = str.maketrans(
-        '0123456789',
-        '۰۱۲۳۴۵۶۷۸۹'
+        "0123456789",
+        "۰۱۲۳۴۵۶۷۸۹"
     )
     return text.translate(mapping)
 
 
 def get_tehran_time():
-    tz = pytz.timezone('Asia/Tehran')
+    tz = pytz.timezone("Asia/Tehran")
 
     now = jdatetime.datetime.fromtimestamp(
         datetime.now(tz).timestamp(),
@@ -113,20 +111,40 @@ def get_sent_ips():
     if not os.path.exists(SENT_IPS_FILE):
         return set()
 
-    with open(SENT_IPS_FILE, "r") as f:
-        return set(
-            line.strip()
-            for line in f
-            if line.strip()
-        )
+    try:
+        with open(
+            SENT_IPS_FILE,
+            "r",
+            encoding="utf-8"
+        ) as f:
+
+            return {
+                line.strip()
+                for line in f
+                if line.strip()
+            }
+
+    except Exception:
+        return set()
 
 
 def save_sent_ips(ip_set):
 
-    with open(SENT_IPS_FILE, "w") as f:
+    try:
+        with open(
+            SENT_IPS_FILE,
+            "w",
+            encoding="utf-8"
+        ) as f:
 
-        for ip_port in sorted(ip_set):
-            f.write(f"{ip_port}\n")
+            for ip_port in sorted(ip_set):
+                f.write(f"{ip_port}\n")
+
+    except Exception as e:
+
+        print(
+            f"⚠️ خطا در ذخیره IPها: {e}"
+        )
 
 
 # ==========================================
@@ -138,55 +156,140 @@ def load_subscription():
     if not os.path.exists(SUBSCRIPTION_FILE):
         return []
 
-    with open(
-        SUBSCRIPTION_FILE,
-        "r",
-        encoding="utf-8"
-    ) as f:
+    try:
 
-        return [
-            line.strip()
-            for line in f
-            if line.strip()
-        ]
+        with open(
+            SUBSCRIPTION_FILE,
+            "r",
+            encoding="utf-8"
+        ) as f:
+
+            return [
+                line.strip()
+                for line in f
+                if line.strip()
+            ]
+
+    except Exception as e:
+
+        print(
+            f"⚠️ خطا در خواندن Subscription: {e}"
+        )
+
+        return []
 
 
 def save_subscription(configs):
 
-    configs = configs[-MAX_SUB_SIZE:]
+    configs = configs[:MAX_SUB_SIZE]
 
-    with open(
-        SUBSCRIPTION_FILE,
-        "w",
-        encoding="utf-8"
-    ) as f:
+    try:
 
-        for cfg in configs:
-            f.write(cfg + "\n")
+        with open(
+            SUBSCRIPTION_FILE,
+            "w",
+            encoding="utf-8"
+        ) as f:
 
-    print(
-        f"✅ ساب ذخیره شد. تعداد: {len(configs)}"
-    )
+            for cfg in configs:
+                f.write(cfg + "\n")
+
+        print(
+            f"✅ ساب ذخیره شد. تعداد: {len(configs)}"
+        )
+
+    except Exception as e:
+
+        print(
+            f"❌ خطا در ذخیره Subscription: {e}"
+        )
 
 
 # ==========================================
-# تشخیص کانفیگ
+# تشخیص پروتکل
 # ==========================================
+
+def get_protocol(config):
+
+    if not config:
+        return ""
+
+    config = config.strip().lower()
+
+    for protocol in (
+        "vless",
+        "vmess",
+        "hysteria2",
+        "trojan",
+        "ss"
+    ):
+
+        if config.startswith(protocol + "://"):
+            return protocol
+
+    return ""
+
 
 def is_valid_config(config: str) -> bool:
 
-    if not config or not isinstance(config, str):
-        return False
+    return bool(get_protocol(config))
 
-    config = config.strip()
 
-    return config.startswith((
-        "vless://",
-        "vmess://",
-        "hysteria2://",
-        "trojan://",
-        "ss://"
-    ))
+# ==========================================
+# Base64 Decode
+# ==========================================
+
+def decode_base64_text(value):
+
+    value = value.strip()
+
+    if not value:
+        return ""
+
+    # حذف فاصله و newline
+    value = re.sub(
+        r"\s+",
+        "",
+        value
+    )
+
+    # Base64 معمولی
+    padded = value + "=" * (
+        -len(value) % 4
+    )
+
+    try:
+
+        decoded = base64.b64decode(
+            padded
+        ).decode(
+            "utf-8",
+            errors="ignore"
+        )
+
+        if decoded:
+            return decoded
+
+    except Exception:
+        pass
+
+    # Base64 URL Safe
+    try:
+
+        decoded = base64.urlsafe_b64decode(
+            padded
+        ).decode(
+            "utf-8",
+            errors="ignore"
+        )
+
+        if decoded:
+            return decoded
+
+    except Exception:
+        pass
+
+    return ""
 
 
 # ==========================================
@@ -195,45 +298,110 @@ def is_valid_config(config: str) -> bool:
 
 def extract_ip_port(config):
 
+    if not config:
+        return None, None
+
     try:
 
-        # ------------------------------
+        config = config.strip()
+
+        protocol = get_protocol(config)
+
+        # ----------------------------------
         # VMess
-        # ------------------------------
-        if config.startswith("vmess://"):
+        # ----------------------------------
 
-            b64_str = config.replace(
-                "vmess://",
-                ""
+        if protocol == "vmess":
+
+            b64_str = config[
+                len("vmess://"):
+            ]
+
+            decoded = decode_base64_text(
+                b64_str
             )
 
-            b64_str += '=' * (
-                -len(b64_str) % 4
-            )
+            if not decoded:
+                return None, None
 
             json_data = json.loads(
-                base64.b64decode(
-                    b64_str
-                ).decode("utf-8")
+                decoded
             )
 
-            return (
-                json_data.get("add", ""),
-                str(json_data.get("port", ""))
+            address = str(
+                json_data.get(
+                    "add",
+                    ""
+                )
+            ).strip()
+
+            port = str(
+                json_data.get(
+                    "port",
+                    ""
+                )
+            ).strip()
+
+            if address and port:
+                return address, port
+
+            return None, None
+
+        # ----------------------------------
+        # MTProto
+        # ----------------------------------
+
+        if (
+            "tg://proxy" in config
+            or "https://t.me/proxy" in config
+        ):
+
+            parsed = urllib.parse.urlparse(
+                config
             )
 
-        # ------------------------------
-        # VLESS / Trojan / SS / Hysteria2
-        # ------------------------------
-        elif config.startswith((
-            "vless://",
-            "trojan://",
-            "ss://",
-            "hysteria2://"
-        )):
+            query = urllib.parse.parse_qs(
+                parsed.query
+            )
 
+            server = query.get(
+                "server",
+                [""]
+            )[0]
+
+            port = query.get(
+                "port",
+                [""]
+            )[0]
+
+            if server and port:
+                return server, str(port)
+
+            return None, None
+
+        # ----------------------------------
+        # VLESS / Trojan / Hysteria2
+        # ----------------------------------
+
+        if protocol in (
+            "vless",
+            "trojan",
+            "hysteria2"
+        ):
+
+            parsed = urllib.parse.urlparse(
+                config
+            )
+
+            hostname = parsed.hostname
+            port = parsed.port
+
+            if hostname and port:
+                return hostname, str(port)
+
+            # fallback
             match = re.search(
-                r'@([^:/?#]+):(\d+)',
+                r"@\[([0-9a-fA-F:]+)\]:(\d+)",
                 config
             )
 
@@ -244,35 +412,127 @@ def extract_ip_port(config):
                     match.group(2)
                 )
 
-        # ------------------------------
-        # MTProto
-        # ------------------------------
-        elif (
-            "tg://proxy" in config
-            or "https://t.me/proxy" in config
-        ):
-
-            ip_match = re.search(
-                r'server=([^&]+)',
+            match = re.search(
+                r"@([^:/?#]+):(\d+)",
                 config
             )
 
-            port_match = re.search(
-                r'port=(\d+)',
-                config
-            )
-
-            if ip_match and port_match:
+            if match:
 
                 return (
-                    ip_match.group(1),
-                    port_match.group(1)
+                    match.group(1),
+                    match.group(2)
                 )
+
+            return None, None
+
+        # ----------------------------------
+        # SS
+        # ----------------------------------
+
+        if protocol == "ss":
+
+            # حالت معمول:
+            # ss://base64@host:port
+            after_scheme = config[
+                len("ss://"):
+            ]
+
+            if "@" in after_scheme:
+
+                user_part, server_part = (
+                    after_scheme.rsplit(
+                        "@",
+                        1
+                    )
+                )
+
+                server_part = server_part.split(
+                    "?",
+                    1
+                )[0]
+
+                server_part = server_part.split(
+                    "#",
+                    1
+                )[0]
+
+                # IPv6
+                match = re.match(
+                    r"^\[([0-9a-fA-F:]+)\]:(\d+)",
+                    server_part
+                )
+
+                if match:
+
+                    return (
+                        match.group(1),
+                        match.group(2)
+                    )
+
+                # IPv4 / domain
+                match = re.match(
+                    r"^([^:]+):(\d+)",
+                    server_part
+                )
+
+                if match:
+
+                    return (
+                        match.group(1),
+                        match.group(2)
+                    )
+
+            # SS قدیمی به شکل Base64 کامل باشد
+            decoded = decode_base64_text(
+                after_scheme
+            )
+
+            if decoded and "@" in decoded:
+
+                match = re.search(
+                    r"@([^:/?#]+):(\d+)",
+                    decoded
+                )
+
+                if match:
+
+                    return (
+                        match.group(1),
+                        match.group(2)
+                    )
+
+            return None, None
 
     except Exception:
         pass
 
     return None, None
+
+
+# ==========================================
+# ساخت کلید یکتا
+# ==========================================
+
+def get_config_key(config):
+
+    ip, port = extract_ip_port(
+        config
+    )
+
+    if ip and port:
+
+        return (
+            f"{ip.strip().lower()}:"
+            f"{str(port).strip()}"
+        )
+
+    # اگر نتوانستیم IP/Port استخراج کنیم
+    # خود کانفیگ کلید می‌شود
+    return (
+        config.strip()
+        .lower()
+    )
 
 
 # ==========================================
@@ -285,42 +545,50 @@ def get_flag_from_remark(config):
 
         remark = ""
 
+        protocol = get_protocol(config)
+
         # VMess
-        if config.startswith("vmess://"):
+        if protocol == "vmess":
 
-            b64_str = config.replace(
-                "vmess://",
-                ""
+            b64_str = config[
+                len("vmess://"):
+            ]
+
+            decoded = decode_base64_text(
+                b64_str
             )
 
-            b64_str += '=' * (
-                -len(b64_str) % 4
-            )
+            if decoded:
 
-            json_data = json.loads(
-                base64.b64decode(
-                    b64_str
-                ).decode("utf-8")
-            )
+                json_data = json.loads(
+                    decoded
+                )
 
-            remark = json_data.get(
-                "ps",
-                ""
-            )
+                remark = json_data.get(
+                    "ps",
+                    ""
+                )
 
-        # VLESS / Trojan / SS / Hysteria2
+        # سایر پروتکل‌ها
         elif "#" in config:
 
             remark = urllib.parse.unquote(
-                config.split("#", 1)[1]
+                config.split(
+                    "#",
+                    1
+                )[1]
             )
 
-        m = re.match(
-            r'^([\U0001F1E6-\U0001F1FF]{2}|🌐)',
+        match = re.match(
+            r"^([\U0001F1E6-\U0001F1FF]{2}|🌐)",
             remark
         )
 
-        return m.group(1) if m else ""
+        return (
+            match.group(1)
+            if match
+            else ""
+        )
 
     except Exception:
         return ""
@@ -334,27 +602,39 @@ def get_country_and_flag(ip_list):
 
     result = {}
 
+    # حذف تکراری‌ها
+    ip_list = list(
+        dict.fromkeys(
+            ip_list
+        )
+    )
+
     valid_ips = [
         ip
         for ip in ip_list
         if ip
         and re.match(
-            r'^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$',
+            r"^\d{1,3}\."
+            r"\d{1,3}\."
+            r"\d{1,3}\."
+            r"\d{1,3}$",
             ip
         )
     ]
 
-    if not valid_ips:
+    # برای دامنه‌ها
+    for ip in ip_list:
 
-        return {
-            ip: {
+        if ip not in valid_ips:
+
+            result[ip] = {
                 "code": "",
                 "flag": "🌐"
             }
-            for ip in ip_list
-        }
 
-    # ip-api حداکثر 100 درخواست در batch
+    if not valid_ips:
+        return result
+
     for j in range(
         0,
         len(valid_ips),
@@ -375,22 +655,37 @@ def get_country_and_flag(ip_list):
                 for ip in chunk
             ]
 
-            res = requests.post(
+            response = requests.post(
                 "http://ip-api.com/batch",
                 json=payload,
                 timeout=12
-            ).json()
+            )
 
-            for item in res:
+            if response.status_code != 200:
 
-                ip = item.get(
-                    "query"
+                print(
+                    f"  ⚠️ ip-api status: "
+                    f"{response.status_code}"
                 )
 
-                code = item.get(
-                    "countryCode",
+                continue
+
+            data = response.json()
+
+            for item in data:
+
+                ip = item.get(
+                    "query",
                     ""
-                ) or ""
+                )
+
+                code = (
+                    item.get(
+                        "countryCode",
+                        ""
+                    )
+                    or ""
+                ).upper()
 
                 if len(code) == 2:
 
@@ -398,13 +693,13 @@ def get_country_and_flag(ip_list):
                         chr(
                             0x1F1E6
                             + ord(code[0])
-                            - ord('A')
+                            - ord("A")
                         )
                         +
                         chr(
                             0x1F1E6
                             + ord(code[1])
-                            - ord('A')
+                            - ord("A")
                         )
                     )
 
@@ -420,7 +715,7 @@ def get_country_and_flag(ip_list):
         except Exception as e:
 
             print(
-                f"  ⚠️ خطا در دریافت پرچم کشورها: {e}"
+                f"  ⚠️ خطا در دریافت پرچم: {e}"
             )
 
     for ip in ip_list:
@@ -436,7 +731,7 @@ def get_country_and_flag(ip_list):
 
 
 # ==========================================
-# تغییر Remark کانفیگ‌های V2Ray
+# تغییر Remark V2Ray
 # ==========================================
 
 def change_remark_v2ray(
@@ -446,24 +741,27 @@ def change_remark_v2ray(
 
     try:
 
-        # ------------------------------
+        protocol = get_protocol(config)
+
+        # ----------------------------------
         # VMess
-        # ------------------------------
-        if config.startswith("vmess://"):
+        # ----------------------------------
 
-            b64_str = config.replace(
-                "vmess://",
-                ""
+        if protocol == "vmess":
+
+            b64_str = config[
+                len("vmess://"):
+            ]
+
+            decoded = decode_base64_text(
+                b64_str
             )
 
-            b64_str += '=' * (
-                -len(b64_str) % 4
-            )
+            if not decoded:
+                return config
 
             json_data = json.loads(
-                base64.b64decode(
-                    b64_str
-                ).decode("utf-8")
+                decoded
             )
 
             json_data["ps"] = new_remark
@@ -471,28 +769,37 @@ def change_remark_v2ray(
             new_b64 = base64.b64encode(
                 json.dumps(
                     json_data,
-                    ensure_ascii=False
-                ).encode("utf-8")
-            ).decode("utf-8")
-
-            return f"vmess://{new_b64}"
-
-        # ------------------------------
-        # VLESS / Trojan / SS / Hysteria2
-        # ------------------------------
-        elif config.startswith((
-            "vless://",
-            "trojan://",
-            "ss://",
-            "hysteria2://"
-        )):
-
-            # حذف Remark قبلی
-            base_url = (
-                config.split("#")[0]
-                if "#" in config
-                else config
+                    ensure_ascii=False,
+                    separators=(
+                        ",",
+                        ":"
+                    )
+                ).encode(
+                    "utf-8"
+                )
+            ).decode(
+                "utf-8"
             )
+
+            return (
+                f"vmess://{new_b64}"
+            )
+
+        # ----------------------------------
+        # VLESS / Trojan / SS / Hysteria2
+        # ----------------------------------
+
+        if protocol in (
+            "vless",
+            "trojan",
+            "ss",
+            "hysteria2"
+        ):
+
+            base_url = config.split(
+                "#",
+                1
+            )[0]
 
             encoded_remark = urllib.parse.quote(
                 new_remark,
@@ -500,7 +807,8 @@ def change_remark_v2ray(
             )
 
             return (
-                f"{base_url}#{encoded_remark}"
+                f"{base_url}"
+                f"#{encoded_remark}"
             )
 
         return config
@@ -515,7 +823,7 @@ def change_remark_v2ray(
 
 
 # ==========================================
-# تغییر Remark پروکسی MTProto
+# تغییر Remark MTProto
 # ==========================================
 
 def change_remark_mtproto(
@@ -523,16 +831,28 @@ def change_remark_mtproto(
     new_remark
 ):
 
-    clean_link = re.sub(
-        r'&name=[^&]*',
-        '',
-        link
-    )
+    try:
 
-    return (
-        f"{clean_link}&name="
-        f"{urllib.parse.quote(new_remark)}"
-    )
+        clean_link = re.sub(
+            r"&name=[^&]*",
+            "",
+            link
+        )
+
+        separator = (
+            "&"
+            if "?" in clean_link
+            else "?"
+        )
+
+        return (
+            f"{clean_link}"
+            f"{separator}name="
+            f"{urllib.parse.quote(new_remark)}"
+        )
+
+    except Exception:
+        return link
 
 
 # ==========================================
@@ -750,7 +1070,9 @@ def send_post(
             )
         ]
 
-        configs_text = "\n\n".join(rows)
+        configs_text = "\n\n".join(
+            rows
+        )
 
         full_message = (
             header
@@ -781,19 +1103,50 @@ def send_post(
                 f"با موفقیت پست شد."
             )
 
-        else:
+            return True
 
-            print(
-                f"❌ خطا در ارسال {post_type}: "
-                f"{r.status_code} - "
-                f"{r.text[:200]}"
-            )
+        print(
+            f"❌ خطا در ارسال {post_type}: "
+            f"{r.status_code} - "
+            f"{r.text[:300]}"
+        )
+
+        return False
 
     except Exception as e:
 
         print(
             f"❌ Error sending {post_type}: {e}"
         )
+
+        return False
+
+
+# ==========================================
+# Regex استخراج کانفیگ
+# ==========================================
+
+CONFIG_PATTERN = re.compile(
+    r"(?:vless|vmess|trojan|ss|hysteria2)"
+    r"://[^\s<>'\"`]+",
+    re.IGNORECASE
+)
+
+
+def extract_configs_from_text(text):
+
+    if not text:
+        return []
+
+    found = []
+
+    matches = CONFIG_PATTERN.findall(
+        text
+    )
+
+    found.extend(matches)
+
+    return found
 
 
 # ==========================================
@@ -812,7 +1165,11 @@ def collect_from_channel(channel):
 
         resp = requests.get(
             tg_url,
-            timeout=15
+            timeout=15,
+            headers={
+                "User-Agent":
+                "Mozilla/5.0"
+            }
         )
 
         if resp.status_code != 200:
@@ -823,162 +1180,112 @@ def collect_from_channel(channel):
                 f"برای @{channel}"
             )
 
-            return found
+            return []
 
         soup = BeautifulSoup(
             resp.text,
-            'html.parser'
+            "html.parser"
         )
 
         messages = soup.find_all(
-            'div',
-            class_='tgme_widget_message'
+            "div",
+            class_="tgme_widget_message"
         )[-30:]
-
-        pattern = (
-            r'(?:^|[\s\n\r\"\'>]|\d+\.\s*)'
-            r'((?:vless|vmess|trojan|ss|hysteria2)'
-            r'://[^\s<>"\']+)'
-        )
 
         for msg in messages:
 
-            # --------------------------
-            # 1. متن کامل پیام
-            # --------------------------
-
+            # متن پیام
             full_text = msg.get_text(
                 separator="\n"
             )
 
-            matches = re.findall(
-                pattern,
-                full_text,
-                flags=re.IGNORECASE |
-                      re.MULTILINE
+            found.extend(
+                extract_configs_from_text(
+                    full_text
+                )
             )
 
-            found.extend(matches)
-
-            # --------------------------
-            # 2. code و pre
-            # --------------------------
-
+            # code / pre
             for tag in msg.find_all(
-                ['code', 'pre']
+                ["code", "pre"]
             ):
 
-                code_text = tag.get_text()
-
-                matches = re.findall(
-                    pattern,
-                    code_text,
-                    flags=re.IGNORECASE |
-                          re.MULTILINE
+                found.extend(
+                    extract_configs_from_text(
+                        tag.get_text()
+                    )
                 )
 
-                found.extend(matches)
-
-            # --------------------------
-            # 3. لینک مستقیم
-            # --------------------------
-
+            # لینک مستقیم
             for a in msg.find_all(
-                'a',
+                "a",
                 href=True
             ):
 
                 href = a.get(
-                    'href',
-                    ''
-                )
+                    "href",
+                    ""
+                ).strip()
 
-                if any(
-                    href.lower().startswith(p)
-                    for p in (
-                        "vless://",
-                        "vmess://",
-                        "trojan://",
-                        "ss://",
-                        "hysteria2://"
+                if is_valid_config(href):
+
+                    found.append(
+                        href
                     )
-                ):
 
-                    found.append(href)
-
-            # --------------------------
-            # 4. HTML خام
-            # --------------------------
-
+            # HTML خام
             raw_html = str(msg)
 
-            matches = re.findall(
-                pattern,
-                raw_html,
-                flags=re.IGNORECASE |
-                      re.MULTILINE
+            found.extend(
+                extract_configs_from_text(
+                    raw_html
+                )
             )
-
-            found.extend(matches)
-
-            # --------------------------
-            # 5. بازسازی کانفیگ چندخطی
-            # --------------------------
-
-            text_no_nums = re.sub(
-                r'(?m)^\s*[\d۰-۹]+\.\s*$',
-                '',
-                full_text
-            )
-
-            joined_text = re.sub(
-                r'\s+',
-                '',
-                text_no_nums
-            )
-
-            joined_text = re.sub(
-                r'(?i)'
-                r'(vless|vmess|trojan|ss|hysteria2)://',
-                r' \1://',
-                joined_text
-            )
-
-            matches = re.findall(
-                pattern,
-                joined_text,
-                flags=re.IGNORECASE |
-                      re.MULTILINE
-            )
-
-            found.extend(matches)
 
     except Exception as e:
 
         print(
-            f"خطا در کانال {channel}: {e}"
+            f"  ❌ خطا در کانال @{channel}: {e}"
         )
 
+        return []
+
+    # ----------------------------------
+    # پاکسازی
+    # ----------------------------------
+
     cleaned = []
+
+    seen = set()
 
     for item in found:
 
         item = (
             item.strip()
-            .strip('"')
-            .strip("'")
+            .strip("\"'")
+            .strip()
+            .rstrip(
+                ".,;،؛)>"
+            )
         )
 
-        if is_valid_config(item):
+        if not is_valid_config(item):
+            continue
 
-            ip, port = extract_ip_port(item)
+        key = get_config_key(
+            item
+        )
 
-            if ip and port:
-                cleaned.append(item)
+        if key in seen:
+            continue
 
-    return list(
-        dict.fromkeys(cleaned)
-    )
+        seen.add(key)
+
+        cleaned.append(
+            item
+        )
+
+    return cleaned
 
 
 # ==========================================
@@ -993,37 +1300,154 @@ def collect_from_sub(url):
 
         resp = requests.get(
             url,
-            timeout=20
+            timeout=25,
+            headers={
+                "User-Agent":
+                "Mozilla/5.0"
+            }
         )
+
+        if resp.status_code != 200:
+
+            print(
+                f"  ⚠️ وضعیت ساب: "
+                f"{resp.status_code}"
+            )
+
+            return []
 
         content = resp.text.strip()
 
-        try:
+        # ----------------------------------
+        # اول متن خام
+        # ----------------------------------
 
-            decoded = base64.b64decode(
+        found.extend(
+            extract_configs_from_text(
                 content
-            ).decode("utf-8")
+            )
+        )
 
-            lines = decoded.splitlines()
+        # ----------------------------------
+        # تلاش برای Base64
+        # ----------------------------------
 
-        except:
+        decoded = decode_base64_text(
+            content
+        )
 
-            lines = content.splitlines()
+        if decoded:
 
-        for line in lines:
+            found.extend(
+                extract_configs_from_text(
+                    decoded
+                )
+            )
+
+            # خطوط جداگانه
+            for line in decoded.splitlines():
+
+                line = line.strip()
+
+                if is_valid_config(line):
+
+                    found.append(
+                        line
+                    )
+
+        # ----------------------------------
+        # خطوط متن خام
+        # ----------------------------------
+
+        for line in content.splitlines():
 
             line = line.strip()
 
             if is_valid_config(line):
-                found.append(line)
+
+                found.append(
+                    line
+                )
+
+        # ----------------------------------
+        # HTML
+        # ----------------------------------
+
+        if "<html" in content.lower():
+
+            soup = BeautifulSoup(
+                content,
+                "html.parser"
+            )
+
+            text = soup.get_text(
+                separator="\n"
+            )
+
+            found.extend(
+                extract_configs_from_text(
+                    text
+                )
+
+            for a in soup.find_all(
+                "a",
+                href=True
+            ):
+
+                href = a.get(
+                    "href",
+                    ""
+                ).strip()
+
+                if is_valid_config(href):
+
+                    found.append(
+                        href
+                    )
 
     except Exception as e:
 
         print(
-            f"خطا در دریافت ساب {url}: {e}"
+            f"  ❌ خطا در دریافت ساب: {e}"
         )
 
-    return found
+        return []
+
+    # ----------------------------------
+    # پاکسازی و Dedup
+    # ----------------------------------
+
+    cleaned = []
+
+    seen = set()
+
+    for cfg in found:
+
+        cfg = (
+            cfg.strip()
+            .strip("\"'")
+            .rstrip(
+                ".,;،؛)>"
+            )
+        )
+
+        if not is_valid_config(cfg):
+            continue
+
+        key = get_config_key(
+            cfg
+        )
+
+        if key in seen:
+            continue
+
+        seen.add(key)
+
+        cleaned.append(
+            cfg
+        )
+
+    return cleaned
 
 
 # ==========================================
@@ -1038,159 +1462,237 @@ def update_subscription():
     )
     print("=" * 50)
 
-    kept_old = []
+    # ----------------------------------
+    # ساب قبلی
+    # ----------------------------------
 
-    need_flag = []
+    old_sub = load_subscription()
 
-    seen = set()
+    print(
+        f"ساب قبلی: {len(old_sub)} کانفیگ"
+    )
 
-    def add_new_config(cfg):
+    old_by_key = {}
+
+    for cfg in old_sub:
 
         if not is_valid_config(cfg):
-            return False
+            continue
 
-        ip, port = extract_ip_port(cfg)
-
-        key = (
-            f"{ip}:{port}"
-            if ip
-            else cfg[:80]
+        key = get_config_key(
+            cfg
         )
 
-        if key in seen:
-            return False
+        if key not in old_by_key:
 
-        seen.add(key)
+            old_by_key[key] = cfg
 
-        need_flag.append(
-            change_remark_v2ray(
-                cfg,
-                CUSTOM_REMARK
-            )
-        )
+    # ----------------------------------
+    # کانفیگ‌های جدید
+    # ----------------------------------
 
-        return True
+    new_configs = []
+
+    new_keys = set()
 
     total_found = 0
 
-    # ------------------------------
+    total_invalid = 0
+
+    total_duplicate = 0
+
+    source_stats = []
+
+    # ==================================
+    # تابع افزودن
+    # ==================================
+
+    def process_source_configs(
+        configs,
+        source_name
+    ):
+
+        nonlocal total_found
+        nonlocal total_invalid
+        nonlocal total_duplicate
+
+        source_new = 0
+        source_invalid = 0
+        source_duplicate = 0
+
+        total_found += len(configs)
+
+        for cfg in configs:
+
+            if not is_valid_config(cfg):
+
+                source_invalid += 1
+                total_invalid += 1
+
+                continue
+
+            ip, port = extract_ip_port(
+                cfg
+            )
+
+            if not ip or not port:
+
+                source_invalid += 1
+                total_invalid += 1
+
+                continue
+
+            key = get_config_key(
+                cfg
+            )
+
+            # قبلاً در منابع همین اجرا
+            if key in new_keys:
+
+                source_duplicate += 1
+                total_duplicate += 1
+
+                continue
+
+            new_keys.add(key)
+
+            # اگر در ساب قبلی بوده
+            if key in old_by_key:
+
+                # فعلاً اضافه نمی‌کنیم؛
+                # نسخه قبلی را بعداً حفظ می‌کنیم
+                source_duplicate += 1
+                total_duplicate += 1
+
+                continue
+
+            new_configs.append(cfg)
+
+            source_new += 1
+
+        source_stats.append({
+            "name": source_name,
+            "found": len(configs),
+            "new": source_new,
+            "invalid": source_invalid,
+            "duplicate": source_duplicate
+        })
+
+    # ==================================
     # کانال‌ها
-    # ------------------------------
+    # ==================================
 
     for ch in SOURCE_CHANNELS:
 
         print(
-            f"→ در حال دریافت از "
+            f"\n→ در حال دریافت از "
             f"کانال @{ch} ..."
         )
 
-        configs = collect_from_channel(ch)
-
-        added = sum(
-            1
-            for cfg in configs
-            if add_new_config(cfg)
+        configs = collect_from_channel(
+            ch
         )
 
-        total_found += len(configs)
-
-        print(
-            f"  پیدا شد: {len(configs)} "
-            f"| اضافه شد: {added}"
+        process_source_configs(
+            configs,
+            f"@{ch}"
         )
 
-    # ------------------------------
-    # Subscriptionها
-    # ------------------------------
-
-    for sub_url in SOURCE_SUBS:
+        stat = source_stats[-1]
 
         print(
-            "→ در حال دریافت از لینک ساب ..."
+            f"  پیدا شد: {stat['found']}"
+            f" | جدید: {stat['new']}"
+            f" | تکراری/قدیمی: {stat['duplicate']}"
+            f" | نامعتبر: {stat['invalid']}"
+        )
+
+    # ==================================
+    # Subscriptionهای خارجی
+    # ==================================
+
+    for index, sub_url in enumerate(
+        SOURCE_SUBS,
+        1
+    ):
+
+        print(
+            f"\n→ در حال دریافت از لینک ساب "
+            f"#{index} ..."
         )
 
         configs = collect_from_sub(
             sub_url
         )
 
-        added = sum(
-            1
-            for cfg in configs
-            if add_new_config(cfg)
+        process_source_configs(
+            configs,
+            f"SUB#{index}"
         )
 
-        total_found += len(configs)
+        stat = source_stats[-1]
 
         print(
-            f"  پیدا شد: {len(configs)} "
-            f"| اضافه شد: {added}"
+            f"  پیدا شد: {stat['found']}"
+            f" | جدید: {stat['new']}"
+            f" | تکراری/قدیمی: {stat['duplicate']}"
+            f" | نامعتبر: {stat['invalid']}"
         )
 
-    # ------------------------------
-    # ساب قبلی
-    # ------------------------------
+    # ==================================
+    # آماده‌سازی جدیدها
+    # ==================================
 
-    old_sub = load_subscription()
-
-    kept = 0
-
-    for cfg in old_sub:
-
-        ip, port = extract_ip_port(cfg)
-
-        key = (
-            f"{ip}:{port}"
-            if ip
-            else cfg[:80]
-        )
-
-        if key in seen:
-            continue
-
-        seen.add(key)
-
-        if get_flag_from_remark(cfg):
-
-            kept_old.append(cfg)
-
-        else:
-
-            need_flag.append(cfg)
-
-        kept += 1
+    print("\n" + "-" * 50)
 
     print(
-        f"→ از ساب قبلی نگه داشته شد: "
-        f"{kept} "
-        f"(بدون نیاز به API: "
-        f"{len(kept_old)} "
-        f"| نیازمند پرچم: "
-        f"{kept - len(kept_old)})"
+        f"مجموع پیدا شده: {total_found}"
     )
 
-    # ------------------------------
-    # دریافت پرچم
-    # ------------------------------
+    print(
+        f"جدید و قابل اضافه شدن: "
+        f"{len(new_configs)}"
+    )
 
-    if need_flag:
+    print(
+        f"تکراری یا موجود در ساب قبلی: "
+        f"{total_duplicate}"
+    )
+
+    print(
+        f"نامعتبر / بدون IP یا Port: "
+        f"{total_invalid}"
+    )
+
+    # ==================================
+    # دریافت پرچم جدیدها
+    # ==================================
+
+    new_flagged = []
+
+    if new_configs:
 
         unique_ips = []
 
         seen_ip = set()
 
-        for cfg in need_flag:
+        for cfg in new_configs:
 
-            ip, _ = extract_ip_port(cfg)
+            ip, _ = extract_ip_port(
+                cfg
+            )
 
-            if ip and ip not in seen_ip:
+            if (
+                ip
+                and ip not in seen_ip
+            ):
 
                 seen_ip.add(ip)
-
                 unique_ips.append(ip)
 
         print(
-            f"→ در حال دریافت پرچم برای "
-            f"{len(need_flag)} کانفیگ جدید "
+            f"\n→ دریافت پرچم برای "
+            f"{len(new_configs)} کانفیگ جدید "
             f"({len(unique_ips)} IP یکتا) ..."
         )
 
@@ -1198,53 +1700,101 @@ def update_subscription():
             unique_ips
         )
 
-        new_flagged = []
+        for cfg in new_configs:
 
-        for cfg in need_flag:
-
-            ip, _ = extract_ip_port(cfg)
+            ip, _ = extract_ip_port(
+                cfg
+            )
 
             flag = (
                 country_info
                 .get(ip, {})
-                .get("flag", "🌐")
-                if ip
-                else "🌐"
-            )
-
-            new_flagged.append(
-                change_remark_v2ray(
-                    cfg,
-                    f"{flag} {CUSTOM_REMARK}"
+                .get(
+                    "flag",
+                    "🌐"
                 )
             )
 
+            modified = change_remark_v2ray(
+                cfg,
+                f"{flag} {CUSTOM_REMARK}"
+            )
+
+            new_flagged.append(
+                modified
+            )
+
         print(
-            "  ✅ پرچم اضافه شد"
+            f"  ✅ پرچم برای "
+            f"{len(new_flagged)} کانفیگ اضافه شد"
         )
 
-    else:
+    # ==================================
+    # آماده‌سازی قدیمی‌ها
+    # ==================================
 
-        new_flagged = []
+    old_kept = list(
+        old_by_key.values()
+    )
 
-    # ------------------------------
-    # ترتیب نهایی
-    # ------------------------------
+    print(
+        f"\n→ کانفیگ‌های قدیمی قابل حفظ: "
+        f"{len(old_kept)}"
+    )
+
+    # ==================================
+    # اولویت‌بندی صحیح
+    #
+    # NEW → OLD
+    # ==================================
 
     all_configs = (
         new_flagged
-        + kept_old
+        + old_kept
     )
 
-    if len(all_configs) > MAX_SUB_SIZE:
+    total_before_limit = len(
+        all_configs
+    )
 
-        all_configs = all_configs[
-            -MAX_SUB_SIZE:
-        ]
+    # نکته مهم:
+    # قبلاً [-1000:] بود که اشتباه بود.
+    # الان [:1000] است.
+    # بنابراین جدیدها اولویت دارند.
+    all_configs = all_configs[
+        :MAX_SUB_SIZE
+    ]
+
+    removed_by_limit = (
+        total_before_limit
+        - len(all_configs)
+    )
+
+    print(
+        f"\nتعداد قبل از محدودیت: "
+        f"{total_before_limit}"
+    )
+
+    print(
+        f"ظرفیت Subscription: "
+        f"{MAX_SUB_SIZE}"
+    )
+
+    print(
+        f"به علت محدودیت ظرفیت حذف شد: "
+        f"{removed_by_limit}"
+    )
+
+    print(
+        f"تعداد نهایی: "
+        f"{len(all_configs)}"
+    )
 
     save_subscription(
         all_configs
     )
+
+    print("\n" + "=" * 50)
 
     return all_configs
 
@@ -1279,27 +1829,30 @@ def get_v2ray_from_sub(sent_ips):
         f"{len(sub_configs)}"
     )
 
-    random.shuffle(
-        sub_configs
-    )
+    # ----------------------------------
+    # ابتدا همه را مرتب می‌کنیم
+    # جدید بودن بر اساس sent_ips
+    # ----------------------------------
 
     candidates = []
 
     seen = set()
-
-    target_candidates = 20
 
     for cfg in sub_configs:
 
         if not is_valid_config(cfg):
             continue
 
-        ip, port = extract_ip_port(cfg)
+        ip, port = extract_ip_port(
+            cfg
+        )
 
         if not ip or not port:
             continue
 
-        ip_port = f"{ip}:{port}"
+        ip_port = (
+            f"{ip}:{port}"
+        )
 
         if ip_port in seen:
             continue
@@ -1309,20 +1862,65 @@ def get_v2ray_from_sub(sent_ips):
         candidates.append({
             "config": cfg,
             "ip_port": ip_port,
-            "is_new": ip_port not in sent_ips,
+            "is_new": (
+                ip_port not in sent_ips
+            ),
             "ip": ip
         })
 
-        if len(candidates) >= target_candidates:
-            break
+    # ----------------------------------
+    # جدیدها اول
+    # ----------------------------------
+
+    new_candidates = [
+        c
+        for c in candidates
+        if c["is_new"]
+    ]
+
+    old_candidates = [
+        c
+        for c in candidates
+        if not c["is_new"]
+    ]
+
+    random.shuffle(
+        new_candidates
+    )
+
+    random.shuffle(
+        old_candidates
+    )
+
+    candidates = (
+        new_candidates
+        + old_candidates
+    )
+
+    # حداکثر 50 کاندید برای بررسی کشور
+    candidates = candidates[:50]
 
     print(
-        f"تعداد کاندیدا: "
+        f"کاندیداهای جدید: "
+        f"{len(new_candidates[:50])}"
+    )
+
+    print(
+        f"کاندیداهای قبلی: "
+        f"{len(old_candidates[:50])}"
+    )
+
+    print(
+        f"تعداد کاندیدای بررسی‌شده: "
         f"{len(candidates)}"
     )
 
     if not candidates:
         return []
+
+    # ----------------------------------
+    # کشور
+    # ----------------------------------
 
     ips = [
         c["ip"]
@@ -1334,23 +1932,25 @@ def get_v2ray_from_sub(sent_ips):
     )
 
     europe = []
-
     others = []
 
     for c in candidates:
 
-        code = (
-            country_info
-            .get(c["ip"], {})
-            .get("code", "")
+        info = country_info.get(
+            c["ip"],
+            {}
+        )
+
+        code = info.get(
+            "code",
+            ""
         )
 
         c["country_code"] = code
 
-        c["flag"] = (
-            country_info
-            .get(c["ip"], {})
-            .get("flag", "🌐")
+        c["flag"] = info.get(
+            "flag",
+            "🌐"
         )
 
         if code in PREFERRED_COUNTRIES:
@@ -1366,10 +1966,14 @@ def get_v2ray_from_sub(sent_ips):
         f"| بقیه: {len(others)}"
     )
 
-    selected = europe[
-        :MAX_V2RAY_POST
-    ]
+    selected = []
 
+    # اروپا اول
+    selected.extend(
+        europe[:MAX_V2RAY_POST]
+    )
+
+    # اگر کم بود، بقیه
     if len(selected) < MAX_V2RAY_POST:
 
         needed = (
@@ -1383,8 +1987,7 @@ def get_v2ray_from_sub(sent_ips):
 
     print(
         f"نهایی انتخاب شده: "
-        f"{len(selected)} "
-        f"(اولویت با اروپا)"
+        f"{len(selected)}"
     )
 
     return selected
@@ -1416,45 +2019,60 @@ def get_mtproto_proxies(sent_ips):
 
             resp = requests.get(
                 tg_url,
-                timeout=12
+                timeout=12,
+                headers={
+                    "User-Agent":
+                    "Mozilla/5.0"
+                }
             )
 
             if resp.status_code != 200:
+
+                print(
+                    f"  ⚠️ @{src_chan}: "
+                    f"{resp.status_code}"
+                )
+
                 continue
 
             soup = BeautifulSoup(
                 resp.text,
-                'html.parser'
+                "html.parser"
             )
 
             messages = soup.find_all(
-                'div',
-                class_='tgme_widget_message'
+                "div",
+                class_="tgme_widget_message"
             )[-8:]
 
             for msg in messages:
 
                 text_div = msg.find(
-                    'div',
-                    class_='tgme_widget_message_text'
+                    "div",
+                    class_="tgme_widget_message_text"
                 )
 
                 if text_div:
 
                     matches = re.findall(
-                        r'(https://t\.me/proxy\?[^\s<>"\']+|'
-                        r'tg://proxy\?[^\s<>"\']+)',
+                        r"(https://t\.me/proxy\?[^\s<>\"']+|"
+                        r"tg://proxy\?[^\s<>\"']+)",
                         text_div.get_text()
                     )
 
-                    found.extend(matches)
+                    found.extend(
+                        matches
+                    )
 
                 for btn in msg.find_all(
-                    'a',
+                    "a",
                     href=True
                 ):
 
-                    href = btn['href']
+                    href = btn.get(
+                        "href",
+                        ""
+                    )
 
                     if (
                         "tg://proxy" in href
@@ -1462,28 +2080,58 @@ def get_mtproto_proxies(sent_ips):
                         "https://t.me/proxy" in href
                     ):
 
-                        found.append(href)
+                        found.append(
+                            href
+                        )
 
         except Exception as e:
 
             print(
-                f"خطا در کانال "
-                f"{src_chan}: {e}"
+                f"  ❌ خطا در @{src_chan}: {e}"
             )
 
+    # ----------------------------------
+    # Dedup
+    # ----------------------------------
+
+    unique = []
+
+    seen = set()
+
+    for proxy in found:
+
+        proxy = proxy.strip()
+
+        ip, port = extract_ip_port(
+            proxy
+        )
+
+        if not ip or not port:
             continue
 
-    unique = list(
-        dict.fromkeys(found)
-    )
+        key = (
+            f"{ip}:{port}"
+        )
+
+        if key in seen:
+            continue
+
+        seen.add(key)
+
+        unique.append(
+            proxy
+        )
 
     print(
         f"تعداد پروکسی یکتا: "
         f"{len(unique)}"
     )
 
-    new_proxies = []
+    # ----------------------------------
+    # جدید / قدیمی
+    # ----------------------------------
 
+    new_proxies = []
     old_proxies = []
 
     for proxy in unique:
@@ -1492,18 +2140,34 @@ def get_mtproto_proxies(sent_ips):
             proxy
         )
 
-        if not ip:
-            continue
-
-        ip_port = f"{ip}:{port}"
+        ip_port = (
+            f"{ip}:{port}"
+        )
 
         if ip_port not in sent_ips:
 
-            new_proxies.append(proxy)
+            new_proxies.append(
+                proxy
+            )
 
         else:
 
-            old_proxies.append(proxy)
+            old_proxies.append(
+                proxy
+            )
+
+    print(
+        f"جدید: {len(new_proxies)} "
+        f"| قبلی: {len(old_proxies)}"
+    )
+
+    random.shuffle(
+        new_proxies
+    )
+
+    random.shuffle(
+        old_proxies
+    )
 
     selected = new_proxies[
         :MAX_MTPROTO_POST
@@ -1511,30 +2175,13 @@ def get_mtproto_proxies(sent_ips):
 
     if len(selected) < MAX_MTPROTO_POST:
 
-        selected.extend(
-            old_proxies[
-                :MAX_MTPROTO_POST
-                - len(selected)
-            ]
-        )
-
-    if len(selected) < MAX_MTPROTO_POST:
-
-        remaining = [
-            p
-            for p in unique
-            if p not in selected
-        ]
-
-        random.shuffle(
-            remaining
+        needed = (
+            MAX_MTPROTO_POST
+            - len(selected)
         )
 
         selected.extend(
-            remaining[
-                :MAX_MTPROTO_POST
-                - len(selected)
-            ]
+            old_proxies[:needed]
         )
 
     return selected[
@@ -1567,15 +2214,15 @@ def main():
         f"{len(sent_ips)}"
     )
 
-    # ------------------------------
-    # بروزرسانی Subscription
-    # ------------------------------
+    # ======================================
+    # Subscription
+    # ======================================
 
     update_subscription()
 
-    # ------------------------------
-    # انتخاب V2Ray
-    # ------------------------------
+    # ======================================
+    # V2Ray
+    # ======================================
 
     v2ray_results = get_v2ray_from_sub(
         sent_ips
@@ -1601,14 +2248,20 @@ def main():
                 modified
             )
 
-            sent_ips.add(
-                item["ip_port"]
-            )
-
-        send_post(
+        success = send_post(
             configs_to_post,
             "v2ray"
         )
+
+        # فقط اگر ارسال موفق بود
+        # IPها ثبت شوند
+        if success:
+
+            for item in v2ray_results:
+
+                sent_ips.add(
+                    item["ip_port"]
+                )
 
     else:
 
@@ -1616,9 +2269,9 @@ def main():
             "هیچ کانفیگ V2Ray پیدا نشد."
         )
 
-    # ------------------------------
+    # ======================================
     # فاصله بین دو پست
-    # ------------------------------
+    # ======================================
 
     between_delay = random.randint(
         180,
@@ -1635,9 +2288,9 @@ def main():
         between_delay
     )
 
-    # ------------------------------
+    # ======================================
     # MTProto
-    # ------------------------------
+    # ======================================
 
     mt_proxies = get_mtproto_proxies(
         sent_ips
@@ -1654,7 +2307,9 @@ def main():
             )
 
             if ip:
-                all_ips.append(ip)
+                all_ips.append(
+                    ip
+                )
 
         country_info = get_country_and_flag(
             all_ips
@@ -1671,7 +2326,10 @@ def main():
             flag = (
                 country_info
                 .get(ip, {})
-                .get("flag", "🌐")
+                .get(
+                    "flag",
+                    "🌐"
+                )
                 if ip
                 else "🌐"
             )
@@ -1685,16 +2343,24 @@ def main():
                 modified
             )
 
-            if ip and port:
-
-                sent_ips.add(
-                    f"{ip}:{port}"
-                )
-
-        send_post(
+        success = send_post(
             configs_to_post,
             "mtproto"
         )
+
+        if success:
+
+            for proxy in mt_proxies:
+
+                ip, port = extract_ip_port(
+                    proxy
+                )
+
+                if ip and port:
+
+                    sent_ips.add(
+                        f"{ip}:{port}"
+                    )
 
     else:
 
@@ -1702,9 +2368,9 @@ def main():
             "هیچ پروکسی MTProto پیدا نشد."
         )
 
-    # ------------------------------
-    # ذخیره IPها
-    # ------------------------------
+    # ======================================
+    # ذخیره IPهای ارسال‌شده
+    # ======================================
 
     save_sent_ips(
         sent_ips
