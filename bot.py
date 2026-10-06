@@ -46,7 +46,8 @@ MTPROTO_CHANNELS = [
     "Myporoxy",
     "ProxyWR",
     "P500Y",
-    "ProxyMTProto"
+    "ProxyMTProto",
+    "webproxy"
 ]
 
 CUSTOM_REMARK = "@goololgoo 🔐 وی‌پی‌ان رایگان | Free Proxy💥"
