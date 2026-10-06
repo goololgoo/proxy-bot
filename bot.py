@@ -942,7 +942,7 @@ def get_random_header_footer(
 
         headers = [
 
-            f"""☄ پروکسی‌های جدید تلگرام
+            f"""☄  webproxy . mtporoto پروکسی‌های جدید تلگرام
 
 آخرین به‌روزرسانی: {date_str} ساعت {time_str}
 تست شده و فعال ✅
@@ -951,7 +951,7 @@ def get_random_header_footer(
 برای اتصال روی لینک مورد نظر کلیک کنید 👇
 """,
 
-            f"""🚀 پروکسی MTProto تازه
+            f"""🚀 پروکسی webproxy . mtporoto تازه
 
 تاریخ: {date_str} | {time_str}
 تست شده روی همراه اول، ایرانسل و رایتل
@@ -960,7 +960,7 @@ def get_random_header_footer(
 روی لینک بزن تا وصل بشی
 """,
 
-            f"""🔥 پروکسی‌های امروز آماده شد
+            f"""🔥 پروکسی‌های webproxy . mtporoto امروز آماده شد
 
 به‌روزرسانی: {date_str} ساعت {time_str}
 مناسب دور زدن فیلتر تلگرام
