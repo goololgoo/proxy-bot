@@ -354,6 +354,8 @@ def extract_ip_port(config):
         if (
             "tg://proxy" in config
             or "https://t.me/proxy" in config
+            or "https://t.me/webproxy" in config
+            or "tg://webproxy" in config
         ):
 
             parsed = urllib.parse.urlparse(
