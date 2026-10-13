@@ -34,6 +34,6 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: Update subscription and sent_ips
-          file_pattern: subscription.txt sent_ips.txt
+          file_pattern: @goololgoo.txt sent_ips.txt
           commit_user_name: github-actions[bot]
           commit_user_email: 41898282+github-actions[bot]@users.noreply.github.com
