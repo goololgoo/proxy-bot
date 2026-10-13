@@ -62,7 +62,7 @@ PREFERRED_COUNTRIES = {
 }
 
 SENT_IPS_FILE = "sent_ips.txt"
-SUBSCRIPTION_FILE = "subscription.txt"
+SUBSCRIPTION_FILE = "@goololgoo.txt"
 
 
 # ==========================================
