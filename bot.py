@@ -181,31 +181,26 @@ def load_subscription():
 
 
 def save_subscription(configs):
-
     configs = configs[:MAX_SUB_SIZE]
-
     try:
-
-        with open(
-            SUBSCRIPTION_FILE,
-            "w",
-            encoding="utf-8"
-        ) as f:
-
+        with open(SUBSCRIPTION_FILE, "w", encoding="utf-8") as f:
+            # نوشتن هدرهای متادیتای استاندارد در ابتدای فایل
+            f.write("#profile-title: @goololgoo — Free Configs\n")
+            f.write("#profile-update-interval: 1\n")
+            f.write("#subscription-userinfo: upload=0; download=0; total=0; expire=0\n")
+            f.write("#support-url: https://t.me/goololgoo\n")
+            f.write("#profile-web-page-url: https://t.me/goololgoo\n")
+            f.write("# @goololgoo — Sorted & Checked Configs\n\n")
+            
+            # نوشتن لیست کانفیگ‌ها
             for cfg in configs:
                 f.write(cfg + "\n")
 
-        print(
-            f"✅ ساب ذخیره شد. تعداد: {len(configs)}"
-        )
+        print(f"✅ ساب همراه با هدرهای اختصاصی ذخیره شد. تعداد: {len(configs)}")
 
     except Exception as e:
-
-        print(
-            f"❌ خطا در ذخیره Subscription: {e}"
-        )
-
-
+        print(f"❌ خطا در ذخیره Subscription: {e}")
+        
 # ==========================================
 # تشخیص پروتکل
 # ==========================================
