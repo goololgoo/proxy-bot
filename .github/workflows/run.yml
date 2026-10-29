@@ -5,13 +5,13 @@ on:
     paths:
       - '.github/workflows/run.yml'
   schedule:
-    - cron: '25 * * * *'   # هر ۱ ساعت، دقیقه ۲۵
+    # GitHub cron is UTC: minute 25 UTC = minute 55 in Iran (Asia/Tehran).
+    - cron: '25 * * * *'
   workflow_dispatch:
 
 permissions:
   contents: write
 
-# Prevent overlapping runs from racing while saving memory files.
 concurrency:
   group: proxy-bot-main
   cancel-in-progress: false
@@ -19,11 +19,19 @@ concurrency:
 jobs:
   run_bot:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+
+      - name: Log execution time
+        run: |
+          echo "Trigger: $GITHUB_EVENT_NAME"
+          echo "UTC: $(date -u '+%Y-%m-%d %H:%M:%S')"
+          echo "Iran: $(TZ=Asia/Tehran date '+%Y-%m-%d %H:%M:%S %Z')"
+          echo "Commit: $GITHUB_SHA"
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -31,8 +39,7 @@ jobs:
           python-version: '3.10'
 
       - name: Install dependencies
-        run: |
-          pip install requests jdatetime pytz beautifulsoup4
+        run: pip install requests jdatetime pytz beautifulsoup4
 
       - name: Run Bot
         run: python bot.py
@@ -44,32 +51,45 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
+          set -e
+
+          # Preserve this run's generated output before syncing with the latest main.
+          cp goololgoo.txt /tmp/goololgoo.generated.txt
+          cp sent_ips.txt /tmp/sent_ips.generated.txt
+
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add goololgoo.txt sent_ips.txt
-          if git diff --cached --quiet; then
-            echo "No memory-file changes to commit."
-            exit 0
-          fi
-
-          git commit -m "Update goololgoo and sent_ips"
-
-          # Rebase the memory-file commit onto the latest main before pushing.
-          # The workflow concurrency lock prevents another scheduled run racing this step.
+          # Retry from the newest main each time. Merge sent IPs as a union so
+          # parallel/manual updates cannot cause a rebase conflict or lose history.
           for attempt in 1 2 3; do
             git fetch origin main
-            if ! git rebase origin/main; then
-              echo "Rebase conflict while saving memory files."
-              git rebase --abort || true
-              exit 1
+            git reset --hard origin/main
+
+            cp /tmp/goololgoo.generated.txt goololgoo.txt
+            python - <<'PY'
+          from pathlib import Path
+
+          remote_ips = set(Path("sent_ips.txt").read_text(encoding="utf-8").splitlines()) if Path("sent_ips.txt").exists() else set()
+          generated_ips = set(Path("/tmp/sent_ips.generated.txt").read_text(encoding="utf-8").splitlines()) if Path("/tmp/sent_ips.generated.txt").exists() else set()
+          merged = sorted(ip.strip() for ip in remote_ips | generated_ips if ip.strip())
+          Path("sent_ips.txt").write_text("".join(ip + "\\n" for ip in merged), encoding="utf-8")
+          print(f"Merged sent IPs: {len(merged)}")
+          PY
+
+            git add goololgoo.txt sent_ips.txt
+            if git diff --cached --quiet; then
+              echo "No memory-file changes to commit."
+              exit 0
             fi
+
+            git commit -m "Update goololgoo and sent_ips"
             if git push origin HEAD:main; then
               echo "Memory files saved successfully."
               exit 0
             fi
-            echo "Push attempt $attempt failed; retrying..."
-            sleep 2
+
+            echo "Push attempt $attempt failed; retrying from latest main..."
           done
 
           echo "Could not push memory files after 3 attempts."
