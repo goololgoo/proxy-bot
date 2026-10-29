@@ -1,6 +1,9 @@
 name: Run V2ray Bot
 
 on:
+  push:
+    paths:
+      - '.github/workflows/run.yml'
   schedule:
     - cron: '25 * * * *'   # هر ۱ ساعت، دقیقه ۲۵
   workflow_dispatch:
