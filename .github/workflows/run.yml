@@ -73,7 +73,7 @@ jobs:
           remote_ips = set(Path("sent_ips.txt").read_text(encoding="utf-8").splitlines()) if Path("sent_ips.txt").exists() else set()
           generated_ips = set(Path("/tmp/sent_ips.generated.txt").read_text(encoding="utf-8").splitlines()) if Path("/tmp/sent_ips.generated.txt").exists() else set()
           merged = sorted(ip.strip() for ip in remote_ips | generated_ips if ip.strip())
-          Path("sent_ips.txt").write_text("".join(ip + "\\n" for ip in merged), encoding="utf-8")
+          Path("sent_ips.txt").write_text("".join(ip + "\n" for ip in merged), encoding="utf-8")
           print(f"Merged sent IPs: {len(merged)}")
           PY
 
