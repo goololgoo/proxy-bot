@@ -8,12 +8,19 @@ on:
 permissions:
   contents: write
 
+# Prevent overlapping runs from racing while saving memory files.
+concurrency:
+  group: proxy-bot-main
+  cancel-in-progress: false
+
 jobs:
   run_bot:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -29,11 +36,38 @@ jobs:
         env:
           BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
 
-      - name: Save memory files
+      - name: Save memory files safely
         if: always()
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: Update goololgoo and sent_ips
-          file_pattern: goololgoo.txt sent_ips.txt
-          commit_user_name: github-actions[bot]
-          commit_user_email: 41898282+github-actions[bot]@users.noreply.github.com
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add goololgoo.txt sent_ips.txt
+          if git diff --cached --quiet; then
+            echo "No memory-file changes to commit."
+            exit 0
+          fi
+
+          git commit -m "Update goololgoo and sent_ips"
+
+          # Rebase the memory-file commit onto the latest main before pushing.
+          # The workflow concurrency lock prevents another scheduled run racing this step.
+          for attempt in 1 2 3; do
+            git fetch origin main
+            if ! git rebase origin/main; then
+              echo "Rebase conflict while saving memory files."
+              git rebase --abort || true
+              exit 1
+            fi
+            if git push origin HEAD:main; then
+              echo "Memory files saved successfully."
+              exit 0
+            fi
+            echo "Push attempt $attempt failed; retrying..."
+            sleep 2
+          done
+
+          echo "Could not push memory files after 3 attempts."
+          exit 1
