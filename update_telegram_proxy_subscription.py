@@ -16,8 +16,8 @@ CHANNELS = [
 OUTPUT = Path("goololgoo_telegram_proxy.txt")
 MAX_PROXIES = 500
 LINK_RE = re.compile(
-    r"(?:https://t\\.me/(?:proxy|webproxy)\\?[^\\s<>\\\"']+|"
-    r"tg://(?:proxy|webproxy)\\?[^\\s<>\\\"']+)",
+    r"(?:https://t\.me/(?:proxy|webproxy)\?[^\s<>\"']+|"
+    r"tg://(?:proxy|webproxy)\?[^\s<>\"']+)",
     re.IGNORECASE,
 )
 
@@ -92,7 +92,7 @@ def main():
         return
 
     selected = links[:MAX_PROXIES]
-    OUTPUT.write_text("".join(link + "\\n" for link in selected), encoding="utf-8")
+    OUTPUT.write_text("".join(link + "\n" for link in selected), encoding="utf-8")
     print(
         f"Saved {len(selected)} unique Telegram proxies "
         f"({sum(1 for link in selected if 'webproxy?' in link.lower())} WEB Proxy) "
