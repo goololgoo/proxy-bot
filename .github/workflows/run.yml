@@ -50,6 +50,23 @@ jobs:
         if: always()
         run: python update_telegram_proxy_subscription.py
 
+      - name: Report Telegram proxy counts
+        if: always()
+        run: |
+          python - <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          from pathlib import Path
+          import re
+
+          path = Path("goololgoo_telegram_proxy.txt")
+          links = [line.strip().lower() for line in path.read_text(encoding="utf-8").splitlines() if line.strip()] if path.exists() else []
+          mtproto = sum(bool(re.match(r"(?:https://t\\.me/proxy\\?|tg://proxy\\?)", link)) for link in links)
+          web_proxy = sum(bool(re.match(r"(?:https://t\\.me/webproxy\\?|tg://webproxy\\?)", link)) for link in links)
+          print("## Telegram proxy scan results")
+          print(f"- **MTProto:** {mtproto}")
+          print(f"- **WEB Proxy:** {web_proxy}")
+          print(f"- **Total unique proxies:** {len(links)}")
+          PY
+
       - name: Save memory files safely
         if: always()
         env:
