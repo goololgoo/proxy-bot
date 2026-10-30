@@ -1,3 +1,4 @@
+import html
 import re
 import urllib.parse
 from pathlib import Path
@@ -5,14 +6,7 @@ from pathlib import Path
 import requests
 from bs4 import BeautifulSoup
 
-CHANNELS = [
-    "PinkProxy",
-    "Myporoxy",
-    "ProxyWR",
-    "P500Y",
-    "ProxyMTProto",
-    "webproxy",
-]
+CHANNELS = ["PinkProxy", "Myporoxy", "ProxyWR", "P500Y", "ProxyMTProto", "webproxy"]
 OUTPUT = Path("goololgoo_telegram_proxy.txt")
 MAX_PROXIES = 500
 LINK_RE = re.compile(
@@ -22,8 +16,12 @@ LINK_RE = re.compile(
 )
 
 
+def clean_link(link):
+    return html.unescape(link.strip()).replace(r"\&", "&").rstrip(".,);]}")
+
+
 def parse_proxy(link):
-    link = link.strip()
+    link = clean_link(link)
     parsed = urllib.parse.urlparse(link)
     scheme = parsed.scheme.lower()
     if scheme == "https":
@@ -43,8 +41,6 @@ def parse_proxy(link):
     secret = query.get("secret", [""])[0].strip()
     if not server or not secret:
         return None
-
-    # WEB Proxy links intentionally have no port parameter; Telegram uses 443.
     if kind == "webproxy":
         key = (kind, server, secret.lower())
     else:
@@ -52,6 +48,62 @@ def parse_proxy(link):
             return None
         key = (kind, server, port, secret.lower())
     return key, link
+
+
+def extract_message_metadata(message):
+    """Read Server/Port/Secret from the message body above its inline buttons."""
+    text_node = message.find("div", class_="tgme_widget_message_text")
+    if not text_node:
+        return None
+
+    body = html.unescape(text_node.get_text(" ", strip=True)).replace("\u00a0", " ")
+    fields = {}
+    for label in ("server", "port", "secret"):
+        match = re.search(
+            rf"\b{label}\s*:\s*[\x60]?([^\s\\\x60]+)",
+            body,
+            flags=re.IGNORECASE,
+        )
+        if match:
+            fields[label] = match.group(1).strip().strip("\x60.,;")
+
+    if not fields:
+        return None
+
+    server = fields.get("server", "")
+    port = fields.get("port", "")
+    secret = fields.get("secret", "")
+    print(
+        "Message metadata: "
+        f"server={server or 'missing'}, port={port or 'missing'}, "
+        f"secret={'present' if secret else 'missing'}"
+    )
+
+    if (
+        server
+        and server.lower() not in {"unknown", "n/a", "none", "-"}
+        and port.isdigit()
+        and 1 <= int(port) <= 65535
+        and secret
+    ):
+        query = urllib.parse.urlencode({"server": server, "port": port, "secret": secret})
+        return "tg://proxy?" + query
+    return None
+
+
+def extract_message_links(message):
+    candidates = []
+    text_node = message.find("div", class_="tgme_widget_message_text")
+    if text_node:
+        candidates.extend(LINK_RE.findall(html.unescape(text_node.get_text(" ", strip=True))))
+
+    # Inline keyboard URLs are href attributes; visible button labels do not contain URLs.
+    candidates.extend(anchor["href"] for anchor in message.find_all("a", href=True))
+
+    metadata_link = extract_message_metadata(message)
+    if metadata_link:
+        candidates.append(metadata_link)
+    return candidates
 
 
 def main():
@@ -62,27 +114,19 @@ def main():
 
     for channel in CHANNELS:
         try:
-            response = session.get(f"https://t.me/s/{channel}", timeout=15)
+            response = session.get(f"https://t.me/s/{channel}", timeout=20)
             response.raise_for_status()
             soup = BeautifulSoup(response.text, "html.parser")
-            messages = soup.find_all("div", class_="tgme_widget_message")[-12:]
+            messages = soup.find_all("div", class_="tgme_widget_message")[-20:]
 
             for message in messages:
-                text_node = message.find("div", class_="tgme_widget_message_text")
-                candidates = []
-                if text_node:
-                    candidates.extend(LINK_RE.findall(text_node.get_text(" ", strip=True)))
-                candidates.extend(a.get("href", "") for a in message.find_all("a", href=True))
-
-                for candidate in candidates:
-                    candidate = candidate.strip().rstrip(".,);]}>")
+                for candidate in extract_message_links(message):
                     parsed = parse_proxy(candidate)
                     if not parsed:
                         continue
                     key, original_link = parsed
                     if key not in seen:
                         seen.add(key)
-                        # Keep /webproxy links intact; do not rewrite them as MTProto /proxy links.
                         links.append(original_link)
         except Exception as exc:
             print(f"Could not fetch @{channel}: {exc}")
@@ -93,11 +137,9 @@ def main():
 
     selected = links[:MAX_PROXIES]
     OUTPUT.write_text("".join(link + "\n" for link in selected), encoding="utf-8")
-    print(
-        f"Saved {len(selected)} unique Telegram proxies "
-        f"({sum(1 for link in selected if 'webproxy?' in link.lower())} WEB Proxy) "
-        f"to {OUTPUT}"
-    )
+    mtproto_count = sum(1 for link in selected if "tg://proxy?" in link.lower() or "t.me/proxy?" in link.lower())
+    web_count = sum(1 for link in selected if "/webproxy?" in link.lower())
+    print(f"Saved {len(selected)} unique Telegram proxies ({mtproto_count} MTProto, {web_count} WEB Proxy) to {OUTPUT}")
 
 
 if __name__ == "__main__":
