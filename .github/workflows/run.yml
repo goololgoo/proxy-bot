@@ -46,6 +46,10 @@ jobs:
         env:
           BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
 
+      - name: Build Telegram MTProto subscription
+        if: always()
+        run: python update_telegram_proxy_subscription.py
+
       - name: Save memory files safely
         if: always()
         env:
@@ -56,6 +60,7 @@ jobs:
           # Preserve this run's generated output before syncing with the latest main.
           cp goololgoo.txt /tmp/goololgoo.generated.txt
           cp sent_ips.txt /tmp/sent_ips.generated.txt
+          cp goololgoo_telegram_proxy.txt /tmp/goololgoo_telegram_proxy.generated.txt
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -67,6 +72,7 @@ jobs:
             git reset --hard origin/main
 
             cp /tmp/goololgoo.generated.txt goololgoo.txt
+            cp /tmp/goololgoo_telegram_proxy.generated.txt goololgoo_telegram_proxy.txt
             python - <<'PY'
           from pathlib import Path
 
@@ -77,7 +83,7 @@ jobs:
           print(f"Merged sent IPs: {len(merged)}")
           PY
 
-            git add goololgoo.txt sent_ips.txt
+            git add goololgoo.txt sent_ips.txt goololgoo_telegram_proxy.txt
             if git diff --cached --quiet; then
               echo "No memory-file changes to commit."
               exit 0
