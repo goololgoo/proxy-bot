@@ -1053,7 +1053,7 @@ def send_post(
         for i, cfg in enumerate(configs_to_post, 1):
             if i - 1 == channel_slot:
                 proxy_blocks.append(
-                    f'🚀 Proxy {i}\\n'
+                    f'🚀 Proxy {i}\n'
                     f'<a href="https://t.me/goololgoo">https://t.me/goololgoo</a>'
                 )
             else:
@@ -1061,7 +1061,7 @@ def send_post(
                     f'<a href="{html.escape(cfg, quote=True)}">🚀 Proxy {i}</a>'
                 )
 
-        configs_text = "\\n\\n".join(proxy_blocks)
+        configs_text = "\n\n".join(proxy_blocks)
 
         full_message = (
             header
