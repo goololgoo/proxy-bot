@@ -1047,30 +1047,21 @@ def send_post(
 
     else:
 
-        links_html = [
-            f'<a href="{html.escape(cfg)}">'
-            f'🚀 Proxy {i}</a>'
-            for i, cfg
-            in enumerate(
-                configs_to_post,
-                1
-            )
-        ]
+        channel_slot = random.randrange(len(configs_to_post)) if configs_to_post else -1
 
-        rows = [
-            "  |  ".join(
-                links_html[i:i + 3]
-            )
-            for i in range(
-                0,
-                len(links_html),
-                3
-            )
-        ]
+        proxy_blocks = []
+        for i, cfg in enumerate(configs_to_post, 1):
+            if i - 1 == channel_slot:
+                proxy_blocks.append(
+                    f'🚀 Proxy {i}\\n'
+                    f'<a href="https://t.me/goololgoo">https://t.me/goololgoo</a>'
+                )
+            else:
+                proxy_blocks.append(
+                    f'<a href="{html.escape(cfg, quote=True)}">🚀 Proxy {i}</a>'
+                )
 
-        configs_text = "\n\n".join(
-            rows
-        )
+        configs_text = "\\n\\n".join(proxy_blocks)
 
         full_message = (
             header
