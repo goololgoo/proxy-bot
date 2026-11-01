@@ -1859,7 +1859,37 @@ def update_subscription():
             item["country_code"] = info.get("code", "")
             item["flag"] = info.get("flag", "🌐")
 
+    # مهاجرت کانفیگ‌های فعلی ساب به بانک جامع در اجرای اول
+    for key, cfg in old_by_key.items():
+        if key not in all_records and key not in discovered_records:
+            ip, port = extract_ip_port(cfg)
+            discovered_records[key] = {
+                "key": key,
+                "config": cfg,
+                "protocol": get_protocol(cfg),
+                "ip": ip,
+                "port": str(port or ""),
+                "country_code": "",
+                "flag": "🌐",
+                "source": "legacy:goololgoo.txt",
+                "first_seen": datetime.utcnow().isoformat(timespec="seconds") + "Z"
+            }
+
     all_records.update(discovered_records)
+
+    # تلاش برای تکمیل کشور مواردی که قبلاً کشورشان نامشخص مانده است
+    missing_country_ips = list(dict.fromkeys(
+        item.get("ip") for item in all_records.values()
+        if item.get("ip") and not item.get("country_code")
+    ))
+    if missing_country_ips:
+        country_info = get_country_and_flag(missing_country_ips)
+        for item in all_records.values():
+            if item.get("ip") and not item.get("country_code"):
+                info = country_info.get(item["ip"], {})
+                item["country_code"] = info.get("code", "")
+                item["flag"] = info.get("flag", "🌐")
+
     save_all_config_records(all_records)
 
     print("\n" + "=" * 50)
