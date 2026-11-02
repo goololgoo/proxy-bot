@@ -1439,6 +1439,55 @@ def collect_from_sub(url):
 
 
 # ==========================================
+# بانک جامع کانفیگ‌ها (بدون سقف ۱۰۰۰ مورد)
+# ==========================================
+
+ALL_CONFIGS_FILE = "goololgoo_all.txt"
+ALL_CONFIGS_META_FILE = "goololgoo_all.json"
+
+
+def load_all_config_records():
+    if not os.path.exists(ALL_CONFIGS_META_FILE):
+        return {}
+    try:
+        with open(ALL_CONFIGS_META_FILE, "r", encoding="utf-8") as f:
+            payload = json.load(f)
+        records = payload.get("configs", [])
+        return {
+            item.get("key"): item
+            for item in records
+            if item.get("key") and item.get("config")
+        }
+    except Exception as e:
+        print(f"⚠️ خطا در خواندن بانک جامع: {e}")
+        return {}
+
+
+def save_all_config_records(records):
+    ordered = sorted(
+        records.values(),
+        key=lambda item: (item.get("protocol", ""), item.get("country_code", ""), item.get("key", ""))
+    )
+    payload = {
+        "version": 1,
+        "updated_at": datetime.utcnow().isoformat(timespec="seconds") + "Z",
+        "count": len(ordered),
+        "configs": ordered
+    }
+    try:
+        with open(ALL_CONFIGS_META_FILE, "w", encoding="utf-8") as f:
+            json.dump(payload, f, ensure_ascii=False, indent=2)
+        with open(ALL_CONFIGS_FILE, "w", encoding="utf-8") as f:
+            for item in ordered:
+                f.write(item["config"].strip() + "\n")
+        print(f"✅ بانک جامع ذخیره شد: {len(ordered)} کانفیگ")
+        return True
+    except Exception as e:
+        print(f"❌ خطا در ذخیره بانک جامع: {e}")
+        return False
+
+
+# ==========================================
 # ساخت / به‌روزرسانی Subscription
 # ==========================================
 
@@ -1490,6 +1539,8 @@ def update_subscription():
     total_duplicate = 0
 
     source_stats = []
+    all_records = load_all_config_records()
+    discovered_records = {}
 
     # ==================================
     # تابع افزودن
@@ -1530,9 +1581,23 @@ def update_subscription():
 
                 continue
 
-            key = get_config_key(
-                cfg
-            )
+            key = get_config_key(cfg)
+            protocol = get_protocol(cfg)
+            ip, port = extract_ip_port(cfg)
+
+            # بانک جامع مستقل از سقف فایل ساب نگهداری می‌شود.
+            if key not in all_records and key not in discovered_records:
+                discovered_records[key] = {
+                    "key": key,
+                    "config": cfg,
+                    "protocol": protocol,
+                    "ip": ip,
+                    "port": str(port),
+                    "country_code": "",
+                    "flag": "🌐",
+                    "source": source_name,
+                    "first_seen": datetime.utcnow().isoformat(timespec="seconds") + "Z"
+                }
 
             # قبلاً در منابع همین اجرا
             if key in new_keys:
@@ -1781,6 +1846,52 @@ def update_subscription():
     save_subscription(
         all_configs
     )
+
+    # تکمیل متادیتای کشور برای کانفیگ‌های تازه
+    if discovered_records:
+        unique_ips = list(dict.fromkeys(
+            item["ip"] for item in discovered_records.values()
+            if item.get("ip")
+        ))
+        country_info = get_country_and_flag(unique_ips)
+        for item in discovered_records.values():
+            info = country_info.get(item.get("ip", ""), {})
+            item["country_code"] = info.get("code", "")
+            item["flag"] = info.get("flag", "🌐")
+
+    # مهاجرت ساب قبلی در اولین اجرا؛ داده‌های موجود حفظ می‌شوند.
+    for key, cfg in old_by_key.items():
+        if key not in all_records and key not in discovered_records:
+            ip, port = extract_ip_port(cfg)
+            discovered_records[key] = {
+                "key": key,
+                "config": cfg,
+                "protocol": get_protocol(cfg),
+                "ip": ip,
+                "port": str(port or ""),
+                "country_code": "",
+                "flag": "🌐",
+                "source": "legacy:goololgoo.txt",
+                "first_seen": datetime.utcnow().isoformat(timespec="seconds") + "Z"
+            }
+
+    all_records.update(discovered_records)
+
+    # تلاش برای تکمیل کشور رکوردهای قدیمی که هنوز کشور ندارند.
+    missing_country_ips = list(dict.fromkeys(
+        item.get("ip") for item in all_records.values()
+        if item.get("ip") and not item.get("country_code")
+    ))
+    if missing_country_ips:
+        country_info = get_country_and_flag(missing_country_ips)
+        for item in all_records.values():
+            if item.get("ip") and not item.get("country_code"):
+                info = country_info.get(item["ip"], {})
+                item["country_code"] = info.get("code", "")
+                item["flag"] = info.get("flag", "🌐")
+
+    if not save_all_config_records(all_records):
+        raise RuntimeError("ذخیره بانک جامع ناموفق بود؛ اجرای Workflow باید ناموفق اعلام شود.")
 
     print("\n" + "=" * 50)
 

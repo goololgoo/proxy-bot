@@ -81,6 +81,10 @@ jobs:
           cp goololgoo.txt /tmp/goololgoo.generated.txt
           cp sent_ips.txt /tmp/sent_ips.generated.txt
           cp goololgoo_telegram_proxy.txt /tmp/goololgoo_telegram_proxy.generated.txt
+          test -s goololgoo_all.txt
+          test -s goololgoo_all.json
+          cp goololgoo_all.txt /tmp/goololgoo_all.generated.txt
+          cp goololgoo_all.json /tmp/goololgoo_all.generated.json
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -93,6 +97,8 @@ jobs:
 
             cp /tmp/goololgoo.generated.txt goololgoo.txt
             cp /tmp/goololgoo_telegram_proxy.generated.txt goololgoo_telegram_proxy.txt
+            cp /tmp/goololgoo_all.generated.txt goololgoo_all.txt
+            cp /tmp/goololgoo_all.generated.json goololgoo_all.json
             python - <<'PY'
           from pathlib import Path
 
@@ -103,7 +109,7 @@ jobs:
           print(f"Merged sent IPs: {len(merged)}")
           PY
 
-            git add goololgoo.txt sent_ips.txt goololgoo_telegram_proxy.txt
+            git add goololgoo.txt sent_ips.txt goololgoo_telegram_proxy.txt goololgoo_all.txt goololgoo_all.json
             if git diff --cached --quiet; then
               echo "No memory-file changes to commit."
               exit 0
