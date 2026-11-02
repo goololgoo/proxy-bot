@@ -1483,7 +1483,7 @@ def load_all_config_records():
         return {}
 
 
-def save_all_config_records(records):
+def save_all_config_records(records, current_run_configs=None):
     ordered = sorted(
         records.values(),
         key=lambda item: (item.get("protocol", ""), item.get("country_code", ""), item.get("key", ""))
@@ -1497,9 +1497,13 @@ def save_all_config_records(records):
     try:
         with open(ALL_CONFIGS_META_FILE, "w", encoding="utf-8") as f:
             json.dump(payload, f, ensure_ascii=False, indent=2)
+        # فقط goololgoo_all.txt از خروجی همین اجرای ربات ساخته می‌شود.
+        # JSON آرشیو قبلی خود را حفظ می‌کند و منطق آن تغییر نمی‌کند.
+        configs_for_txt = current_run_configs if current_run_configs is not None else [item["config"] for item in ordered]
         with open(ALL_CONFIGS_FILE, "w", encoding="utf-8") as f:
-            for item in ordered:
-                f.write(item["config"].strip() + "\n")
+            for config in configs_for_txt:
+                if config and str(config).strip():
+                    f.write(str(config).strip() + "\n")
         print(f"✅ بانک جامع ذخیره شد: {len(ordered)} کانفیگ")
         return True
     except Exception as e:
@@ -1561,6 +1565,8 @@ def update_subscription():
     source_stats = []
     all_records = load_all_config_records()
     discovered_records = {}
+    # خروجی تازه این اجرا؛ بدون مقایسه با فایل goololgoo_all.txt قبلی.
+    run_archive_configs = []
 
     # ==================================
     # تابع افزودن
@@ -1600,6 +1606,10 @@ def update_subscription():
                 total_invalid += 1
 
                 continue
+
+            # هر کانفیگ معتبرِ این اجرا مستقیماً وارد خروجی TXT می‌شود.
+            # عمداً با آرشیو قبلی یا کانفیگ‌های قبلاً دیده‌شده مقایسه نمی‌شود.
+            run_archive_configs.append(cfg)
 
             key = get_config_key(cfg)
             protocol = get_protocol(cfg)
@@ -1910,7 +1920,7 @@ def update_subscription():
                 item["country_code"] = info.get("code", "")
                 item["flag"] = info.get("flag", "🌐")
 
-    if not save_all_config_records(all_records):
+    if not save_all_config_records(all_records, run_archive_configs):
         raise RuntimeError("ذخیره بانک جامع ناموفق بود؛ اجرای Workflow باید ناموفق اعلام شود.")
 
     print("\n" + "=" * 50)
