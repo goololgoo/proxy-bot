@@ -9,6 +9,7 @@ import random
 import time
 import html
 import re
+import hashlib
 from datetime import datetime
 from bs4 import BeautifulSoup
 
@@ -513,24 +514,33 @@ def extract_ip_port(config):
 # ==========================================
 
 def get_config_key(config):
+    """
+    کلید یکتا بر اساس خود مشخصات اتصال ساخته می‌شود، نه فقط host:port.
+    بنابراین دو کاربر/پروتکل متفاوت روی یک سرور با هم ادغام نمی‌شوند.
+    Remark (#...) نادیده گرفته می‌شود تا نام نمایشی باعث رکورد تکراری نشود.
+    """
+    config = (config or "").strip()
+    protocol = get_protocol(config)
 
-    ip, port = extract_ip_port(
-        config
-    )
+    if not protocol:
+        canonical = config.lower()
+    elif protocol == "vmess":
+        decoded = decode_base64_text(config[len("vmess://"):])
+        try:
+            data = json.loads(decoded)
+            data.pop("ps", None)
+            canonical = json.dumps(
+                data, ensure_ascii=False, sort_keys=True, separators=(",", ":")
+            )
+        except Exception:
+            canonical = config.split("#", 1)[0].strip().lower()
+    else:
+        canonical = config.split("#", 1)[0].strip()
 
-    if ip and port:
-
-        return (
-            f"{ip.strip().lower()}:"
-            f"{str(port).strip()}"
-        )
-
-    # اگر نتوانستیم IP/Port استخراج کنیم
-    # خود کانفیگ کلید می‌شود
-    return (
-        config.strip()
-        .lower()
-    )
+    digest = hashlib.sha256(
+        f"{protocol}|{canonical}".encode("utf-8")
+    ).hexdigest()
+    return f"{protocol or 'unknown'}:{digest}"
 
 
 # ==========================================
@@ -1453,11 +1463,21 @@ def load_all_config_records():
         with open(ALL_CONFIGS_META_FILE, "r", encoding="utf-8") as f:
             payload = json.load(f)
         records = payload.get("configs", [])
-        return {
-            item.get("key"): item
-            for item in records
-            if item.get("key") and item.get("config")
-        }
+        normalized = {}
+        for item in records:
+            if not item.get("config"):
+                continue
+            # مهاجرت خودکار کلیدهای قدیمی host:port به کلید دقیق اتصال
+            key = get_config_key(item["config"])
+            item["key"] = key
+            if key not in normalized:
+                normalized[key] = item
+            else:
+                # در صورت تکرار دقیق، قدیمی‌ترین first_seen حفظ شود.
+                current = normalized[key]
+                if item.get("first_seen", "") < current.get("first_seen", ""):
+                    normalized[key] = item
+        return normalized
     except Exception as e:
         print(f"⚠️ خطا در خواندن بانک جامع: {e}")
         return {}
