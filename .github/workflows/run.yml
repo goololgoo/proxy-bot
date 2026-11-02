@@ -81,7 +81,8 @@ jobs:
           cp goololgoo.txt /tmp/goololgoo.generated.txt
           cp sent_ips.txt /tmp/sent_ips.generated.txt
           cp goololgoo_telegram_proxy.txt /tmp/goololgoo_telegram_proxy.generated.txt
-          test -s goololgoo_all.txt
+          # The TXT may legitimately be empty for a run with no valid configs.
+          test -f goololgoo_all.txt
           test -s goololgoo_all.json
           cp goololgoo_all.txt /tmp/goololgoo_all.generated.txt
           cp goololgoo_all.json /tmp/goololgoo_all.generated.json
