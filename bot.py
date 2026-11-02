@@ -1498,12 +1498,20 @@ def save_all_config_records(records, current_run_configs=None):
         with open(ALL_CONFIGS_META_FILE, "w", encoding="utf-8") as f:
             json.dump(payload, f, ensure_ascii=False, indent=2)
         # فقط goololgoo_all.txt از خروجی همین اجرای ربات ساخته می‌شود.
+        # اگر این اجرا هیچ کانفیگ معتبری نداشت، فایل قبلی حفظ می‌شود.
         # JSON آرشیو قبلی خود را حفظ می‌کند و منطق آن تغییر نمی‌کند.
         configs_for_txt = current_run_configs if current_run_configs is not None else [item["config"] for item in ordered]
+        valid_txt_configs = [
+            str(config).strip()
+            for config in configs_for_txt
+            if config and str(config).strip()
+        ]
+        if not valid_txt_configs:
+            print("⚠️ خروجی این اجرا خالی است؛ فایل قبلی goololgoo_all.txt حفظ شد.")
+            return True
         with open(ALL_CONFIGS_FILE, "w", encoding="utf-8") as f:
-            for config in configs_for_txt:
-                if config and str(config).strip():
-                    f.write(str(config).strip() + "\n")
+            for config in valid_txt_configs:
+                f.write(config + "\n")
         print(f"✅ بانک جامع ذخیره شد: {len(ordered)} کانفیگ")
         return True
     except Exception as e:
