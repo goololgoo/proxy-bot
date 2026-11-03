@@ -9,6 +9,8 @@ import random
 import time
 import html
 import re
+import socket
+import ipaddress
 import hashlib
 from datetime import datetime
 from bs4 import BeautifulSoup
@@ -734,6 +736,102 @@ def get_country_and_flag(ip_list):
                 "code": "",
                 "flag": "🌐"
             }
+
+    return result
+
+
+# ==========================================
+# GeoIP مخصوص آرشیو goololgoo_all.txt
+# پشتیبانی از IPv4، IPv6 و تبدیل دامنه به IP
+# این تابع عمداً از GeoIP اشتراک goololgoo.txt جداست.
+# ==========================================
+
+def get_archive_country_and_flag(address_list):
+
+    result = {}
+    address_list = list(dict.fromkeys(
+        address for address in address_list if address
+    ))
+
+    address_to_ips = {}
+    lookup_ips = []
+
+    for address in address_list:
+        resolved = []
+
+        try:
+            parsed_ip = ipaddress.ip_address(address)
+            if parsed_ip.is_global:
+                resolved.append(str(parsed_ip))
+        except ValueError:
+            # دامنه: resolve کردن IPv4 و IPv6
+            try:
+                records = socket.getaddrinfo(
+                    address,
+                    None,
+                    family=socket.AF_UNSPEC,
+                    type=socket.SOCK_STREAM
+                )
+                for record in records:
+                    candidate = record[4][0].split("%", 1)[0]
+                    try:
+                        parsed_ip = ipaddress.ip_address(candidate)
+                        if parsed_ip.is_global:
+                            normalized = str(parsed_ip)
+                            if normalized not in resolved:
+                                resolved.append(normalized)
+                    except ValueError:
+                        continue
+            except (OSError, socket.gaierror) as e:
+                print(f"  ⚠️ DNS ناموفق برای {address}: {e}")
+
+        address_to_ips[address] = resolved
+        for resolved_ip in resolved:
+            if resolved_ip not in lookup_ips:
+                lookup_ips.append(resolved_ip)
+
+    ip_info = {}
+
+    for offset in range(0, len(lookup_ips), 100):
+        chunk = lookup_ips[offset:offset + 100]
+        payload = [
+            {"query": ip, "fields": "query,countryCode"}
+            for ip in chunk
+        ]
+
+        try:
+            response = requests.post(
+                "http://ip-api.com/batch",
+                json=payload,
+                timeout=20
+            )
+            if response.status_code != 200:
+                print(f"  ⚠️ ip-api status: {response.status_code}")
+                continue
+
+            for item in response.json():
+                queried_ip = item.get("query", "")
+                code = (item.get("countryCode") or "").upper()
+
+                if len(code) == 2 and code.isalpha():
+                    flag = (
+                        chr(0x1F1E6 + ord(code[0]) - ord("A"))
+                        + chr(0x1F1E6 + ord(code[1]) - ord("A"))
+                    )
+                    ip_info[queried_ip] = {
+                        "code": code,
+                        "flag": flag
+                    }
+        except Exception as e:
+            print(f"  ⚠️ خطای GeoIP آرشیو: {e}")
+
+    for address, resolved in address_to_ips.items():
+        # در صورت داشتن چند IP، اولین IP دارای کشور انتخاب می‌شود.
+        info = next(
+            (ip_info[ip] for ip in resolved if ip in ip_info),
+            {"code": "", "flag": "🌐"}
+        )
+        result[address] = info
 
     return result
 
@@ -1939,7 +2037,7 @@ def update_subscription():
             archive_seen_ips.add(ip)
             archive_unique_ips.append(ip)
 
-    archive_country_info = get_country_and_flag(archive_unique_ips)
+    archive_country_info = get_archive_country_and_flag(archive_unique_ips)
 
     archive_flagged_configs = []
     for config in run_archive_configs:
