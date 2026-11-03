@@ -1930,21 +1930,23 @@ def update_subscription():
 
     # نام‌گذاری خودکار تمام کانفیگ‌های خروجی goololgoo_all.txt
     # دقیقاً با همان الگوی Subscription؛ بدون تغییر فایل goololgoo.txt
-    archive_flags_by_ip = {
-        item.get("ip"): item.get("flag", "🌐")
-        for item in all_records.values()
-        if item.get("ip")
-    }
+    archive_unique_ips = []
+    archive_seen_ips = set()
+
+    for config in run_archive_configs:
+        ip, _ = extract_ip_port(config)
+        if ip and ip not in archive_seen_ips:
+            archive_seen_ips.add(ip)
+            archive_unique_ips.append(ip)
+
+    archive_country_info = get_country_and_flag(archive_unique_ips)
 
     archive_flagged_configs = []
     for config in run_archive_configs:
         ip, _ = extract_ip_port(config)
-        flag = archive_flags_by_ip.get(ip, "🌐")
+        flag = archive_country_info.get(ip, {}).get("flag", "🌐")
         archive_flagged_configs.append(
-            change_remark_v2ray(
-                config,
-                f"{flag} {CUSTOM_REMARK}"
-            )
+            change_remark_v2ray(config, f"{flag} {CUSTOM_REMARK}")
         )
 
     if not save_all_config_records(all_records, archive_flagged_configs):
