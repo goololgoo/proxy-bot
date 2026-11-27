@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "updated_at": "2026-11-27T03:00:55Z",
-  "count": 14535,
+  "updated_at": "2026-11-27T12:49:57Z",
+  "count": 14724,
   "configs": [
     {
       "key": "hysteria2:012d3445b81f712efdaae1817a2482ffd0a5aaa62f5d09d7a26d349d1962a47e",
@@ -1608,6 +1608,28 @@
       "flag": "🇰🇿",
       "source": "SUB#3",
       "first_seen": "2026-11-02T07:49:23Z"
+    },
+    {
+      "key": "hysteria2:4acae3b4d2a666948377c25a37cb40b70a90a5b7dfc6bc22c64e6b30d6abff8d",
+      "config": "hysteria2://AIbXqmbagi8c_pPQF8UkyQRgAlGbk5aT@nemazu.grandserver8.ir:8445?security=tls&amp;obfs=salamander&amp;obfs-password=5wnhum8v8a5f8m9z&amp;insecure=0&amp;sni=donige.grandserver8.ir#%F0%9F%8F%B4%E2%80%8D%E2%98%A0%EF%B8%8F%40FreakConfig",
+      "protocol": "hysteria2",
+      "ip": "nemazu.grandserver8.ir",
+      "port": "8445",
+      "country_code": "LI",
+      "flag": "🇱🇮",
+      "source": "@FreakConfig",
+      "first_seen": "2026-11-27T12:49:06Z"
+    },
+    {
+      "key": "hysteria2:fc6f7d396e75b9f5229882272c9e9d6e75843c9d0a537fa0afd4790b565c7414",
+      "config": "hysteria2://AIbXqmbagi8c_pPQF8UkyQRgAlGbk5aT@nemazu.grandserver8.ir:8445?security=tls&obfs=salamander&obfs-password=5wnhum8v8a5f8m9z&insecure=0&sni=donige.grandserver8.ir#%F0%9F%8F%B4%E2%80%8D%E2%98%A0%EF%B8%8F%40FreakConfig",
+      "protocol": "hysteria2",
+      "ip": "nemazu.grandserver8.ir",
+      "port": "8445",
+      "country_code": "LI",
+      "flag": "🇱🇮",
+      "source": "@FreakConfig",
+      "first_seen": "2026-11-27T12:49:06Z"
     },
     {
       "key": "hysteria2:56827c24dc857061b5b9eb80f13b0c485f8b5baf8f1b848036192389ce5b3c5b",
@@ -3722,6 +3744,17 @@
       "first_seen": "2026-11-01T07:46:31Z"
     },
     {
+      "key": "ss:4786fa969276ec40dd69408ad94a4c4874492307fee617c79c3ff720219cc667",
+      "config": "ss://YWVzLTI1Ni1nY206WlJwZ2FCZUd4dEVOSVhndmhwa1pCS3o5R25XUlMyZFljeDlPK2EyaXdOND0@leviko-ch7340.shopingggg.ir:19999#🇨🇭",
+      "protocol": "ss",
+      "ip": "leviko-ch7340.shopingggg.ir",
+      "port": "19999",
+      "country_code": "CH",
+      "flag": "🇨🇭",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
+    },
+    {
       "key": "ss:539ab6c9e3fc5e81245ce18e0c00a489a9684a4502422b07eba96bdabb047bb6",
       "config": "ss://YWVzLTI1Ni1nY206WlJwZ2FCZUd4dEVOSVhndmhwa1pCS3o5R25XUlMyZFljeDlPK2EyaXdOND0@23.166.88.127:19999#🇨🇭[openproxylist.com]",
       "protocol": "ss",
@@ -3733,6 +3766,17 @@
       "first_seen": "2026-11-06T15:13:18Z"
     },
     {
+      "key": "ss:61d569971a7a3261c0879d0cac54a7bec30ab55050d09c61e289bd490018c5ba",
+      "config": "ss://YWVzLTI1Ni1nY206WlJwZ2FCZUd4dEVOSVhndmhwa1pCS3o5R25XUlMyZFljeDlPK2EyaXdOND0@leviko-ch0322.shopingggg.ir:19999#🇨🇭",
+      "protocol": "ss",
+      "ip": "leviko-ch0322.shopingggg.ir",
+      "port": "19999",
+      "country_code": "CH",
+      "flag": "🇨🇭",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
+    },
+    {
       "key": "ss:6828c6343333c18a9ce491e88c1780708e3f52120f8dcffa8c6d9997be672638",
       "config": "ss://YWVzLTI1Ni1nY206WlJwZ2FCZUd4dEVOSVhndmhwa1pCS3o5R25XUlMyZFljeDlPK2EyaXdOND0@leviko-ch7709.shopingggg.ir:19999#🇨🇭",
       "protocol": "ss",
@@ -3742,6 +3786,17 @@
       "flag": "🇨🇭",
       "source": "SUB#2",
       "first_seen": "2026-11-24T02:23:01Z"
+    },
+    {
+      "key": "ss:708f715e6253a2555283132e5ffd4b4cebd8c50d4dd206a05301c6bc2a2c6e33",
+      "config": "ss://YWVzLTI1Ni1nY206WlJwZ2FCZUd4dEVOSVhndmhwa1pCS3o5R25XUlMyZFljeDlPK2EyaXdOND0@leviko-ch5965.shopingggg.ir:19999#🇨🇭",
+      "protocol": "ss",
+      "ip": "leviko-ch5965.shopingggg.ir",
+      "port": "19999",
+      "country_code": "CH",
+      "flag": "🇨🇭",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
     },
     {
       "key": "ss:807f025cfb833cbbbab3b0821c86742116bec046da9e542e321635345675f5de",
@@ -4591,6 +4646,17 @@
       "first_seen": "2026-11-09T18:56:48Z"
     },
     {
+      "key": "ss:89cf9bbf21cf93ef505bfedefe596410faec95915150292ef342b302a0666fe6",
+      "config": "ss://MjAyMi1ibGFrZTMtY2hhY2hhMjAtcG9seTEzMDU6OHlPM0FOV2VmdXVHczFsUktYRUNRQTFGRWh4bFdGVjJwcFFNY0JhWm81WT0=@8.211.56.98:443#🇩🇪[openproxylist.com]",
+      "protocol": "ss",
+      "ip": "8.211.56.98",
+      "port": "443",
+      "country_code": "DE",
+      "flag": "🇩🇪",
+      "source": "SUB#4",
+      "first_seen": "2026-11-27T12:49:09Z"
+    },
+    {
       "key": "ss:8a387e84021e0a34b35ffd68d1373fc51f21257a284aec5cbca2d1db4ef4d853",
       "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1N290ejRTWFlmQTgxQlZWRzhVMzNPckNLOHI2a015dQ==@138.199.156.174:1388#[",
       "protocol": "ss",
@@ -4943,6 +5009,17 @@
       "first_seen": "2026-11-18T22:10:20Z"
     },
     {
+      "key": "ss:d8a9125110aeeecfbcab16ecd2d3cf4f72cf2c01cd2ddf0278ec6a104d299b90",
+      "config": "ss://MjAyMi1ibGFrZTMtY2hhY2hhMjAtcG9seTEzMDU6OHlPM0FOV2VmdXVHczFsUktYRUNRQTFGRWh4bFdGVjJwcFFNY0JhWm81WT0@3.127.215.115:443#%F0%9F%87%A9%F0%9F%87%AA%40FreakConfig",
+      "protocol": "ss",
+      "ip": "3.127.215.115",
+      "port": "443",
+      "country_code": "DE",
+      "flag": "🇩🇪",
+      "source": "@FreakConfig",
+      "first_seen": "2026-11-27T12:49:06Z"
+    },
+    {
       "key": "ss:da2a3812234e316a5977a8980d4a4788e9cb41a64a1fa9677c9622e87d5fe40b",
       "config": "ss://YWVzLTI1Ni1nY206WlJwZ2FCZUd4dEVOSVhndmhwa1pCS3o5R25XUlMyZFljeDlPK2EyaXdOND0@leviko-de8397.shopingggg.ir:19999#%D8%AA%DA%A9%20%DA%A9%D8%A7%D9%86%D9%81%DB%8C%DA%AF%F0%9F%87%A9%F0%9F%87%AA%20Vip%20%D8%AB%D8%A7%D8%A8%D8%AA%20%F0%9F%91%88%F0%9F%91%88config_star1",
       "protocol": "ss",
@@ -5062,6 +5139,17 @@
       "flag": "🇩🇪",
       "source": "@ConfigsHUB",
       "first_seen": "2026-11-12T12:58:31Z"
+    },
+    {
+      "key": "ss:f591872a08b73d0ecda4df92309c796ae83f9673f802759f6d86aeac3a8352fe",
+      "config": "ss://MjAyMi1ibGFrZTMtY2hhY2hhMjAtcG9seTEzMDU6OHlPM0FOV2VmdXVHczFsUktYRUNRQTFGRWh4bFdGVjJwcFFNY0JhWm81WT0@18.192.105.157:443#Telegram%20%40Proxy_mtm%20",
+      "protocol": "ss",
+      "ip": "18.192.105.157",
+      "port": "443",
+      "country_code": "DE",
+      "flag": "🇩🇪",
+      "source": "@proxy_mtm",
+      "first_seen": "2026-11-27T12:49:08Z"
     },
     {
       "key": "ss:f7f2e8de37f9e74f4100f48014a1d76c4854356820b5356c8337f34fac35779c",
@@ -5447,6 +5535,17 @@
       "flag": "🇫🇷",
       "source": "SUB#4",
       "first_seen": "2026-11-01T07:46:37Z"
+    },
+    {
+      "key": "ss:3e4d136c576015139b5bdfdf27de362bf2d572703f23123ddfac0c3862655eeb",
+      "config": "ss://YWVzLTI1Ni1nY206WlJwZ2FCZUd4dEVOSVhndmhwa1pCS3o5R25XUlMyZFljeDlPK2EyaXdOND0@leviko-fr5418.shopingggg.ir:19999#🇫🇷",
+      "protocol": "ss",
+      "ip": "leviko-fr5418.shopingggg.ir",
+      "port": "19999",
+      "country_code": "FR",
+      "flag": "🇫🇷",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
     },
     {
       "key": "ss:40b53c7160cf074fbb9adeb9c6bbe5e008a00cbd3a73d9b4534833641ced0891",
@@ -7429,6 +7528,17 @@
       "first_seen": "2026-11-16T11:47:28Z"
     },
     {
+      "key": "ss:51539bf8992731fbc3d32589f2e425de699877f545c198eb984d99ab6b90265f",
+      "config": "ss://YWVzLTI1Ni1nY206MTIzNDU2@47.91.31.150:5555#🇯🇵",
+      "protocol": "ss",
+      "ip": "47.91.31.150",
+      "port": "5555",
+      "country_code": "JP",
+      "flag": "🇯🇵",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
+    },
+    {
       "key": "ss:544177b64ac929b73e593208e3683b1b97999d6215e1f5adb4275aaaeaccefec",
       "config": "ss://YWVzLTI1Ni1nY206MTIzNDU2@47.91.18.202:5555#🇯🇵",
       "protocol": "ss",
@@ -7438,6 +7548,17 @@
       "flag": "🇯🇵",
       "source": "SUB#2",
       "first_seen": "2026-11-27T03:00:15Z"
+    },
+    {
+      "key": "ss:5e29bd9d4ac28edc70e471f794efe75908df91e187cdf921056b7b57ad907670",
+      "config": "ss://YWVzLTI1Ni1nY206MTIzNDU2@8.209.249.205:5555#%40FarazV2ray%20",
+      "protocol": "ss",
+      "ip": "8.209.249.205",
+      "port": "5555",
+      "country_code": "JP",
+      "flag": "🇯🇵",
+      "source": "@persianvpnhub",
+      "first_seen": "2026-11-27T12:49:04Z"
     },
     {
       "key": "ss:725cc1937d6f1d875c88cad1414f8f18e677f003a23e447eeee9252d6961573a",
@@ -7561,6 +7682,39 @@
       "first_seen": "2026-11-17T04:38:40Z"
     },
     {
+      "key": "ss:be35c37210ddae5fb1b105efc12efba76a6bbeb1b9e95d99d1aa3c125bb609f1",
+      "config": "ss://YWVzLTI1Ni1nY206MTIzNDU2@8.216.15.30:5555#🇯🇵",
+      "protocol": "ss",
+      "ip": "8.216.15.30",
+      "port": "5555",
+      "country_code": "JP",
+      "flag": "🇯🇵",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
+    },
+    {
+      "key": "ss:c036037d0f74b2ddf2fd3b872b09b5871e60bf8eff90956e10f7ac26e52fa88c",
+      "config": "ss://YWVzLTI1Ni1nY206MTIzNDU2@8.211.174.60:5555#🇯🇵",
+      "protocol": "ss",
+      "ip": "8.211.174.60",
+      "port": "5555",
+      "country_code": "JP",
+      "flag": "🇯🇵",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
+    },
+    {
+      "key": "ss:c038181f797f2407849e95ed8980aa6ba8ae485ae3ed972c4fa05b8d2742ff10",
+      "config": "ss://YWVzLTI1Ni1nY206MTIzNDU2@47.245.40.193:5555#🇯🇵[openproxylist.com]",
+      "protocol": "ss",
+      "ip": "47.245.40.193",
+      "port": "5555",
+      "country_code": "JP",
+      "flag": "🇯🇵",
+      "source": "SUB#4",
+      "first_seen": "2026-11-27T12:49:09Z"
+    },
+    {
       "key": "ss:cf19ef82e782e26906a980f0f1f7011f77d21cc80fe7a6b7cc8eb8349f867829",
       "config": "ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M@149.22.87.241:443#%40FarazV2ray%20",
       "protocol": "ss",
@@ -7594,6 +7748,28 @@
       "first_seen": "2026-11-26T20:19:44Z"
     },
     {
+      "key": "ss:e455de43ca2350825b23d4ca75d7dab8af5341410ab112710540dea9a96e5db6",
+      "config": "ss://YWVzLTI1Ni1nY206MTIzNDU2@8.216.5.89:5555#%40FarazV2ray%20",
+      "protocol": "ss",
+      "ip": "8.216.5.89",
+      "port": "5555",
+      "country_code": "JP",
+      "flag": "🇯🇵",
+      "source": "@persianvpnhub",
+      "first_seen": "2026-11-27T12:49:04Z"
+    },
+    {
+      "key": "ss:f109cb6411b7849bfa429c9958f70e673856185fa497d5e071d0557e9f673833",
+      "config": "ss://YWVzLTI1Ni1nY206MTIzNDU2@8.216.5.230:5555#🇯🇵",
+      "protocol": "ss",
+      "ip": "8.216.5.230",
+      "port": "5555",
+      "country_code": "JP",
+      "flag": "🇯🇵",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
+    },
+    {
       "key": "ss:f112af7751cc9bcb2822fe960c4e533450b02d842947eab396539edb1267ce2c",
       "config": "ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@149.22.87.204:443#%F0%9F%8C%9F%20%40MTproxy22_v2ray",
       "protocol": "ss",
@@ -7614,6 +7790,17 @@
       "flag": "🇯🇵",
       "source": "@persianvpnhub",
       "first_seen": "2026-11-02T07:28:48Z"
+    },
+    {
+      "key": "ss:f90de48bb7234b3f86160cced56c7c75a4bd227b59c62b8be5da148a5fefc8ed",
+      "config": "ss://YWVzLTI1Ni1nY206MTIzNDU2@8.209.221.90:5555#🇯🇵",
+      "protocol": "ss",
+      "ip": "8.209.221.90",
+      "port": "5555",
+      "country_code": "JP",
+      "flag": "🇯🇵",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
     },
     {
       "key": "ss:2cb97a1684924b1ad9a2191197b6ab887a8b3f07cbbceb92cd29694190eb0133",
@@ -7737,6 +7924,17 @@
       "first_seen": "2026-11-10T17:59:19Z"
     },
     {
+      "key": "ss:9ee90cbd8c0e3add0c19f06e37af0a09c423f885bebb76e1b77a5f8ebcb86756",
+      "config": "ss://YWVzLTI1Ni1nY206cXBvd2lfdmlwX3R1bm5lbF8yMDI2X3NlY3VyZQ@211.233.33.228:8388#🇰🇷",
+      "protocol": "ss",
+      "ip": "211.233.33.228",
+      "port": "8388",
+      "country_code": "KR",
+      "flag": "🇰🇷",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
+    },
+    {
       "key": "ss:9f4b262976e96624d5a3b12aa88cdecce8439e04baeef933985aa41bfa5465f8",
       "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo3ZTY4ZTMyZi04MDE1LTRmMzctOTA4Mi03MGU4YjBiNTgwNDM@15.165.75.243:8443#🇰🇷[openproxylist.com]",
       "protocol": "ss",
@@ -7856,6 +8054,17 @@
       "flag": "🇱🇻",
       "source": "@persianvpnhub",
       "first_seen": "2026-11-26T01:54:02Z"
+    },
+    {
+      "key": "ss:ffc9100723c0367b264135c516fe9c51897eb9a547ccd4302aeac037f96f07fc",
+      "config": "ss://YWVzLTI1Ni1jZmI6aGJ0dmdVejV1Tll5QjNSZg@185.135.86.175:9036#0352%20%7C%20%F0%9F%87%B1%F0%9F%87%BB%20NetFreedom0%20",
+      "protocol": "ss",
+      "ip": "185.135.86.175",
+      "port": "9036",
+      "country_code": "LV",
+      "flag": "🇱🇻",
+      "source": "@persianvpnhub",
+      "first_seen": "2026-11-27T12:49:04Z"
     },
     {
       "key": "ss:2928ba04fde761974e026c37c9029fc3cb63e0d86679970cd4cbc6a8ea461d83",
@@ -10740,6 +10949,17 @@
       "first_seen": "2026-11-04T15:36:17Z"
     },
     {
+      "key": "ss:f52f61708384d501c0502eed4eb8c0766b05721ff033f0e3ae78bb7343d4f4d1",
+      "config": "ss://YWVzLTI1Ni1nY206NW1LalhBR3JsaUlBbFl3V0RlRnprQ0VNSWdRZEZRTGU@194.87.69.12:18443#🇷🇺",
+      "protocol": "ss",
+      "ip": "194.87.69.12",
+      "port": "18443",
+      "country_code": "RU",
+      "flag": "🇷🇺",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
+    },
+    {
       "key": "ss:fcac35da63d9b5ec01a3076e6eee5b88d11b903000de099a6261376a09e99c64",
       "config": "ss://YWVzLTEyOC1nY206ODcyMmRlNTZiNmMwYjNmNmE0ZDAxY2Y5MWMwN2U2YWE=@38.60.223.125:13108#🇷🇺[openproxylist.com]",
       "protocol": "ss",
@@ -11365,6 +11585,17 @@
       "flag": "🇸🇬",
       "source": "SUB#4",
       "first_seen": "2026-11-07T01:01:47Z"
+    },
+    {
+      "key": "ss:ff1c9742b88c50283aee98955807651bcb704223d96ba940299511415c31a450",
+      "config": "ss://YWVzLTI1Ni1nY206WlJwZ2FCZUd4dEVOSVhndmhwa1pCS3o5R25XUlMyZFljeDlPK2EyaXdOND0@leviko-sg3063.shopingggg.ir:19999#🇸🇬",
+      "protocol": "ss",
+      "ip": "leviko-sg3063.shopingggg.ir",
+      "port": "19999",
+      "country_code": "SG",
+      "flag": "🇸🇬",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
     },
     {
       "key": "ss:0fa8e6c72da013b1bab85195e9fd5b6ee9f0c84549f37e7af433007ec8d74350",
@@ -20673,6 +20904,17 @@
       "first_seen": "2026-11-26T20:19:42Z"
     },
     {
+      "key": "trojan:5d85e1d12fab93f510f232e22094e06f556b3e18a0af32a02658e33b32e412ff",
+      "config": "trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@66.163.127.107:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=blog.indyourperfectremotetechjobfromthecomfortofhome.com#@proxy_kafee",
+      "protocol": "trojan",
+      "ip": "66.163.127.107",
+      "port": "443",
+      "country_code": "NL",
+      "flag": "🇳🇱",
+      "source": "@proxy_kafee",
+      "first_seen": "2026-11-27T12:49:04Z"
+    },
+    {
       "key": "trojan:5e039779ba665f4e50dcb956fa25661d72c9d9f12a988a5bbb1e5678cf6d1e95",
       "config": "trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@66.163.127.155:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=indyourperfectremotetechjobfromthecomfortofhome.com#@meliproxyy",
       "protocol": "trojan",
@@ -20847,6 +21089,17 @@
       "flag": "🇳🇱",
       "source": "SUB#2",
       "first_seen": "2026-11-22T16:28:17Z"
+    },
+    {
+      "key": "trojan:942e521b3fc32b5c49ad1ff4f8cd60c731d0672dd08f3a92436d0dee81547483",
+      "config": "trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@66.163.127.107:443?security=tls&amp;insecure=0&amp;headerType=none&amp;type=tcp&amp;allowInsecure=0&amp;sni=blog.indyourperfectremotetechjobfromthecomfortofhome.com#@proxy_kafee",
+      "protocol": "trojan",
+      "ip": "66.163.127.107",
+      "port": "443",
+      "country_code": "NL",
+      "flag": "🇳🇱",
+      "source": "@proxy_kafee",
+      "first_seen": "2026-11-27T12:49:04Z"
     },
     {
       "key": "trojan:99c844312c026865322171350c17bce499fcdbc6bc31eb4c61120abb1b65d5db",
@@ -21663,6 +21916,17 @@
       "first_seen": "2026-11-15T17:52:32Z"
     },
     {
+      "key": "trojan:0c4f705278bddf80e7e8ec0c46753228d31ec170998daad04c5496d8fc740f70",
+      "config": "trojan://WvH8ooM9hom4KOOJHFJz1x5umE0aV4R0@43.156.36.253:443?security=tls&amp;sni=43.156.36.253&amp;insecure=1&amp;fp=&amp;type=tcp#%F0%9F%87%B8%F0%9F%87%AC09%20%20NetFreedom0",
+      "protocol": "trojan",
+      "ip": "43.156.36.253",
+      "port": "443",
+      "country_code": "SG",
+      "flag": "🇸🇬",
+      "source": "@persianvpnhub",
+      "first_seen": "2026-11-27T12:49:04Z"
+    },
+    {
       "key": "trojan:2485475143af1188e5eb651d439087f5a70aa674f87f6399d838edaeeea483ef",
       "config": "trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@15.235.184.127:443?security=tls&insecure=0&headerType=&type=tcp&allowInsecure=0&sni=exploredigitaljobplatformandfindonlinework.com#🇸🇬[openproxylist.com]",
       "protocol": "trojan",
@@ -21760,6 +22024,17 @@
       "flag": "🇸🇬",
       "source": "SUB#4",
       "first_seen": "2026-11-22T16:28:17Z"
+    },
+    {
+      "key": "trojan:4d1131754d306c2c1bfb2f7c8acaf8cf458cd9ecd81532e7c3aaf0416aa08273",
+      "config": "trojan://WvH8ooM9hom4KOOJHFJz1x5umE0aV4R0@43.156.36.253:443?security=tls&sni=43.156.36.253&insecure=1&fp=&type=tcp#%F0%9F%87%B8%F0%9F%87%AC09%20%20NetFreedom0",
+      "protocol": "trojan",
+      "ip": "43.156.36.253",
+      "port": "443",
+      "country_code": "SG",
+      "flag": "🇸🇬",
+      "source": "@persianvpnhub",
+      "first_seen": "2026-11-27T12:49:04Z"
     },
     {
       "key": "trojan:503c655ee07983a4b916dd8ccc2367ffe957053f74b6cd3cb0f899289722dd56",
@@ -22706,6 +22981,17 @@
       "flag": "🇺🇸",
       "source": "SUB#4",
       "first_seen": "2026-11-01T07:46:37Z"
+    },
+    {
+      "key": "trojan:0da116957c439facc56c09a9ca5240718d712693dccc17cca33ee58cf1dcde9c",
+      "config": "trojan://Z-jckziI1rW4yrUMorrv0Q@ipfast.kingmna.com:443?path=%2FTELEGRAM-%40NUFiLTER-TELEGRAM-%40NUFiLTER-TELEGRAM-%40NUFiLTER-TELEGRAM-%40NUFiLTER-TELEGRAM-%40NUFiLTER-TELEGRAM-%40NUFiLTER-TELEGRAM-%40NUFiLTER-TELEGRAM-%40NUFiLTER&security=tls&host=looasaaaboijji.global.ssl.fastly.net.&type=ws&allowInsecure=1&sni=cdn.akamai.steamstatic.com#[",
+      "protocol": "trojan",
+      "ip": "ipfast.kingmna.com",
+      "port": "443",
+      "country_code": "US",
+      "flag": "🇺🇸",
+      "source": "@ConfigsHUB",
+      "first_seen": "2026-11-27T12:49:06Z"
     },
     {
       "key": "trojan:0dc029017c1c83509f597844520e1506c7f6f904171cc460dc0628af03195dd1",
@@ -24171,6 +24457,17 @@
       "first_seen": "2026-11-01T07:46:37Z"
     },
     {
+      "key": "trojan:2eea07cf160810137bb28a8c0617c09ad3ae38b20bfad3e65100650d1d17d74a",
+      "config": "trojan://Z-jckziI1rW4yrUMorrv0Q@ipfast.kingmna.com:443?path=%2FTELEGRAM-%40NUFiLTER-TELEGRAM-%40NUFiLTER-TELEGRAM-%40NUFiLTER-TELEGRAM-%40NUFiLTER-TELEGRAM-%40NUFiLTER-TELEGRAM-%40NUFiLTER-TELEGRAM-%40NUFiLTER-TELEGRAM-%40NUFiLTER&security=tls&host=looasaaa2boijji.global.ssl.fastly.net&type=ws&allowInsecure=1&sni=cdn.akamai.steamstatic.com#[",
+      "protocol": "trojan",
+      "ip": "ipfast.kingmna.com",
+      "port": "443",
+      "country_code": "US",
+      "flag": "🇺🇸",
+      "source": "@ConfigsHUB",
+      "first_seen": "2026-11-27T12:49:06Z"
+    },
+    {
       "key": "trojan:2f2959978ed67cdce77c1aa348a5b6270ce00774ebe052b2b16b9c841396dd5c",
       "config": "trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@66.163.114.45:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=cdn.findconnectwithemployersandbuildprofessionalnetwork.com#%F0%9F%87%BA%F0%9F%87%B8%20%40goololgoo%20%F0%9F%94%90%20%D9%88%DB%8C%E2%80%8C%D9%BE%DB%8C%E2%80%8C%D8%A7%D9%86%20%D8%B1%D8%A7%DB%8C%DA%AF%D8%A7%D9%86%20%7C%20Free%20Proxy%F0%9F%92%A5",
       "protocol": "trojan",
@@ -24235,6 +24532,17 @@
       "flag": "🇺🇸",
       "source": "SUB#1",
       "first_seen": "2026-11-09T18:56:51Z"
+    },
+    {
+      "key": "trojan:30bccd61a794454666a112380e95714f295402404ba493095184686d0badcd17",
+      "config": "trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@66.163.114.166:443?security=tls&sni=blog.findconnectwithemployersandbuildprofessionalnetwork.com&type=tcp#🇺🇸[openproxylist.com]",
+      "protocol": "trojan",
+      "ip": "66.163.114.166",
+      "port": "443",
+      "country_code": "US",
+      "flag": "🇺🇸",
+      "source": "SUB#4",
+      "first_seen": "2026-11-27T12:49:09Z"
     },
     {
       "key": "trojan:3118f572df53e86fd9c47a0f13a2612132b014bcb84e723dc7e58bacfca0b660",
@@ -25843,6 +26151,17 @@
       "first_seen": "2026-11-04T06:44:03Z"
     },
     {
+      "key": "trojan:566efdb2ad61f4d046783f64cf647418f9888d1f5cf99b74fadece7b744d0003",
+      "config": "trojan://Z-jckziI1rW4yrUMorrv0Q@ipfast.kingmna.com:443?path=%2FTELEGRAM-%40NUFiLTER-TELEGRAM-%40NUFiLTER-TELEGRAM-%40NUFiLTER-TELEGRAM-%40NUFiLTER-TELEGRAM-%40NUFiLTER-TELEGRAM-%40NUFiLTER-TELEGRAM-%40NUFiLTER-TELEGRAM-%40NUFiLTER&amp;security=tls&amp;host=looasaaaboijji.global.ssl.fastly.net.&amp;type=ws&amp;allowInsecure=1&amp;sni=cdn.akamai.steamstatic.com#[",
+      "protocol": "trojan",
+      "ip": "ipfast.kingmna.com",
+      "port": "443",
+      "country_code": "US",
+      "flag": "🇺🇸",
+      "source": "@ConfigsHUB",
+      "first_seen": "2026-11-27T12:49:06Z"
+    },
+    {
       "key": "trojan:56d5610427326dc833f00d7bc6eeb1d733e86b3655c0694a3b822bcefabad1d0",
       "config": "trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@216.152.155.131:443?security=tls&amp;insecure=0&amp;headerType=none&amp;type=tcp&amp;allowInsecure=0&amp;sni=www.nextjobopportunityandclaimyouridealrole.com#🇺🇸[openproxylist.com]",
       "protocol": "trojan",
@@ -26393,6 +26712,17 @@
       "first_seen": "2026-11-13T23:44:35Z"
     },
     {
+      "key": "trojan:6519a3ac108903163e16021ef230b6f23366f17b0d878355876000e1c3a795b0",
+      "config": "trojan://Z-jckziI1rW4yrUMorrv0Q@ipfast.kingmna.com:443?type=ws&amp;security=tls&amp;path=%2FTELEGRAM-%40NUFiLTER-TELEGRAM-%40NUFiLTER-TELEGRAM-%40NUFiLTER-TELEGRAM-%40NUFiLTER-TELEGRAM-%40NUFiLTER-TELEGRAM-%40NUFiLTER-TELEGRAM-%40NUFiLTER-TELEGRAM-%40NUFiLTER&amp;host=looasaaaboijji.global.ssl.fastly.net.&amp;sni=cdn.akamai.steamstatic.com&amp;pinSHA256=CD6E838B9BFE31CAB8B3D5C858B0D6223FE84ECE236C1FDB281BE93C302E1E6E&amp;pcs=CD6E838B9BFE31CAB8B3D5C858B0D6223FE84ECE236C1FDB281BE93C302E1E6E#@proxy_kafee",
+      "protocol": "trojan",
+      "ip": "ipfast.kingmna.com",
+      "port": "443",
+      "country_code": "US",
+      "flag": "🇺🇸",
+      "source": "@proxy_kafee",
+      "first_seen": "2026-11-27T12:49:04Z"
+    },
+    {
       "key": "trojan:65424988063ebd2715aece94e0ad3dda10a21ee9e4e2498a09cda337a8c9efd3",
       "config": "trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@66.163.122.7:443?allowInsecure=0&sni=www.searchnationwidecareerchangehelperandguidancetoday.com#%F0%9F%87%BA%F0%9F%87%B8%20%40goololgoo%20%F0%9F%94%90%20%D9%88%DB%8C%E2%80%8C%D9%BE%DB%8C%E2%80%8C%D8%A7%D9%86%20%D8%B1%D8%A7%DB%8C%DA%AF%D8%A7%D9%86%20%7C%20Free%20Proxy%F0%9F%92%A5",
       "protocol": "trojan",
@@ -26402,6 +26732,17 @@
       "flag": "🇺🇸",
       "source": "legacy:goololgoo.txt",
       "first_seen": "2026-11-02T07:49:24Z"
+    },
+    {
+      "key": "trojan:65622e241995df433b427161c950b2c9beddb01f9334853bda81ac2405410e33",
+      "config": "trojan://Z-jckziI1rW4yrUMorrv0Q@ipfast.kingmna.com:443?type=ws&security=tls&path=%2FTELEGRAM-%40NUFiLTER-TELEGRAM-%40NUFiLTER-TELEGRAM-%40NUFiLTER-TELEGRAM-%40NUFiLTER-TELEGRAM-%40NUFiLTER-TELEGRAM-%40NUFiLTER-TELEGRAM-%40NUFiLTER-TELEGRAM-%40NUFiLTER&host=looasaaaboijji.global.ssl.fastly.net.&sni=cdn.akamai.steamstatic.com&pinSHA256=CD6E838B9BFE31CAB8B3D5C858B0D6223FE84ECE236C1FDB281BE93C302E1E6E&pcs=CD6E838B9BFE31CAB8B3D5C858B0D6223FE84ECE236C1FDB281BE93C302E1E6E#@proxy_kafee",
+      "protocol": "trojan",
+      "ip": "ipfast.kingmna.com",
+      "port": "443",
+      "country_code": "US",
+      "flag": "🇺🇸",
+      "source": "@proxy_kafee",
+      "first_seen": "2026-11-27T12:49:04Z"
     },
     {
       "key": "trojan:65736ab8c0757129f7b9b3ab59002346e1e00d5a484e26ed2439ba4527848271",
@@ -28428,6 +28769,17 @@
       "first_seen": "2026-11-02T07:49:22Z"
     },
     {
+      "key": "trojan:92c1ee18c683dafed14f8f9aa1e0c6149aa90423ebba0dae22e652946c5ac557",
+      "config": "trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@66.163.114.166:443?allowInsecure=1&fp=chrome&security=tls&sni=blog.findconnectwithemployersandbuildprofessionalnetwork.com&type=tcp#🇺🇸[openproxylist.com]",
+      "protocol": "trojan",
+      "ip": "66.163.114.166",
+      "port": "443",
+      "country_code": "US",
+      "flag": "🇺🇸",
+      "source": "SUB#4",
+      "first_seen": "2026-11-27T12:49:09Z"
+    },
+    {
       "key": "trojan:931b14121ae8402250c3b83ad6d33a0c3cfd0821356446dc77c3c71258c179f0",
       "config": "trojan://242a3d8eee5e4ed1a6bfa4141d549a25@www.findlocaljobnetworkandbuildcommunityconnections.com:443?security=tls&amp;type=tcp&amp;sni=www.findlocaljobnetworkandbuildcommunityconnections.com&amp;allowInsecure=1#[",
       "protocol": "trojan",
@@ -28877,6 +29229,17 @@
       "flag": "🇺🇸",
       "source": "@meliproxyy",
       "first_seen": "2026-11-08T17:10:18Z"
+    },
+    {
+      "key": "trojan:9d63cd83e4bc895db37f6eb9574627346b4ecfc4e1b20b0a65fbfeb9075f89cd",
+      "config": "trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@66.163.122.25:443?security=tls&amp;insecure=0&amp;headerType=none&amp;type=tcp&amp;allowInsecure=0&amp;sni=cdn.searchnationwidecareerchangehelperandguidancetoday.com#@proxy_kafee",
+      "protocol": "trojan",
+      "ip": "66.163.122.25",
+      "port": "443",
+      "country_code": "US",
+      "flag": "🇺🇸",
+      "source": "@proxy_kafee",
+      "first_seen": "2026-11-27T12:49:04Z"
     },
     {
       "key": "trojan:9d880eec2878bd2ac381942a1a4187be3c94b22fa9843e06cb14d1a6e0110a13",
@@ -29990,6 +30353,17 @@
       "first_seen": "2026-11-02T07:49:22Z"
     },
     {
+      "key": "trojan:bc25e3eac7281f9a9b912554fc8589ef692882729706e2f3e7e744ce3c9ac4a6",
+      "config": "trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@170.101.101.112:443?security=tls&amp;insecure=0&amp;headerType=none&amp;fp=chrome&amp;type=tcp&amp;allowInsecure=0&amp;sni=resources.explorecreativejobsandenhanceyourcareerportfolio.com#@proxy_kafee",
+      "protocol": "trojan",
+      "ip": "170.101.101.112",
+      "port": "443",
+      "country_code": "US",
+      "flag": "🇺🇸",
+      "source": "@proxy_kafee",
+      "first_seen": "2026-11-27T12:49:04Z"
+    },
+    {
       "key": "trojan:bd3ada9410c6dcf45e880d8aaffbbe4904f726364981740d29a8ba07a061e739",
       "config": "trojan://%4D%69%54%69%56%50%4E@199.232.78.120:443?pcs=cd6e838b9bfe31cab8b3d5c858b0d6223fe84ece236c1fdb281be93c302e1e6e&path=/%3FTelegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET&security=tls&alpn=http%2F1.1&insecure=0&host=%6D%69%74%69%76%70%6E-%6D%69%74%69%76%70%6E-%6D%69%74%69%76%70%6E.ac.ir&fp=chrome&type=ws&allowInsecure=0&sni=firefox.com#@meliproxyy",
       "protocol": "trojan",
@@ -30087,6 +30461,17 @@
       "flag": "🇺🇸",
       "source": "@persianvpnhub",
       "first_seen": "2026-11-23T14:58:37Z"
+    },
+    {
+      "key": "trojan:bf3129573cc1f718c128a2929ae3ceb74628e2357eddfd651ebe85bf7876f1b0",
+      "config": "trojan://Z-jckziI1rW4yrUMorrv0Q@ipfast.kingmna.com:443?path=%2FTELEGRAM-%40NUFiLTER-TELEGRAM-%40NUFiLTER-TELEGRAM-%40NUFiLTER-TELEGRAM-%40NUFiLTER-TELEGRAM-%40NUFiLTER-TELEGRAM-%40NUFiLTER-TELEGRAM-%40NUFiLTER-TELEGRAM-%40NUFiLTER&amp;security=tls&amp;host=looasaaa2boijji.global.ssl.fastly.net&amp;type=ws&amp;allowInsecure=1&amp;sni=cdn.akamai.steamstatic.com#[",
+      "protocol": "trojan",
+      "ip": "ipfast.kingmna.com",
+      "port": "443",
+      "country_code": "US",
+      "flag": "🇺🇸",
+      "source": "@ConfigsHUB",
+      "first_seen": "2026-11-27T12:49:06Z"
     },
     {
       "key": "trojan:bf34b317504a8a2da13f8a69f733188d9c3245c75b78eec68735c35027ca1354",
@@ -31154,6 +31539,17 @@
       "flag": "🇺🇸",
       "source": "SUB#1",
       "first_seen": "2026-11-01T07:46:37Z"
+    },
+    {
+      "key": "trojan:d6d63161196212d883051cd4341f6d0830149a31fc0840209392d9925cc95fc7",
+      "config": "trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@66.163.114.114:443?allowInsecure=0&sni=learn.findconnectwithemployersandbuildprofessionalnetwork.com#🇺🇸[openproxylist.com]",
+      "protocol": "trojan",
+      "ip": "66.163.114.114",
+      "port": "443",
+      "country_code": "US",
+      "flag": "🇺🇸",
+      "source": "SUB#4",
+      "first_seen": "2026-11-27T12:49:09Z"
     },
     {
       "key": "trojan:d736483bc09aa79a301ade78205ae30feacac37edfc45aba9b07d223141c009e",
@@ -35006,6 +35402,17 @@
       "first_seen": "2026-11-12T20:58:39Z"
     },
     {
+      "key": "vless:7d5ac94807ae8cf8c68984ead0cb32307ddbf1a6e1aeea3c9ac2b5d90c1a5b3b",
+      "config": "vless://8f2940bc-a353-4efc-a9a0-22184cd4f1ac@p2real33.greewebservices.ir:1330?security=reality&encryption=none&pbk=xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8&headerType=none&fp=chrome&type=tcp&sni=play.googleapis.com&sid=9b60d3#@meliproxyy",
+      "protocol": "vless",
+      "ip": "p2real33.greewebservices.ir",
+      "port": "1330",
+      "country_code": "BG",
+      "flag": "🇧🇬",
+      "source": "@meliproxyy",
+      "first_seen": "2026-11-27T12:49:07Z"
+    },
+    {
       "key": "vless:8310c3f94b96afbebdb4267fdbb5271a8423b610d33b2a3cfbd02f4c8fbdffd0",
       "config": "vless://aabfa4e8-c32b-4f41-b980-36819d9d8ed5@66.bmi.ir.asopardaz.ir:8443?encryption=none&amp;flow=xtls-rprx-vision&amp;security=reality&amp;sni=timeline.www.cloudflare.com&amp;fp=chrome&amp;pbk=JtA0d5K6Jnmg35oWP9SDOsc1ceuqaxOsNg33fiPHJQs&amp;sid=e915&amp;type=tcp&amp;headerType=none#Channel%20%3A%20%40Daily_Configs",
       "protocol": "vless",
@@ -35114,6 +35521,17 @@
       "flag": "🇧🇬",
       "source": "@prrofile_purple",
       "first_seen": "2026-11-02T07:49:21Z"
+    },
+    {
+      "key": "vless:9b3bc999e1fc129eb3f6f9f831a706cfcfb85769f2bdcc9f5a0c8066ed94f13d",
+      "config": "vless://8f2940bc-a353-4efc-a9a0-22184cd4f1ac@p2real33.greewebservices.ir:1330?security=reality&amp;encryption=none&amp;pbk=xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8&amp;headerType=none&amp;fp=chrome&amp;type=tcp&amp;sni=play.googleapis.com&amp;sid=9b60d3#@meliproxyy",
+      "protocol": "vless",
+      "ip": "p2real33.greewebservices.ir",
+      "port": "1330",
+      "country_code": "BG",
+      "flag": "🇧🇬",
+      "source": "@meliproxyy",
+      "first_seen": "2026-11-27T12:49:07Z"
     },
     {
       "key": "vless:9c048deef0c89d6454225c71a67f4f8678e64502c50e228788a2dcab5291650a",
@@ -38493,6 +38911,17 @@
       "first_seen": "2026-11-15T23:00:01Z"
     },
     {
+      "key": "vless:484864fc777debda5cd8efabb0a8ba88ae31166378f9a8a99a7b612344b3e5a8",
+      "config": "vless://d3895603-3164-4003-b85c-70f171ab30b5@184.107.179.150:8443?flow=xtls-rprx-vision&security=reality&sni=www.kpn.com&fp=firefox&pbk=FZvOenkKu_0DspnZA7Nc7xgWhR0_Z0MvqhntPqPchV4&sid=40a4615253b8f75d#🇨🇦",
+      "protocol": "vless",
+      "ip": "184.107.179.150",
+      "port": "8443",
+      "country_code": "CA",
+      "flag": "🇨🇦",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
+    },
+    {
       "key": "vless:487f20b6fc2fbf1f9db8e48cac81ead5f844a9bf523be63d5e4cefb20fde5fcb",
       "config": "vless://99c5b713-dedf-4a10-8070-916ff3f49b0e@104.24.196.20:443?path=/?---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---&security=tls&encryption=none&insecure=0&host=fs.qicai99.com&type=ws&allowInsecure=0&sni=fs.qicai99.com#CA",
       "protocol": "vless",
@@ -38570,6 +38999,17 @@
       "first_seen": "2026-11-15T23:00:01Z"
     },
     {
+      "key": "vless:4a71a581f636360897819cd94004841bd7b298f4cc2d994b648b7a6ce457c661",
+      "config": "vless://03fcc618-b93d-6796-6aed-8a38c975d581@kuruish.org:443?security=tls&encryption=none&headerType=none&fp=chrome&type=tcp&allowInsecure=0&sni=kuruish.org#[",
+      "protocol": "vless",
+      "ip": "kuruish.org",
+      "port": "443",
+      "country_code": "CA",
+      "flag": "🇨🇦",
+      "source": "@ConfigsHUB",
+      "first_seen": "2026-11-27T12:49:06Z"
+    },
+    {
       "key": "vless:4a757cbc61d880776ca4b54a3710dc4e6ef6ce2834d44b13316f13cd3167e36e",
       "config": "vless://16f63796-3e98-5a7b-b016-540ce6e79007@188.114.98.0:443?encryption=none&security=tls&type=ws&host=se1.v2less.site&path=/vless&sni=se1.v2less.site&alpn=http/1.1&fp=unsafe&cs=TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256:TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256&fm={\"tcp\": [{\"type\": \"fragment\", \"settings\": {\"packets\": \"tlshello\", \"lengths\": [\"0\", \"104\", \"1\"], \"delays\": [\"0\"], \"maxSplit\": \"0\"}},{\"type\": \"fragment\", \"settings\": {\"packets\": \"1-1\", \"lengths\": [\"114\", \"1\"], \"delays\": [\"1\"], \"maxSplit\": \"11\"}}]}#🇺🇸 33 - US - VLESS/WS/TLS/UTLS - 443",
       "protocol": "vless",
@@ -38590,6 +39030,17 @@
       "flag": "🇨🇦",
       "source": "SUB#1",
       "first_seen": "2026-11-25T17:27:54Z"
+    },
+    {
+      "key": "vless:4ab9381acacabf18968848ea3207171fc443f0fafcae13993b13d0079010f9f4",
+      "config": "vless://8344360f-0349-4784-a19f-33fd92e89389@104.19.28.32:443?mode=gun&security=tls&encryption=none&insecure=0&fp=chrome&type=grpc&serviceName=v3-direct&allowInsecure=0&sni=sync.2ml.bid#🇺🇸",
+      "protocol": "vless",
+      "ip": "104.19.28.32",
+      "port": "443",
+      "country_code": "CA",
+      "flag": "🇨🇦",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
     },
     {
       "key": "vless:4acb4c91db389cd5406961dd01e295653481ea7798b42fbf61c834dabac12ae2",
@@ -39888,6 +40339,17 @@
       "flag": "🇨🇦",
       "source": "SUB#4",
       "first_seen": "2026-11-08T10:36:23Z"
+    },
+    {
+      "key": "vless:6b742cebf0425fec0071105dc724e812c03eb030b21be089cdf1f9fe4db19074",
+      "config": "vless://03fcc618-b93d-6796-6aed-8a38c975d581@kuruish.org:443?security=tls&amp;encryption=none&amp;headerType=none&amp;fp=chrome&amp;type=tcp&amp;allowInsecure=0&amp;sni=kuruish.org#[",
+      "protocol": "vless",
+      "ip": "kuruish.org",
+      "port": "443",
+      "country_code": "CA",
+      "flag": "🇨🇦",
+      "source": "@ConfigsHUB",
+      "first_seen": "2026-11-27T12:49:06Z"
     },
     {
       "key": "vless:6c2366b35729ba8026bca9caded2d6820f6e9db0abc124011672d3641bfe1fcc",
@@ -42387,6 +42849,17 @@
       "first_seen": "2026-11-12T20:58:47Z"
     },
     {
+      "key": "vless:ae9ebe07e011e3f99681b9fbc0997f870ec9b3456fe03a9c30a963d0f5fffa48",
+      "config": "vless://97514cec-cf70-42b1-9743-3f89122adc8e@104.16.244.34:2053?&security=tls&fp=chrome&sni=cffq.pages.dev&type=ws&headerType=none&host=cffq.pages.dev&path=%2F%3Fed%3D2560#🇸🇬[openproxylist.com]",
+      "protocol": "vless",
+      "ip": "104.16.244.34",
+      "port": "2053",
+      "country_code": "CA",
+      "flag": "🇨🇦",
+      "source": "SUB#4",
+      "first_seen": "2026-11-27T12:49:09Z"
+    },
+    {
       "key": "vless:aeb265909a87bafc02ef337289e6634a9288fca9907c4f78e00476a3d2a8c5e8",
       "config": "vless://099244b9-2168-4dbd-870e-cbbe9d6eb573@172.67.65.56:2053?path=/proxyip&security=tls&encryption=none&insecure=0&host=whitecreeper.pages.dev&fp=chrome&type=ws&allowInsecure=0&sni=whitecreeper.pages.dev#CA",
       "protocol": "vless",
@@ -43430,6 +43903,17 @@
       "flag": "🇨🇦",
       "source": "SUB#2",
       "first_seen": "2026-11-20T21:21:08Z"
+    },
+    {
+      "key": "vless:cd344c6d38b527bdc570df5f607332c0ebcfb66e14186f89a14955c034df6eb8",
+      "config": "vless://d3895603-3164-4003-b85c-70f171ab30b5@184.107.179.150:8443?security=reality&type=tcp&sni=www.kpn.com&fp=firefox&flow=xtls-rprx-vision&sid=40a4615253b8f75d&pbk=FZvOenkKu_0DspnZA7Nc7xgWhR0_Z0MvqhntPqPchV4#CA",
+      "protocol": "vless",
+      "ip": "184.107.179.150",
+      "port": "8443",
+      "country_code": "CA",
+      "flag": "🇨🇦",
+      "source": "SUB#1",
+      "first_seen": "2026-11-27T12:49:09Z"
     },
     {
       "key": "vless:cd719f48ba07e4cf0badedbc143fd87cb63f054f3bbdb067d9fb8c435d938bad",
@@ -45082,6 +45566,17 @@
       "first_seen": "2026-11-23T14:58:38Z"
     },
     {
+      "key": "vless:fbc1a6c637ab60b4c4883a7abc7020e4e5d893ac2ed5776aa23545a87792b022",
+      "config": "vless://53bbdad4-2f4e-45db-8df4-fa491a6a7227@leviko-us4350.shopingggg.ir:443?path=/proxyip&security=tls&alpn=http/1.1&encryption=none&insecure=0&host=freeceshi6.frii.site&type=ws&allowInsecure=0&sni=freeceshi6.frii.site#🇺🇸",
+      "protocol": "vless",
+      "ip": "leviko-us4350.shopingggg.ir",
+      "port": "443",
+      "country_code": "CA",
+      "flag": "🇨🇦",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
+    },
+    {
       "key": "vless:fbc8a2a3cafb4e68457e0d461eb9288dc055ab0c1584c2b3658473eb674471ed",
       "config": "vless://18dee1c0-77be-4596-88d6-c23bd83fdae6@151.101.1.242:443?path=%2Fws&amp;security=tls&amp;encryption=none&amp;insecure=0&amp;host=bounded-crammed.video-streams.org&amp;fp=firefox&amp;type=ws&amp;allowInsecure=0&amp;sni=bounded-crammed.video-streams.org#[",
       "protocol": "vless",
@@ -45124,6 +45619,17 @@
       "flag": "🇨🇦",
       "source": "SUB#4",
       "first_seen": "2026-11-01T07:46:37Z"
+    },
+    {
+      "key": "vless:fc94f1169e70ccd1461f83a5fc6b5dd1e38f330a809ac36a5209df2fc2a25100",
+      "config": "vless://bf14dc50-e9f2-49fd-8642-620446edeafb@www.visa.com:2083?&security=tls&fp=chrome&sni=v4-77j.pages.dev&type=ws&headerType=none&host=v4-77j.pages.dev&path=%2F#🇨🇦[openproxylist.com]",
+      "protocol": "vless",
+      "ip": "www.visa.com",
+      "port": "2083",
+      "country_code": "CA",
+      "flag": "🇨🇦",
+      "source": "SUB#4",
+      "first_seen": "2026-11-27T12:49:09Z"
     },
     {
       "key": "vless:fd941195c18f782a5c79559661cd29a8936d0588be532798e0b7969c7fbdd298",
@@ -46611,6 +47117,17 @@
       "first_seen": "2026-11-25T05:32:23Z"
     },
     {
+      "key": "vless:5467b3bd6b821c613f52eeeffb27fd5fd88601df154c22a21caf91925611192b",
+      "config": "vless://7ad63b26-bf70-4872-8fab-ebaf73a1e19d@153.52.69.249:443?security=reality&encryption=none&pbk=WVfpQqoeOrTtCq052_IOxvMv7RCWfLlAOxEfsH1aa2U&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=cache-78.topp-con.xyz&sid=d5492c7a39515c65#🇩🇪",
+      "protocol": "vless",
+      "ip": "153.52.69.249",
+      "port": "443",
+      "country_code": "CZ",
+      "flag": "🇨🇿",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
+    },
+    {
       "key": "vless:5a25ef7c1b3ccba2008f91d35dfff33facd514df64be38cf5ab82c0fc5d10c86",
       "config": "vless://d65fb384-5029-4edf-bdc7-0f5960600e3d@153.76.190.31:2083?encryption=none&amp;security=tls&amp;sni=speedtestmark.com&amp;alpn=http%2F1.1&amp;fp=firefox&amp;type=ws&amp;path=%2Fvless-ws&amp;headers=%7B%0A%20%20%22Host%22%3A%20%22%22%0A%7D#@meliproxyy",
       "protocol": "vless",
@@ -46798,6 +47315,17 @@
       "first_seen": "2026-11-06T15:13:16Z"
     },
     {
+      "key": "vless:0156fcff0428d8abccde315808302344c1847e416b916ff42d53243f76511161",
+      "config": "vless://cb3427be-5ab9-4b95-8b17-032843034f34@153.79.171.103:2443?encryption=none&flow=xtls-rprx-vision&fp=firefox&pbk=gMkxxxFo7F0gLBe93tRyfDKFSH0YlfTFPd7X-fHfJ1s&security=reality&sid=abcded1950c35dcc&sni=de2.hys.braidx.tech&type=tcp#🇺🇸",
+      "protocol": "vless",
+      "ip": "153.79.171.103",
+      "port": "2443",
+      "country_code": "DE",
+      "flag": "🇩🇪",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
+    },
+    {
       "key": "vless:017d3bb6b2fec2e882b883eb554d201ef3d472505f129655067138afe3427d4c",
       "config": "vless://2ae1bbd2-dd81-4737-bbec-6a8c1c74e8f1@159.195.137.29:8443?security=reality&encryption=none&pbk=SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc&headerType=none&fp=firefox&type=tcp&flow=xtls-rprx-vision&sni=sellflow.org#%3E%3E%40configV2rayNG%3A%3ADE",
       "protocol": "vless",
@@ -46972,6 +47500,17 @@
       "flag": "🇩🇪",
       "source": "@meliproxyy",
       "first_seen": "2026-11-17T23:01:31Z"
+    },
+    {
+      "key": "vless:03a8b50bd9290e1c3dd74279d2f2a2901c23e5486b38d2e1246724b51966c832",
+      "config": "vless://1d1eda2e-0bd7-4478-877b-1c5425c6c4dd@cloud-de01.dynv6.net:443?security=reality&amp;encryption=none&amp;pbk=yr_opKG6DGTppNDXkk-DhGSYJZXbb9o-caexk2FZO38&amp;headerType=none&amp;type=tcp&amp;flow=xtls-rprx-vision&amp;sni=tradingview.com&amp;sid=8f3c6e2a1b5d4f09#Channel%20%3A%20%40proxy_kafee%20",
+      "protocol": "vless",
+      "ip": "cloud-de01.dynv6.net",
+      "port": "443",
+      "country_code": "DE",
+      "flag": "🇩🇪",
+      "source": "@proxy_kafee",
+      "first_seen": "2026-11-27T12:49:04Z"
     },
     {
       "key": "vless:03b08f7dd6d17338c44b359af3743a2a628a214c237de55ed5c7c359a2831ffd",
@@ -47194,6 +47733,17 @@
       "first_seen": "2026-11-14T14:20:00Z"
     },
     {
+      "key": "vless:074127abbe820d612fdb538ab76b1de68a2d5175deaef87ddaab8f4cec1a25dd",
+      "config": "vless://80256d6f-7cd3-4a3a-8df6-2981e52551dc@91.107.185.86:16893?security=reality&amp;encryption=none&amp;pbk=dpmXAfLC6-Sf6cPjkQKGx_NliRQRFZ_oUiiPA5ALW0I&amp;headerType=none&amp;fp=chrome&amp;spx=%2F&amp;type=tcp&amp;sni=play.google.com&amp;sid=849711f2b99d1176#@meliproxyy",
+      "protocol": "vless",
+      "ip": "91.107.185.86",
+      "port": "16893",
+      "country_code": "DE",
+      "flag": "🇩🇪",
+      "source": "@meliproxyy",
+      "first_seen": "2026-11-27T12:49:07Z"
+    },
+    {
       "key": "vless:076c7c8c5c94284aa1db5b9fa9b81ba84b3fceb1808a03b78089703fa12dc6b5",
       "config": "vless://73a0f995-f2f1-4d47-a99d-a6dcc1952bf9@93.152.223.49:443?security=reality&amp;encryption=none&amp;pbk=HLKQ0JvyaZ16JNdl0pbEPkiVRYJDiZNzGz9prDMiw2s&amp;headerType=none&amp;type=tcp&amp;flow=xtls-rprx-vision&amp;sni=de-4.it-crp.ru&amp;sid=a1b2c3d4b5#Channel%20%3A%20%40proxy_kafee%20",
       "protocol": "vless",
@@ -47324,6 +47874,17 @@
       "flag": "🇩🇪",
       "source": "@persianvpnhub",
       "first_seen": "2026-11-18T22:10:18Z"
+    },
+    {
+      "key": "vless:092bbb1a9f9f4c13c6c6073fcb3cc73321cd61fef6de6e099efee255915a012e",
+      "config": "vless://d1ec39e3-ad7b-4b65-9f65-813696f9a04e@alsu.deev-guard.ir:1289?security=none&encryption=mlkem768x25519plus.native.0rtt.l4vL8o_tMDEuI19vLDJYXFJOvYodTEgF6uK6gqjsDVw&headerType=none&type=tcp#%40FarazV2ray%20",
+      "protocol": "vless",
+      "ip": "alsu.deev-guard.ir",
+      "port": "1289",
+      "country_code": "DE",
+      "flag": "🇩🇪",
+      "source": "@persianvpnhub",
+      "first_seen": "2026-11-27T12:49:04Z"
     },
     {
       "key": "vless:093e847a7b648a5fb8745e4256d7e79e7b078051bbf2895d2af227fef6de6a5c",
@@ -50615,6 +51176,17 @@
       "first_seen": "2026-11-23T14:58:38Z"
     },
     {
+      "key": "vless:3dd621f46fb5ba6ef7416c983d9c9d089a64ba779e88265996f7598761ed9518",
+      "config": "vless://b92fa8ab-5a4b-4202-8e2d-af8e8b332193@109.176.202.177:443?security=reality&amp;encryption=none&amp;pbk=4YuPm6_B_Aa9Um70LtKFnVfA_F8uiwwmXChE_pyXjX8&amp;headerType=none&amp;fp=firefox&amp;type=tcp&amp;sni=delivery.mp.microsoft.com&amp;sid=ec77cd113fc57140#Telegram%20%40mtmvpn%20",
+      "protocol": "vless",
+      "ip": "109.176.202.177",
+      "port": "443",
+      "country_code": "DE",
+      "flag": "🇩🇪",
+      "source": "@proxy_mtm",
+      "first_seen": "2026-11-27T12:49:08Z"
+    },
+    {
       "key": "vless:3dea6b3ad24a98cd0dc530c4900000792b189fdf06f63a0fde980c9240b9c038",
       "config": "vless://b466269b-9b08-4ae9-8d3d-988e3ed7d42e@dehero.chapjavan.ir:8080?security=reality&encryption=none&pbk=3Mu2EzPLYc2OwXsJgxrnx4SJDAxNq2a7ft4yyf3Ny20&headerType=none&fp=firefox&type=tcp&flow=xtls-rprx-vision&sni=graphs.4cdn.de&sid=bf88db0e20a1e64a#@meliproxyy",
       "protocol": "vless",
@@ -52186,6 +52758,17 @@
       "flag": "🇩🇪",
       "source": "@meliproxyy",
       "first_seen": "2026-11-06T20:59:12Z"
+    },
+    {
+      "key": "vless:597511d2bc7557007f2747f4987ac00b837954f58dd9a76302a1b845fb1041bb",
+      "config": "vless://0a5d6127-0d72-4525-88cf-629a9da02dda@rial-gee3.torshikhoone.ir:443?security=reality&amp;encryption=none&amp;pbk=eCt1lJtFXHID16IAEA4nw3xFcMejrnauZqIE_Jf5qEw&amp;headerType=none&amp;fp=chrome&amp;type=tcp&amp;flow=xtls-rprx-vision&amp;sni=tgju.org&amp;sid=b1c9c3d3cc3b662b#Channel%20%3A%20%40proxy_kafee%20",
+      "protocol": "vless",
+      "ip": "rial-gee3.torshikhoone.ir",
+      "port": "443",
+      "country_code": "DE",
+      "flag": "🇩🇪",
+      "source": "@proxy_kafee",
+      "first_seen": "2026-11-27T12:49:04Z"
     },
     {
       "key": "vless:59b5e980a22089bd632bc47cb931e5fb938521ec0e0844fcf5ddfdd53ea72e37",
@@ -57028,6 +57611,17 @@
       "first_seen": "2026-11-02T07:49:17Z"
     },
     {
+      "key": "vless:b66f1090e5627c32e24fd6c61d319a4f4cbc2f6534a517a3fdd82b9f4eecb286",
+      "config": "vless://80256d6f-7cd3-4a3a-8df6-2981e52551dc@91.107.185.86:16893?security=reality&encryption=none&pbk=dpmXAfLC6-Sf6cPjkQKGx_NliRQRFZ_oUiiPA5ALW0I&headerType=none&fp=chrome&spx=%2F&type=tcp&sni=play.google.com&sid=849711f2b99d1176#@meliproxyy",
+      "protocol": "vless",
+      "ip": "91.107.185.86",
+      "port": "16893",
+      "country_code": "DE",
+      "flag": "🇩🇪",
+      "source": "@meliproxyy",
+      "first_seen": "2026-11-27T12:49:07Z"
+    },
+    {
       "key": "vless:b672587e35f4ec2c4b3b22b8e7927985723a895dd8caf74f730ba045a3ad5994",
       "config": "vless://19841976-1b67-49e4-9f21-804d10b2fd00@89.116.72.217:8880?security=reality&encryption=mlkem768x25519plus.native.0rtt.U8fzW-FW7FJZpf3gVKExdUeArvvW5R7Yvtl7w2m0kUg&pbk=OjDDQkw-g0y3OGcZUgsT_k4N_QtBDjgcjYF9it6Nyz4&headerType=none&type=tcp&sni=www.microsoft.com&sid=cb4a2e4c#%F0%9D%99%8F%F0%9D%99%9A%F0%9D%99%A1%F0%9D%99%9A%F0%9D%99%9C%F0%9D%99%A7%F0%9D%99%96%F0%9D%99%A2%E2%AB%B8%40%F0%9D%99%AB%F0%9D%9F%AE%F0%9D%99%A7%F0%9D%99%96%F0%9D%99%AE%F0%9D%99%89%F0%9D%99%82_%F0%9D%99%88%F0%9D%99%96%F0%9D%99%A9%F0%9D%99%A8%F0%9D%99%AA%F0%9D%99%A7%F0%9D%99%9E",
       "protocol": "vless",
@@ -57523,6 +58117,17 @@
       "first_seen": "2026-11-09T18:56:49Z"
     },
     {
+      "key": "vless:bf606a72d5492d1dd6697edf7c494461addf789e9edfb482458f1b0ae176e07c",
+      "config": "vless://711c018e-2692-4aa8-93f3-544d83fcd16c@jdwabxe.cvewfjg.shop:443?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=www.cloudflare.com&fp=chrome&security=reality&pbk=HyVSZ2OyySwXT-xRhTAqoiuYflIaj_b0Jxm7S1Iq9hs&sid=7a76f3c4b9dd#🇩🇪",
+      "protocol": "vless",
+      "ip": "jdwabxe.cvewfjg.shop",
+      "port": "443",
+      "country_code": "DE",
+      "flag": "🇩🇪",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
+    },
+    {
       "key": "vless:bfb26688a3e0f6bb46cef27f6a2c637f960734d4318e4f3deccb7936008b18c4",
       "config": "vless://67cd3349-f789-4cbb-8b91-4b6b1654ce7c@3.168.217.190:443?encryption=none&amp;type=ws&amp;security=tls&amp;path=%2F&amp;host=d2ex4nxd2e01ub.cloudfront.net&amp;sni=d2ex4nxd2e01ub.cloudfront.net&amp;fp=chrome#@meliproxyy",
       "protocol": "vless",
@@ -57543,6 +58148,17 @@
       "flag": "🇩🇪",
       "source": "@FreakConfig",
       "first_seen": "2026-11-12T12:58:32Z"
+    },
+    {
+      "key": "vless:bfce792799e2ddfa895ec1d9e7dbc7e2a4b1db55e49a8b645decaa90466d9f8c",
+      "config": "vless://1d1eda2e-0bd7-4478-877b-1c5425c6c4dd@cloud-de01.dynv6.net:443?security=reality&encryption=none&pbk=yr_opKG6DGTppNDXkk-DhGSYJZXbb9o-caexk2FZO38&headerType=none&type=tcp&flow=xtls-rprx-vision&sni=tradingview.com&sid=8f3c6e2a1b5d4f09#Channel%20%3A%20%40proxy_kafee%20",
+      "protocol": "vless",
+      "ip": "cloud-de01.dynv6.net",
+      "port": "443",
+      "country_code": "DE",
+      "flag": "🇩🇪",
+      "source": "@proxy_kafee",
+      "first_seen": "2026-11-27T12:49:04Z"
     },
     {
       "key": "vless:bff4ff598851ca307988d48c8433c2b26e9804fadb5a356486e542365169284d",
@@ -57598,6 +58214,17 @@
       "flag": "🇩🇪",
       "source": "@proxy_kafee",
       "first_seen": "2026-11-06T07:09:34Z"
+    },
+    {
+      "key": "vless:c07421f8a360ac6dc6c88c3c73f2f25c6b6805fedf963f5d4c06c14523d9a3d8",
+      "config": "vless://d1ec39e3-ad7b-4b65-9f65-813696f9a04e@alsu.deev-guard.ir:1289?security=none&amp;encryption=mlkem768x25519plus.native.0rtt.l4vL8o_tMDEuI19vLDJYXFJOvYodTEgF6uK6gqjsDVw&amp;headerType=none&amp;type=tcp#%40FarazV2ray%20",
+      "protocol": "vless",
+      "ip": "alsu.deev-guard.ir",
+      "port": "1289",
+      "country_code": "DE",
+      "flag": "🇩🇪",
+      "source": "@persianvpnhub",
+      "first_seen": "2026-11-27T12:49:04Z"
     },
     {
       "key": "vless:c07f6eaa26f3290fc8373945a55e7f55aed835950ead4612d6630a56282b2b82",
@@ -58588,6 +59215,17 @@
       "flag": "🇩🇪",
       "source": "@meliproxyy",
       "first_seen": "2026-11-16T11:47:26Z"
+    },
+    {
+      "key": "vless:cf6e4da0480e2b2f78037fab00a36c4dce3f7280a8f619b85b6e4eeb045a60b5",
+      "config": "vless://80256d6f-7cd3-4a3a-8df6-2981e52551dc@91.107.185.86:16893?type=tcp&headerType=none&security=reality&fp=chrome&sni=play.google.com&pbk=dpmXAfLC6-Sf6cPjkQKGx_NliRQRFZ_oUiiPA5ALW0I&sid=849711f2b99d1176&spx=/#🇩🇪",
+      "protocol": "vless",
+      "ip": "91.107.185.86",
+      "port": "16893",
+      "country_code": "DE",
+      "flag": "🇩🇪",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
     },
     {
       "key": "vless:cf6f901c756af67878dbecc4c2f004dd1889bb303717337de777f30805399a46",
@@ -59666,6 +60304,17 @@
       "flag": "🇩🇪",
       "source": "@meliproxyy",
       "first_seen": "2026-11-21T19:31:51Z"
+    },
+    {
+      "key": "vless:e42034ddf6c2a4caa7122657fc6cce343eccaa44d8e5a2ca15cd168792f34d7f",
+      "config": "vless://0a5d6127-0d72-4525-88cf-629a9da02dda@rial-gee3.torshikhoone.ir:443?security=reality&encryption=none&pbk=eCt1lJtFXHID16IAEA4nw3xFcMejrnauZqIE_Jf5qEw&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=tgju.org&sid=b1c9c3d3cc3b662b#Channel%20%3A%20%40proxy_kafee%20",
+      "protocol": "vless",
+      "ip": "rial-gee3.torshikhoone.ir",
+      "port": "443",
+      "country_code": "DE",
+      "flag": "🇩🇪",
+      "source": "@proxy_kafee",
+      "first_seen": "2026-11-27T12:49:04Z"
     },
     {
       "key": "vless:e4285e9b598ec1eccc3734ee362a5c2197b29dbb7ed1b14c12ae1f49972caca7",
@@ -60964,6 +61613,17 @@
       "flag": "🇩🇪",
       "source": "@meliproxyy",
       "first_seen": "2026-11-26T01:54:05Z"
+    },
+    {
+      "key": "vless:fa1d104eec9dbecdc45b438d640e09bd4b8973814d689d9abbda4611b92de5ad",
+      "config": "vless://b92fa8ab-5a4b-4202-8e2d-af8e8b332193@109.176.202.177:443?security=reality&encryption=none&pbk=4YuPm6_B_Aa9Um70LtKFnVfA_F8uiwwmXChE_pyXjX8&headerType=none&fp=firefox&type=tcp&sni=delivery.mp.microsoft.com&sid=ec77cd113fc57140#Telegram%20%40mtmvpn%20",
+      "protocol": "vless",
+      "ip": "109.176.202.177",
+      "port": "443",
+      "country_code": "DE",
+      "flag": "🇩🇪",
+      "source": "@proxy_mtm",
+      "first_seen": "2026-11-27T12:49:08Z"
     },
     {
       "key": "vless:fa2580ae475e50590a54861b441960a4450408510ae93ebb01d6108585fe6c84",
@@ -63012,6 +63672,17 @@
       "first_seen": "2026-11-26T20:19:38Z"
     },
     {
+      "key": "vless:011aa6182ba7d41a3e8f3613c75a9da193a7daa746d745ee2df3b4c72151e7d7",
+      "config": "vless://b0fd9db4-24b8-45d0-88e1-c709c97646e6@144.31.75.168:443?security=reality&amp;encryption=none&amp;pbk=_OxeyvQDpHcak4ou_pmWb5GmhWcG1j7A8LOIqYXghxg&amp;headerType=none&amp;fp=edge&amp;type=tcp&amp;sni=www.fortum.com&amp;sid=2177a83232995047#Telegram%20%40Proxy_mtm%20",
+      "protocol": "vless",
+      "ip": "144.31.75.168",
+      "port": "443",
+      "country_code": "FI",
+      "flag": "🇫🇮",
+      "source": "@proxy_mtm",
+      "first_seen": "2026-11-27T12:49:08Z"
+    },
+    {
       "key": "vless:023d023b6c5817f7685b30d34591b16b321038889a5d6536a90e23b775cf394a",
       "config": "vless://471b3557-91da-44bc-a215-30b8a6fdee79@static.207.81.180.157.clients.your-server.de:443?security=tls&amp;encryption=none&amp;insecure=0&amp;headerType=none&amp;fp=chrome&amp;type=tcp&amp;allowInsecure=0&amp;flow=xtls-rprx-vision&amp;sni=TcpTlsDigikaLa.SavfaSf.iR.#%F0%9F%87%AB%F0%9F%87%AE%40FreakConfig",
       "protocol": "vless",
@@ -64541,6 +65212,17 @@
       "first_seen": "2026-11-26T20:19:39Z"
     },
     {
+      "key": "vless:904b85a5073001491f42a74a76963bdffdc676614df8b5f6743962d35abcab44",
+      "config": "vless://b0fd9db4-24b8-45d0-88e1-c709c97646e6@144.31.75.168:443?security=reality&encryption=none&pbk=_OxeyvQDpHcak4ou_pmWb5GmhWcG1j7A8LOIqYXghxg&headerType=none&fp=edge&type=tcp&sni=www.fortum.com&sid=2177a83232995047#Telegram%20%40Proxy_mtm%20",
+      "protocol": "vless",
+      "ip": "144.31.75.168",
+      "port": "443",
+      "country_code": "FI",
+      "flag": "🇫🇮",
+      "source": "@proxy_mtm",
+      "first_seen": "2026-11-27T12:49:08Z"
+    },
+    {
       "key": "vless:90fa27d1c0d120906bd6ebc2a09e41f6e5d83b74356ad2a2d52387c61b221bf5",
       "config": "vless://b0a76856-69a7-456f-8ffe-c903e2893b7c@n8.hyby.ir:2087?mode=auto&path=%2F&security=tls&alpn=h3%2Ch2%2Chttp%2F1.1&encryption=mlkem768x25519plus.native.0rtt.Fy1WuRvH1VNIEda4AC61jAhcBFLzuYHcwbUO7mNjxwY&insecure=0&host=www.hyby.ir&fp=chrome&type=xhttp&allowInsecure=0#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9D%97%9A%F0%9D%97%B2%F0%9D%97%BF%F0%9D%97%BA%F0%9D%97%AE%F0%9D%97%BB%F0%9D%98%86%20%F0%9F%87%A9%F0%9F%87%AA",
       "protocol": "vless",
@@ -65870,6 +66552,17 @@
       "flag": "🇫🇷",
       "source": "@proxy_kafee",
       "first_seen": "2026-11-10T17:59:13Z"
+    },
+    {
+      "key": "vless:007f5b91a00485e67009e5c300c0508fa3a1f4efa436ba72cae089014afd0538",
+      "config": "vless://e106fb17-3748-4879-a7f2-e8326fcbd3a4@panel.jeprost.ir:443?security=reality&encryption=none&pbk=OxB8GilVtbKilKbaux4Ps04HYtRBHPUHHVaomrQjECg&headerType=none&fp=chrome&spx=%2F&type=tcp&sni=www.cloudflare.com&sid=ce6e9db8#Telegram%20%40mtmvpn%20",
+      "protocol": "vless",
+      "ip": "panel.jeprost.ir",
+      "port": "443",
+      "country_code": "FR",
+      "flag": "🇫🇷",
+      "source": "@proxy_mtm",
+      "first_seen": "2026-11-27T12:49:08Z"
     },
     {
       "key": "vless:00e67969c89ecbd105e6be6ad05f0f082a9230872823cea328cd7591fc7d4bcc",
@@ -67940,6 +68633,17 @@
       "first_seen": "2026-11-14T19:18:23Z"
     },
     {
+      "key": "vless:61a9702bf4f1759f51377f8d651fb18780fa3f6d651478e8319ad72371fa19e3",
+      "config": "vless://b81b4d1b-7f20-48f1-82dc-d24bef898cab@161.97.160.224:443?encryption=none&flow=xtls-rprx-vision&pbk=33zaT3jHXjtynSQ0Ucw9bK92-XH2zolJmuIeZ1XyZB0&security=reality&sid=e6&sni=passport.yandex.ru&type=tcp#🇫🇷",
+      "protocol": "vless",
+      "ip": "161.97.160.224",
+      "port": "443",
+      "country_code": "FR",
+      "flag": "🇫🇷",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
+    },
+    {
       "key": "vless:61d8e10683660fa45be7e9d5a7f1f374e3cd6c6c9b68b315f54a4736cf508dbb",
       "config": "vless://1697852e-cd5c-472d-b377-0def0f301d98@88.151.197.87:2025?path=%2F&security=none&encryption=none&type=ws#@meliproxyy",
       "protocol": "vless",
@@ -69183,6 +69887,17 @@
       "first_seen": "2026-11-21T02:34:11Z"
     },
     {
+      "key": "vless:ad0e3d8475832df437da6b7b02a911c120fa6bdc83e7358d1dd05e159457bd2f",
+      "config": "vless://e106fb17-3748-4879-a7f2-e8326fcbd3a4@panel.jeprost.ir:443?security=reality&amp;encryption=none&amp;pbk=OxB8GilVtbKilKbaux4Ps04HYtRBHPUHHVaomrQjECg&amp;headerType=none&amp;fp=chrome&amp;spx=%2F&amp;type=tcp&amp;sni=www.cloudflare.com&amp;sid=ce6e9db8#Telegram%20%40mtmvpn%20",
+      "protocol": "vless",
+      "ip": "panel.jeprost.ir",
+      "port": "443",
+      "country_code": "FR",
+      "flag": "🇫🇷",
+      "source": "@proxy_mtm",
+      "first_seen": "2026-11-27T12:49:08Z"
+    },
+    {
       "key": "vless:ad73a8f8b3dc9e7e41ab10e32b91021839c8a024890f7ace54928d4b15be5451",
       "config": "vless://48ff2b70-e180-582f-8866-d9a2edeed5f5@62.210.91.2:23576?security=reality&amp;encryption=none&amp;pbk=1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s&amp;headerType=none&amp;type=tcp&amp;flow=xtls-rprx-vision&amp;sni=fuck.rkn&amp;sid=01&amp;host=/%3FTelegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET#Telegram%20%F0%9F%91%89%F0%9F%8F%BC%20%40planB_net%20%20%E2%80%A2%2003",
       "protocol": "vless",
@@ -69412,6 +70127,17 @@
       "flag": "🇫🇷",
       "source": "@meliproxyy",
       "first_seen": "2026-11-08T10:36:21Z"
+    },
+    {
+      "key": "vless:b8c77def1d3a868f06e9caa846fa102c33c731680945e1d58416527b8b45ccfc",
+      "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@13.37.166.253:22222?encryption=none&amp;security=none&amp;type=tcp#(S103",
+      "protocol": "vless",
+      "ip": "13.37.166.253",
+      "port": "22222",
+      "country_code": "FR",
+      "flag": "🇫🇷",
+      "source": "@persianvpnhub",
+      "first_seen": "2026-11-27T12:49:04Z"
     },
     {
       "key": "vless:b93b83fe3a71eb97fd0784178a0367944385d20d545b8c5d8e408132ec6fc3a0",
@@ -70327,6 +71053,17 @@
       "first_seen": "2026-11-02T07:49:20Z"
     },
     {
+      "key": "vless:e53a03bdd1f81be388ae339792a5b2527f2d1cd4ced6f876fe61f871bb64d52b",
+      "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@13.37.166.253:22222?encryption=none&security=none&type=tcp#(S103",
+      "protocol": "vless",
+      "ip": "13.37.166.253",
+      "port": "22222",
+      "country_code": "FR",
+      "flag": "🇫🇷",
+      "source": "@persianvpnhub",
+      "first_seen": "2026-11-27T12:49:04Z"
+    },
+    {
       "key": "vless:e5687051b2e27ce1eac61582ef19f3e2afb4c364c77b8ca07b6e84dcea82aab3",
       "config": "vless://fbda2834-b1e7-4148-afb9-deda31036a30@w.geogame.ir:2053?security=tls&type=tcp&packetEncoding=none&alpn=h2%2Chttp%2F1.1&sni=w.geogame.ir&fp=chrome#🇫🇷[openproxylist.com]",
       "protocol": "vless",
@@ -71183,6 +71920,17 @@
       "flag": "🇬🇧",
       "source": "SUB#3",
       "first_seen": "2026-11-02T07:49:23Z"
+    },
+    {
+      "key": "vless:134aded3d5650c3b3545fc7c8edf6d429c8a5e2c9492c9b77d51882826bd0c93",
+      "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@18.133.68.115:22222?encryption=none&amp;security=none&amp;type=tcp#(S101",
+      "protocol": "vless",
+      "ip": "18.133.68.115",
+      "port": "22222",
+      "country_code": "GB",
+      "flag": "🇬🇧",
+      "source": "@persianvpnhub",
+      "first_seen": "2026-11-27T12:49:04Z"
     },
     {
       "key": "vless:1418d5afc205e0789887c694ebcd881cd7acfbed8f7263a87995655b55f45dc0",
@@ -72252,6 +73000,17 @@
       "first_seen": "2026-11-21T19:31:47Z"
     },
     {
+      "key": "vless:772f6f1a3db0066ab114a7f2fc5c206e7e5e730ad47f1ab419d1003cf06e7831",
+      "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@13.135.190.196:22222?encryption=none&amp;security=none&amp;type=tcp#(S102",
+      "protocol": "vless",
+      "ip": "13.135.190.196",
+      "port": "22222",
+      "country_code": "GB",
+      "flag": "🇬🇧",
+      "source": "@persianvpnhub",
+      "first_seen": "2026-11-27T12:49:04Z"
+    },
+    {
       "key": "vless:7852278efa36c901638181490a87c91abf0d1f5f29fb3ed0661881aaa0d8c045",
       "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@13.43.176.3:22222?encryption=none&amp;security=none&amp;type=tcp#(S101",
       "protocol": "vless",
@@ -72569,6 +73328,17 @@
       "flag": "🇬🇧",
       "source": "SUB#4",
       "first_seen": "2026-11-11T15:28:48Z"
+    },
+    {
+      "key": "vless:8dd6baf63641eab64bac650429076cab19eb58863203e5846e73c868fd8bd53f",
+      "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@13.135.190.196:22222?encryption=none&security=none&type=tcp#(S102",
+      "protocol": "vless",
+      "ip": "13.135.190.196",
+      "port": "22222",
+      "country_code": "GB",
+      "flag": "🇬🇧",
+      "source": "@persianvpnhub",
+      "first_seen": "2026-11-27T12:49:04Z"
     },
     {
       "key": "vless:8ee307f88e262920fc92cc6370433d3608ca44f759bd18c970db2ab351e2037a",
@@ -73196,6 +73966,17 @@
       "flag": "🇬🇧",
       "source": "@persianvpnhub",
       "first_seen": "2026-11-14T23:08:36Z"
+    },
+    {
+      "key": "vless:ccd7d97843b8dfca0c195d1b7cf362b582b2707d8bad6f23cbd68ed2f0d5494b",
+      "config": "vless://e4514801-0d5a-42ba-869f-39bd605aef9e@18.133.68.115:22222?encryption=none&security=none&type=tcp#(S101",
+      "protocol": "vless",
+      "ip": "18.133.68.115",
+      "port": "22222",
+      "country_code": "GB",
+      "flag": "🇬🇧",
+      "source": "@persianvpnhub",
+      "first_seen": "2026-11-27T12:49:04Z"
     },
     {
       "key": "vless:cd4b347d5c6105620b5a0c5bac6ec3ae949f2c506e2da489437220898a530952",
@@ -75387,6 +76168,17 @@
       "first_seen": "2026-11-12T20:58:40Z"
     },
     {
+      "key": "vless:71e47cbc74c7187c48411efa87e7c9bda9f6587a2bf1807b028868fe325719d1",
+      "config": "vless://6bdc8320-7eae-46fc-be08-f5f54e65dfc8@in.smrtai.top:443?type=tcp&encryption=none&sni=www.cloudflare.com&fp=chrome&security=reality&pbk=3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q&sid=6bdc8320#🇮🇳",
+      "protocol": "vless",
+      "ip": "in.smrtai.top",
+      "port": "443",
+      "country_code": "IN",
+      "flag": "🇮🇳",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
+    },
+    {
       "key": "vless:8048b256941d5dfd1bbb3be0b22bc4bff62db4fd587130a7f865722069463c5c",
       "config": "vless://06a5afa1-2bbc-a5d1-1770-becd1089c636@xray-dmr3b3hy-calm-maple-7.cloady.io:443?path=%2F0175469f14317d82&security=tls&encryption=none&insecure=0&host=xray-dmr3b3hy-calm-maple-7.cloady.io&fp=chrome&type=ws&allowInsecure=0&sni=xray-dmr3b3hy-calm-maple-7.cloady.io#@meliproxyy",
       "protocol": "vless",
@@ -75607,6 +76399,17 @@
       "first_seen": "2026-11-23T03:49:52Z"
     },
     {
+      "key": "vless:0533d78c56ae6aa9db636bc49ec9d7c9bcb9d0049e02568624182f235ae1cb1b",
+      "config": "vless://b856294d-5767-4878-8cf5-c1d5ffbfb284@dl1.mbndadwsdf132131.torkey.ir:443?encryption=none&amp;security=reality&amp;type=tcp&amp;headerType=none&amp;flow=xtls-rprx-vision&amp;sni=www.samsung.com&amp;fp=chrome&amp;pbk=MnhL-gBMmVwS3TDfl6rMbGmMhfpFCQQ1QCuefgztY2U&amp;sid=7670b1aff090e4f0#[",
+      "protocol": "vless",
+      "ip": "dl1.mbndadwsdf132131.torkey.ir",
+      "port": "443",
+      "country_code": "IR",
+      "flag": "🇮🇷",
+      "source": "@ConfigsHUB",
+      "first_seen": "2026-11-27T12:49:06Z"
+    },
+    {
       "key": "vless:053caa7b1fe426bfaded9010d087701b0dbd0bcfc563cead7c5c0b600d4a921f",
       "config": "vless://eb6ba095-8184-4a85-992f-7a42049124cc@dash.zeneco.ir:2052?encryption=none&security=tls&type=ws&headerType=none&host=dash.zeneco.ir&sni=dash.zeneco.ir&fp=chrome&alpn=h3%2Ch2%2Chttp%2F1.1#asampingbot",
       "protocol": "vless",
@@ -75748,6 +76551,17 @@
       "flag": "🇮🇷",
       "source": "@proxy_kafee",
       "first_seen": "2026-11-02T07:49:16Z"
+    },
+    {
+      "key": "vless:13ba73e5c06c6aa08eff03b36877dd8c9995e3fe7ae9939e9456e7676a2ed069",
+      "config": "vless://ff1906a5-a446-44e4-8e72-4e2d61775fa0@ns2.irts.lol:443?security=tls&amp;encryption=none&amp;insecure=0&amp;headerType=none&amp;fp=chrome&amp;type=tcp&amp;allowInsecure=0&amp;sni=ns2.irts.lol#[",
+      "protocol": "vless",
+      "ip": "ns2.irts.lol",
+      "port": "443",
+      "country_code": "IR",
+      "flag": "🇮🇷",
+      "source": "@ConfigsHUB",
+      "first_seen": "2026-11-27T12:49:06Z"
     },
     {
       "key": "vless:144ecd6d84b158373784972e948fd5ad30c37b9e51ad83be3ce0f2e519a69c19",
@@ -76685,6 +77499,17 @@
       "first_seen": "2026-11-19T22:19:46Z"
     },
     {
+      "key": "vless:5f8e10ccaf2c550e51b8310517206e4abb3db446c41f16df1ebdfb3458ed1bb4",
+      "config": "vless://ff1906a5-a446-44e4-8e72-4e2d61775fa0@ns2.irts.lol:443?security=tls&encryption=none&insecure=0&headerType=none&fp=chrome&type=tcp&allowInsecure=0&sni=ns2.irts.lol#[",
+      "protocol": "vless",
+      "ip": "ns2.irts.lol",
+      "port": "443",
+      "country_code": "IR",
+      "flag": "🇮🇷",
+      "source": "@ConfigsHUB",
+      "first_seen": "2026-11-27T12:49:06Z"
+    },
+    {
       "key": "vless:605024ab36e2ef159cba61858be4b732b6b6ed8eefecde42c2e244cad1830090",
       "config": "vless://d131b694-e9ce-4de5-b4eb-ecd24d5eac54@irann.qarlumo.ir:7555?encryption=mlkem768x25519plus.native.0rtt.F89o37wmkxmwORAe5QXEqdjX7DO7wnXnBRsmnwkFuS0&security=tls&type=ws&headerType=none&path=%2Fhost&host=tur.qarlumo.ir&sni=tur.qarlumo.ir#[",
       "protocol": "vless",
@@ -77552,6 +78377,17 @@
       "flag": "🇮🇷",
       "source": "@proxy_mtm",
       "first_seen": "2026-11-02T15:24:00Z"
+    },
+    {
+      "key": "vless:a992414ef36019222d78dabf327d30d09a6621b28974b47096091586cd59c3d5",
+      "config": "vless://b856294d-5767-4878-8cf5-c1d5ffbfb284@dl1.mbndadwsdf132131.torkey.ir:443?encryption=none&security=reality&type=tcp&headerType=none&flow=xtls-rprx-vision&sni=www.samsung.com&fp=chrome&pbk=MnhL-gBMmVwS3TDfl6rMbGmMhfpFCQQ1QCuefgztY2U&sid=7670b1aff090e4f0#[",
+      "protocol": "vless",
+      "ip": "dl1.mbndadwsdf132131.torkey.ir",
+      "port": "443",
+      "country_code": "IR",
+      "flag": "🇮🇷",
+      "source": "@ConfigsHUB",
+      "first_seen": "2026-11-27T12:49:06Z"
     },
     {
       "key": "vless:abb90726355ae83481aea6916d83ce40bd69a85ca6d24a2ba3c5c16281fa9bf8",
@@ -79402,6 +80238,17 @@
       "first_seen": "2026-11-18T14:19:22Z"
     },
     {
+      "key": "vless:5e20d391c1bde1969883b236c621a4283f8fe0759c8a5cee3157f333f8b4d673",
+      "config": "vless://8840fac2-5361-4cb6-b887-cd1b95092394@50.7.159.242:443?&security=tls&fp=firefox&sni=jp.reddotcorp.org&type=tcp&headerType=none&path=%2F#🇯🇵[openproxylist.com]",
+      "protocol": "vless",
+      "ip": "50.7.159.242",
+      "port": "443",
+      "country_code": "JP",
+      "flag": "🇯🇵",
+      "source": "SUB#4",
+      "first_seen": "2026-11-27T12:49:09Z"
+    },
+    {
       "key": "vless:62ae82bba1279e2c7ab3004177026bc878894de5e9dcd4402a22cbf9105ed906",
       "config": "vless://57beeeb0-03fc-4fc9-94da-7604488a7134@zfapi.zalolink.com:43149?security=reality&encryption=none&pbk=cvong7paE8XIzzbKWgV5iUruP1pBqI2IhMuBHc8c0UE&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=psstatic.cdn.bcebos.com&sid=15aa0ad4#🇯🇵",
       "protocol": "vless",
@@ -79521,6 +80368,17 @@
       "flag": "🇯🇵",
       "source": "SUB#4",
       "first_seen": "2026-11-16T11:47:28Z"
+    },
+    {
+      "key": "vless:85fafa1407b0d19b0868d701b4d212b73ba5821b6a9255218df1a7f3b5145180",
+      "config": "vless://8840fac2-5361-4cb6-b887-cd1b95092394@50.7.159.242:443?sni=jp.reddotcorp.org&fp=firefox&security=tls#🇯🇵",
+      "protocol": "vless",
+      "ip": "50.7.159.242",
+      "port": "443",
+      "country_code": "JP",
+      "flag": "🇯🇵",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
     },
     {
       "key": "vless:8e1db1ae8c667401d70ef5d05dfb9702a08b48cb5c2f2de1936d16ddcb716d69",
@@ -80073,6 +80931,17 @@
       "first_seen": "2026-11-01T07:46:36Z"
     },
     {
+      "key": "vless:368fd81af3f655aefdbe3acda432403d5e64092254a5f109eec8fa0558432618",
+      "config": "vless://0173d52e-8e1b-4681-831e-11529677b72f@196.198.111.130:443?mode=auto&security=tls&encryption=none&extra=%7B%22xmux%22%3A%7B%22maxConnections%22%3A1%2C%22maxReuseTimes%22%3A0%7D%7D&insecure=0&fp=firefox&type=xhttp&allowInsecure=0&sni=cab-6b07048f.ferrin.uk#Channel%20%3A%20%40proxy_kafee%20",
+      "protocol": "vless",
+      "ip": "196.198.111.130",
+      "port": "443",
+      "country_code": "KZ",
+      "flag": "🇰🇿",
+      "source": "@proxy_kafee",
+      "first_seen": "2026-11-27T12:49:04Z"
+    },
+    {
       "key": "vless:3833da6ab915b369b9697896f30b93c1b6cace3438bdc7407d8eb3cffdd84cc2",
       "config": "vless://1fe01c8a-ab37-4e95-bbfc-95d4a608931e@95.56.251.12:47443?type=tcp&security=reality&flow=xtls-rprx-vision&fp=firefox&pbk=z1GSwCEACvO9RLcMVpcURiT8er4oeIdeSJhraw_0cGU&sid=ae97223a8f799877&sni=kz1.waspnest.space#%F0%9F%87%B0%F0%9F%87%BF%20%40goololgoo%20%F0%9F%94%90%20%D9%88%DB%8C%E2%80%8C%D9%BE%DB%8C%E2%80%8C%D8%A7%D9%86%20%D8%B1%D8%A7%DB%8C%DA%AF%D8%A7%D9%86%20%7C%20Free%20Proxy%F0%9F%92%A5",
       "protocol": "vless",
@@ -80104,6 +80973,17 @@
       "flag": "🇰🇿",
       "source": "@proxy_mtm",
       "first_seen": "2026-11-02T07:49:22Z"
+    },
+    {
+      "key": "vless:4d1eaa182a80ecb1307e9b21b8f4413ee1a6c407c843eaf15c574e131d6cbe91",
+      "config": "vless://0173d52e-8e1b-4681-831e-11529677b72f@one.alpheratzz.org:8443?sni=api-6b04608f.adhil.uk&alpn=h2&flow=xtls-rprx-vision&fp=safari&security=tls#🇪🇪[openproxylist.com]",
+      "protocol": "vless",
+      "ip": "one.alpheratzz.org",
+      "port": "8443",
+      "country_code": "KZ",
+      "flag": "🇰🇿",
+      "source": "SUB#4",
+      "first_seen": "2026-11-27T12:49:09Z"
     },
     {
       "key": "vless:56f6696dd5ca6c6a4209b5d008ebb54d926807e3e0b88cca124895e54e8c82ca",
@@ -80161,6 +81041,17 @@
       "first_seen": "2026-11-01T07:46:37Z"
     },
     {
+      "key": "vless:82d80dd1cc7451e7923088916dee0f1ff3687856fef239bc21ff7f122dc8d734",
+      "config": "vless://0173d52e-8e1b-4681-831e-11529677b72f@196.198.111.130:443?mode=auto&amp;security=tls&amp;encryption=none&amp;extra=%7B%22xmux%22%3A%7B%22maxConnections%22%3A1%2C%22maxReuseTimes%22%3A0%7D%7D&amp;insecure=0&amp;fp=firefox&amp;type=xhttp&amp;allowInsecure=0&amp;sni=cab-6b07048f.ferrin.uk#Channel%20%3A%20%40proxy_kafee%20",
+      "protocol": "vless",
+      "ip": "196.198.111.130",
+      "port": "443",
+      "country_code": "KZ",
+      "flag": "🇰🇿",
+      "source": "@proxy_kafee",
+      "first_seen": "2026-11-27T12:49:04Z"
+    },
+    {
       "key": "vless:844e87537ce005401492e7a83dffff17440f9659c17480c68dbde40cbfff5125",
       "config": "vless://359b9ad3-0009-4655-8872-d0ab566751d3@31.43.179.111:2096?path=%2Fws%3Fed%3D2560&security=tls&encryption=none&insecure=0&host=newgen14.hozheen.ir&fp=chrome&type=ws&allowInsecure=0&sni=d03298146e8e2fe6.hozheen.ir#[",
       "protocol": "vless",
@@ -80214,6 +81105,17 @@
       "flag": "🇰🇿",
       "source": "@ConfigsHUB",
       "first_seen": "2026-11-07T18:54:36Z"
+    },
+    {
+      "key": "vless:90376e68d285108616ccdce77fca0714cdee45bb186971217910ab1a5025cd7c",
+      "config": "vless://0173d52e-8e1b-4681-831e-11529677b72f@196.198.111.146:443?mode=auto&amp;security=tls&amp;encryption=none&amp;insecure=0&amp;fp=firefox&amp;type=xhttp&amp;allowInsecure=0&amp;sni=cab-6b07048f.ferrin.uk#Channel%20%3A%20%40proxy_kafee%20",
+      "protocol": "vless",
+      "ip": "196.198.111.146",
+      "port": "443",
+      "country_code": "KZ",
+      "flag": "🇰🇿",
+      "source": "@proxy_kafee",
+      "first_seen": "2026-11-27T12:49:04Z"
     },
     {
       "key": "vless:93665e54aa9f8974e7774ddb18454463c122b1b79727278c2393541bf44172a7",
@@ -80335,6 +81237,17 @@
       "flag": "🇰🇿",
       "source": "@persianvpnhub",
       "first_seen": "2026-11-20T21:21:02Z"
+    },
+    {
+      "key": "vless:f988dc1c137aef4e494cb9871db13a1fb817a07f40d5805ca0663f3fdec42e9f",
+      "config": "vless://0173d52e-8e1b-4681-831e-11529677b72f@196.198.111.146:443?mode=auto&security=tls&encryption=none&insecure=0&fp=firefox&type=xhttp&allowInsecure=0&sni=cab-6b07048f.ferrin.uk#Channel%20%3A%20%40proxy_kafee%20",
+      "protocol": "vless",
+      "ip": "196.198.111.146",
+      "port": "443",
+      "country_code": "KZ",
+      "flag": "🇰🇿",
+      "source": "@proxy_kafee",
+      "first_seen": "2026-11-27T12:49:04Z"
     },
     {
       "key": "vless:fb49222a41b423642d0a33911b847877ba97888b186de721c3c30693726cb809",
@@ -83175,6 +84088,17 @@
       "first_seen": "2026-11-18T14:19:22Z"
     },
     {
+      "key": "vless:1e1b965e0c81c225e3024186042f27690c1a5a1234a033c5d2b04dcd036f0040",
+      "config": "vless://7ff1e7e1-2b5a-4e53-ae77-1516f9eb7754@51.194.118.38:443?security=tls&amp;encryption=none&amp;insecure=0&amp;fp=chrome&amp;type=grpc&amp;serviceName=50a5f706c8ea4433838a207d435fbf031b008a9a&amp;allowInsecure=0&amp;sni=a1259.ve8nzuk.com#Channel%20%3A%20%40proxy_kafee%20",
+      "protocol": "vless",
+      "ip": "51.194.118.38",
+      "port": "443",
+      "country_code": "NL",
+      "flag": "🇳🇱",
+      "source": "@proxy_kafee",
+      "first_seen": "2026-11-27T12:49:04Z"
+    },
+    {
       "key": "vless:1e310661dbb67793a92f9c0879b1673c3528ea9451dec2098d9c08b560df4258",
       "config": "vless://920b3cd9-4f82-4669-bbd2-d4a28b9052c6@212.192.3.63:9543?security=reality&amp;encryption=none&amp;pbk=M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc&amp;headerType=none&amp;fp=firefox&amp;type=tcp&amp;flow=xtls-rprx-vision&amp;sni=storage.yandexcloud.net&amp;sid=123abcdf#%F0%9F%8F%B4%E2%80%8D%E2%98%A0%EF%B8%8F%40FreakConfig",
       "protocol": "vless",
@@ -84031,6 +84955,17 @@
       "flag": "🇳🇱",
       "source": "@Capoit",
       "first_seen": "2026-11-02T18:34:35Z"
+    },
+    {
+      "key": "vless:2ed5dee6a0b273739cbe338c90722598d496d812cb546738be49478edd11798e",
+      "config": "vless://8fe5187b-f767-47ea-889e-946268b993f1@ne2.zovpn.pro:443?mode=auto&path=%2Fgermany-xhttp&security=reality&encryption=none&extra=%7B%22xmux%22%3A%7B%22cMaxReuseTimes%22%3A0%2C%22maxConcurrency%22%3A%2216-32%22%2C%22maxConnections%22%3A0%2C%22hKeepAlivePeriod%22%3A0%2C%22hMaxRequestTimes%22%3A%22600-900%22%2C%22hMaxReusableSecs%22%3A%221800-3000%22%7D%2C%22headers%22%3A%7B%7D%2C%22noGRPCHeader%22%3Afalse%2C%22xPaddingBytes%22%3A%22100-1000%22%2C%22scMaxEachPostBytes%22%3A1000000%2C%22scMinPostsIntervalMs%22%3A30%2C%22scStreamUpServerSecs%22%3A%2220-80%22%7D&pbk=ucleuGPWvBGG_8cIjDdymbz6IBpFb052qfITM9EXA3k&fp=chrome&type=xhttp&sni=ne2.zovpn.pro&sid=4be3b5e3#@proxy_kafee",
+      "protocol": "vless",
+      "ip": "ne2.zovpn.pro",
+      "port": "443",
+      "country_code": "NL",
+      "flag": "🇳🇱",
+      "source": "@proxy_kafee",
+      "first_seen": "2026-11-27T12:49:04Z"
     },
     {
       "key": "vless:2f28ae5457791fad0f7bd6377732ff6c202d501cb1485e2f963fb769e880d456",
@@ -84946,6 +85881,17 @@
       "first_seen": "2026-11-16T22:21:27Z"
     },
     {
+      "key": "vless:3d23a11023e4bcc813f9a17a07827ca568df537552a69254a7e7f2a8459f3109",
+      "config": "vless://48818046-00b5-4576-bbe8-d2971fe0f844@217.19.123.45:443?security=reality&amp;encryption=none&amp;pbk=KEZ93Y9VgoirI18wIpcfS3z8I9GiaiFe-GKqGdEPMmg&amp;headerType=none&amp;fp=firefox&amp;type=tcp&amp;flow=xtls-rprx-vision&amp;sni=river-3-369.rtbcdn.ru&amp;sid=4b227777d4dd#Telegram%20%40Proxy_mtm%20",
+      "protocol": "vless",
+      "ip": "217.19.123.45",
+      "port": "443",
+      "country_code": "NL",
+      "flag": "🇳🇱",
+      "source": "@proxy_mtm",
+      "first_seen": "2026-11-27T12:49:08Z"
+    },
+    {
       "key": "vless:3d34c61230659bff054c315aaa8d10b7cdabc6bbe4bd019f3d42dfac56ab4f1d",
       "config": "vless://2232d904-8e6a-4202-8240-6efd8aec02e9@app.betust.net:443?security=reality&encryption=none&pbk=xNzdfy4hPv-IgM_MSn64FNQdb-UPu78pmM-GBE1HhSo&headerType=none&fp=chrome&spx=%2F&type=tcp&flow=xtls-rprx-vision&sni=app.betust.net&sid=ef5d4ad5#@meliproxyy",
       "protocol": "vless",
@@ -84988,6 +85934,17 @@
       "flag": "🇳🇱",
       "source": "@daily_configs",
       "first_seen": "2026-11-01T07:46:31Z"
+    },
+    {
+      "key": "vless:3df1aa0987359c12f42cd56135bec1e03ae1e2d8c5edab82d168db1f49d28a42",
+      "config": "vless://727a9178-d7f0-4142-8205-b0d19959ded0@138.124.245.102:443?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=bol.com&fp=edge&security=reality&pbk=yyXZsa238GRW90w5DweXAdRTtVSuK9oZF_dihKQ41So&sid=9e5a335de26d1f5a#🇦🇲",
+      "protocol": "vless",
+      "ip": "138.124.245.102",
+      "port": "443",
+      "country_code": "NL",
+      "flag": "🇳🇱",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
     },
     {
       "key": "vless:3e080d5e3c5027111a45047812790d572fd6b0214b15de8eb89aeec81326b381",
@@ -85439,6 +86396,17 @@
       "flag": "🇳🇱",
       "source": "@meliproxyy",
       "first_seen": "2026-11-07T14:12:01Z"
+    },
+    {
+      "key": "vless:45be56bf2bf4bdeea0c626e49cc52ecdfb92f1e686e6a3e8b213b610621dba8c",
+      "config": "vless://48ff2b70-e180-582f-8866-d9a2edeed5f5@51.158.206.25:23576?security=reality&encryption=none&pbk=1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s&host=/&headerType=none&type=tcp&flow=xtls-rprx-vision&sni=fuck.rkn&sid=01#🇳🇱",
+      "protocol": "vless",
+      "ip": "51.158.206.25",
+      "port": "23576",
+      "country_code": "NL",
+      "flag": "🇳🇱",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
     },
     {
       "key": "vless:45f6dc2a2ee261c7bc386cf0a908d2be011bcfafc926ffc7964525bb92a0d006",
@@ -88642,6 +89610,17 @@
       "first_seen": "2026-11-10T23:35:01Z"
     },
     {
+      "key": "vless:86ba115c3f26ae0614e53d4e027504b541298cc9a04b98b71a849a3d3b98b46a",
+      "config": "vless://f4b08bf1-d9bd-4755-aa88-ba922282c608@81.94.148.30:443?security=reality&encryption=none&pbk=7Vxh4zGjWhTahJSLBItfK8ywBHKI_R1MULmNV7vn3DA&headerType=none&fp=firefox&type=tcp&flow=xtls-rprx-vision&sni=m6.richhoodfoc.com&sid=21c48be99d7e13c8#Telegram%20%40Proxy_mtm%20",
+      "protocol": "vless",
+      "ip": "81.94.148.30",
+      "port": "443",
+      "country_code": "NL",
+      "flag": "🇳🇱",
+      "source": "@proxy_mtm",
+      "first_seen": "2026-11-27T12:49:08Z"
+    },
+    {
       "key": "vless:86c3967f9c9f9573f5a2873604900fbc07fc619dd8e5beca880f588e3aab1798",
       "config": "vless://48ff2b70-e180-582f-8866-d9a2edeed5f5@51.158.206.8:23576?security=reality&amp;encryption=none&amp;pbk=1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s&amp;headerType=none&amp;fp=chrome&amp;type=tcp&amp;flow=xtls-rprx-vision&amp;sni=fuck.rkn&amp;sid=01#%F0%9F%87%B3%F0%9F%87%B1%40FreakConfig",
       "protocol": "vless",
@@ -89786,6 +90765,17 @@
       "first_seen": "2026-11-27T03:00:15Z"
     },
     {
+      "key": "vless:9af14b08d9a341b18ea90b94c0d71180f1d841b301238764e13eab777d2f1d6e",
+      "config": "vless://7ff1e7e1-2b5a-4e53-ae77-1516f9eb7754@51.194.118.38:443?security=tls&encryption=none&insecure=0&fp=chrome&type=grpc&serviceName=50a5f706c8ea4433838a207d435fbf031b008a9a&allowInsecure=0&sni=a1259.ve8nzuk.com#Channel%20%3A%20%40proxy_kafee%20",
+      "protocol": "vless",
+      "ip": "51.194.118.38",
+      "port": "443",
+      "country_code": "NL",
+      "flag": "🇳🇱",
+      "source": "@proxy_kafee",
+      "first_seen": "2026-11-27T12:49:04Z"
+    },
+    {
       "key": "vless:9b4b4d882ba48e97cd496e03ec1ff99db9f0de403c9af0a6ac9f75466163eff2",
       "config": "vless://48ff2b70-e180-582f-8866-d9a2edeed5f5@51.158.206.12:23576?encryption=none&amp;flow=xtls-rprx-vision&amp;security=reality&amp;sni=fuck.rkn&amp;fp=chrome&amp;pbk=1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s&amp;sid=01&amp;type=tcp&amp;headerType=none#[",
       "protocol": "vless",
@@ -90545,6 +91535,17 @@
       "first_seen": "2026-11-23T14:58:43Z"
     },
     {
+      "key": "vless:a6c0662e14fd26e2135e89df64904656ebd87015c1f3b9c21666f0fcf6146da4",
+      "config": "vless://8fe5187b-f767-47ea-889e-946268b993f1@ne2.zovpn.pro:443?mode=auto&amp;path=%2Fgermany-xhttp&amp;security=reality&amp;encryption=none&amp;extra=%7B%22xmux%22%3A%7B%22cMaxReuseTimes%22%3A0%2C%22maxConcurrency%22%3A%2216-32%22%2C%22maxConnections%22%3A0%2C%22hKeepAlivePeriod%22%3A0%2C%22hMaxRequestTimes%22%3A%22600-900%22%2C%22hMaxReusableSecs%22%3A%221800-3000%22%7D%2C%22headers%22%3A%7B%7D%2C%22noGRPCHeader%22%3Afalse%2C%22xPaddingBytes%22%3A%22100-1000%22%2C%22scMaxEachPostBytes%22%3A1000000%2C%22scMinPostsIntervalMs%22%3A30%2C%22scStreamUpServerSecs%22%3A%2220-80%22%7D&amp;pbk=ucleuGPWvBGG_8cIjDdymbz6IBpFb052qfITM9EXA3k&amp;fp=chrome&amp;type=xhttp&amp;sni=ne2.zovpn.pro&amp;sid=4be3b5e3#@proxy_kafee",
+      "protocol": "vless",
+      "ip": "ne2.zovpn.pro",
+      "port": "443",
+      "country_code": "NL",
+      "flag": "🇳🇱",
+      "source": "@proxy_kafee",
+      "first_seen": "2026-11-27T12:49:04Z"
+    },
+    {
       "key": "vless:a7167a0dfe90e42849b1c811350ff16192a4d0064241af0bc1a15ab4a939cc06",
       "config": "vless://0ed9418b-e687-4c2d-8869-7e368c44887e@nl41.homelab-cdn.cloud:8443?security=reality&amp;sni=nl41.homelab-cdn.cloud&amp;fp=firefox&amp;pbk=NW2c4t6gXODenb0_Mo5Qf-1nrJr5xFQm30zf-IVfHjY&amp;sid=08&amp;type=grpc&amp;serviceName=grpc&amp;mode=gun#%40NamiraConfigs",
       "protocol": "vless",
@@ -90897,6 +91898,17 @@
       "first_seen": "2026-11-10T17:59:17Z"
     },
     {
+      "key": "vless:ad936e97cc315e3d2df946ea09bd7c68c8f7337100bc393d321e555a7df6ed8d",
+      "config": "vless://48818046-00b5-4576-bbe8-d2971fe0f844@217.19.123.45:443?security=reality&encryption=none&pbk=KEZ93Y9VgoirI18wIpcfS3z8I9GiaiFe-GKqGdEPMmg&headerType=none&fp=firefox&type=tcp&flow=xtls-rprx-vision&sni=river-3-369.rtbcdn.ru&sid=4b227777d4dd#Telegram%20%40Proxy_mtm%20",
+      "protocol": "vless",
+      "ip": "217.19.123.45",
+      "port": "443",
+      "country_code": "NL",
+      "flag": "🇳🇱",
+      "source": "@proxy_mtm",
+      "first_seen": "2026-11-27T12:49:08Z"
+    },
+    {
       "key": "vless:ad9f483486002938c5272490b62e059dfd1723eb4ea14ae58057265047734374",
       "config": "vless://48ff2b70-e180-582f-8866-d9a2edeed5f5@51.158.206.12:23576?security=reality&amp;encryption=none&amp;pbk=1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s&amp;headerType=none&amp;fp=chrome&amp;type=tcp&amp;flow=xtls-rprx-vision&amp;sni=fuck.rkn&amp;sid=01#%F0%9F%87%B3%F0%9F%87%B1%40FreakConfig",
       "protocol": "vless",
@@ -90972,6 +91984,17 @@
       "flag": "🇳🇱",
       "source": "SUB#4",
       "first_seen": "2026-11-11T22:51:41Z"
+    },
+    {
+      "key": "vless:ae936c5162fa9a6ab5dbee3d122031687c4e9dd9c34d4eb5238bc53ff3cc5883",
+      "config": "vless://By-BlackRay-Channel@217.216.217.127:443?security=reality&amp;encryption=none&amp;pbk=DHhDwTmyUJETVMQUC3xCUK2yApgnRMsyOUK8oVUceRY&amp;headerType=none&amp;fp=chrome&amp;spx=%2FV921qzhUus0LBGK&amp;type=tcp&amp;sni=nl.wordpress.org&amp;sid=21439457#Channel%20%3A%20%40proxy_kafee%20",
+      "protocol": "vless",
+      "ip": "217.216.217.127",
+      "port": "443",
+      "country_code": "NL",
+      "flag": "🇳🇱",
+      "source": "@proxy_kafee",
+      "first_seen": "2026-11-27T12:49:04Z"
     },
     {
       "key": "vless:ae9e9e62217d463a3be0f603080eaafe75d2626ab212c5ba066c59578e388cde",
@@ -91357,6 +92380,17 @@
       "flag": "🇳🇱",
       "source": "@meliproxyy",
       "first_seen": "2026-11-04T22:00:40Z"
+    },
+    {
+      "key": "vless:b72907427fb41b02a00e4be5452641efa5fe4f75de6e5203bcb3146ef2bc5743",
+      "config": "vless://By-BlackRay-Channel@217.216.217.127:443?security=reality&encryption=none&pbk=DHhDwTmyUJETVMQUC3xCUK2yApgnRMsyOUK8oVUceRY&headerType=none&fp=chrome&spx=%2FV921qzhUus0LBGK&type=tcp&sni=nl.wordpress.org&sid=21439457#Channel%20%3A%20%40proxy_kafee%20",
+      "protocol": "vless",
+      "ip": "217.216.217.127",
+      "port": "443",
+      "country_code": "NL",
+      "flag": "🇳🇱",
+      "source": "@proxy_kafee",
+      "first_seen": "2026-11-27T12:49:04Z"
     },
     {
       "key": "vless:b72aa37e1d8a45f783d0106701b5b536ccc5e38c6d3cd67cb7a9f795bbcf5bd3",
@@ -92085,6 +93119,17 @@
       "first_seen": "2026-11-05T11:13:05Z"
     },
     {
+      "key": "vless:c90ba3e8beeaa007a86da1c96450d36633d98e5085d58f6e42cf133851f4696c",
+      "config": "vless://f4b08bf1-d9bd-4755-aa88-ba922282c608@81.94.148.30:443?security=reality&amp;encryption=none&amp;pbk=7Vxh4zGjWhTahJSLBItfK8ywBHKI_R1MULmNV7vn3DA&amp;headerType=none&amp;fp=firefox&amp;type=tcp&amp;flow=xtls-rprx-vision&amp;sni=m6.richhoodfoc.com&amp;sid=21c48be99d7e13c8#Telegram%20%40Proxy_mtm%20",
+      "protocol": "vless",
+      "ip": "81.94.148.30",
+      "port": "443",
+      "country_code": "NL",
+      "flag": "🇳🇱",
+      "source": "@proxy_mtm",
+      "first_seen": "2026-11-27T12:49:08Z"
+    },
+    {
       "key": "vless:c9a94a58db4dcaaa7d6e352663e83c830cf6338b46682a045433be16821ec72e",
       "config": "vless://1653818d-532e-46be-b825-384107fb7c3a@cdn.mediacorphub.org:443?sni=cdn.mediacorphub.org&type=grpc&serviceName=stats.v2.StreamService&fp=firefox&security=tls#🇳🇱[openproxylist.com]",
       "protocol": "vless",
@@ -92358,6 +93403,17 @@
       "flag": "🇳🇱",
       "source": "SUB#4",
       "first_seen": "2026-11-12T20:58:47Z"
+    },
+    {
+      "key": "vless:cfbce66c271b824b3375404c573499f59efa24652d6693c46c95253086277c93",
+      "config": "vless://e73df646-1f62-41bf-8c50-653497d603d0@163.172.213.174:80?type=ws&host=SC-TheNetherlands2.09vpn.com&path=/vless/#🇳🇱[openproxylist.com]",
+      "protocol": "vless",
+      "ip": "163.172.213.174",
+      "port": "80",
+      "country_code": "NL",
+      "flag": "🇳🇱",
+      "source": "SUB#4",
+      "first_seen": "2026-11-27T12:49:09Z"
     },
     {
       "key": "vless:cfec948e593f7271d55b560f89ef391dee7b122deb6176cde5527e6ac1e67d4a",
@@ -95396,6 +96452,17 @@
       "first_seen": "2026-11-06T07:09:38Z"
     },
     {
+      "key": "vless:2b1bbc22933cfbe85c3b15fb1517b5732a6206da6622f9917dcd4aedbd295bc5",
+      "config": "vless://80256d6f-7cd3-4a3a-8df6-2981e52551dc@amz.gsmfixs.com:16893?security=reality&encryption=none&pbk=dpmXAfLC6-Sf6cPjkQKGx_NliRQRFZ_oUiiPA5ALW0I&headerType=none&fp=chrome&spx=%2F&type=tcp&sni=play.google.com&sid=849711f2b99d1176#@meliproxyy",
+      "protocol": "vless",
+      "ip": "amz.gsmfixs.com",
+      "port": "16893",
+      "country_code": "PL",
+      "flag": "🇵🇱",
+      "source": "@meliproxyy",
+      "first_seen": "2026-11-27T12:49:07Z"
+    },
+    {
       "key": "vless:2c2734b7ac8146df8a149229f31420647c6d408a8805b78497707753aa71e6c1",
       "config": "vless://148917bd-0b37-42b8-98f4-aa94ca73e75a@45.142.212.191:443?security=reality&encryption=none&pbk=tp7awfnKLbhIDkdYlT7Avf-SfUwt7ncX5oyWS5wQmR0&headerType=none&type=tcp&flow=xtls-rprx-vision&sni=travel.yandex.ru&sid=24c4#@meliproxyy",
       "protocol": "vless",
@@ -97244,6 +98311,17 @@
       "first_seen": "2026-11-04T06:43:59Z"
     },
     {
+      "key": "vless:fcc9878d0dd285415d00d9f199d6b9ecc571509d2bfbff410aeb327f54670979",
+      "config": "vless://80256d6f-7cd3-4a3a-8df6-2981e52551dc@amz.gsmfixs.com:16893?security=reality&amp;encryption=none&amp;pbk=dpmXAfLC6-Sf6cPjkQKGx_NliRQRFZ_oUiiPA5ALW0I&amp;headerType=none&amp;fp=chrome&amp;spx=%2F&amp;type=tcp&amp;sni=play.google.com&amp;sid=849711f2b99d1176#@meliproxyy",
+      "protocol": "vless",
+      "ip": "amz.gsmfixs.com",
+      "port": "16893",
+      "country_code": "PL",
+      "flag": "🇵🇱",
+      "source": "@meliproxyy",
+      "first_seen": "2026-11-27T12:49:07Z"
+    },
+    {
       "key": "vless:fd00d86751a6096e406cb720a07aa85b8934b3ba466d303114200ffae6608fe7",
       "config": "vless://352a250d-080b-47b5-b7db-f9f8fa31c551@132.243.212.204:443?security=tls&encryption=none&insecure=0&headerType=none&fp=firefox&type=tcp&allowInsecure=0&flow=xtls-rprx-vision&sni=10w0wjw.virtual-network.lol#[",
       "protocol": "vless",
@@ -97398,6 +98476,28 @@
       "first_seen": "2026-11-09T18:56:49Z"
     },
     {
+      "key": "vless:352f29f5e16ce03e36f12eba2a74f75e85d92fd7b6e4a04b8c93d4d04903858b",
+      "config": "vless://89f361ea-a370-4cbe-b2b3-d3e9c0b7c4c1@193.168.140.228:443?mode=auto&amp;path=%2F&amp;security=reality&amp;encryption=none&amp;extra=%7B%22xPaddingBytes%22%3A%22100-1000%22%2C%22xmux%22%3A%7B%22cMaxReuseTimes%22%3A%2264-128%22%2C%22hKeepAlivePeriod%22%3A0%2C%22hMaxRequestTimes%22%3A%22800-1200%22%2C%22hMaxReusableSecs%22%3A%221800-3600%22%2C%22maxConcurrency%22%3A%2216-32%22%7D%7D&amp;pbk=UGeXXP0IS2_P7AWPDbbk_w7BzZLoPPrk3ha7OgI_0D4&amp;host=www.vodafone.ro&amp;fp=firefox&amp;type=xhttp&amp;sni=www.vodafone.ro#Telegram%20%40mtmvpn%20",
+      "protocol": "vless",
+      "ip": "193.168.140.228",
+      "port": "443",
+      "country_code": "RO",
+      "flag": "🇷🇴",
+      "source": "@proxy_mtm",
+      "first_seen": "2026-11-27T12:49:08Z"
+    },
+    {
+      "key": "vless:39e64071d6559117c5b036f60b100a6c678d97bfe376645fc64b5f9be0b4ece0",
+      "config": "vless://89f361ea-a370-4cbe-b2b3-d3e9c0b7c4c1@193.168.140.228:443?mode=auto&path=%2F&security=reality&encryption=none&extra=%7B%22xPaddingBytes%22%3A%22100-1000%22%2C%22xmux%22%3A%7B%22cMaxReuseTimes%22%3A%2264-128%22%2C%22hKeepAlivePeriod%22%3A0%2C%22hMaxRequestTimes%22%3A%22800-1200%22%2C%22hMaxReusableSecs%22%3A%221800-3600%22%2C%22maxConcurrency%22%3A%2216-32%22%7D%7D&pbk=UGeXXP0IS2_P7AWPDbbk_w7BzZLoPPrk3ha7OgI_0D4&host=www.vodafone.ro&fp=firefox&type=xhttp&sni=www.vodafone.ro#Telegram%20%40mtmvpn%20",
+      "protocol": "vless",
+      "ip": "193.168.140.228",
+      "port": "443",
+      "country_code": "RO",
+      "flag": "🇷🇴",
+      "source": "@proxy_mtm",
+      "first_seen": "2026-11-27T12:49:08Z"
+    },
+    {
       "key": "vless:4454e135595ee10cafcd89b344e77bc317b25c379138801a34340e8df6b73d83",
       "config": "vless://33972eb3-3f57-4558-80ff-b6926480ff69@88.80.135.65:4127?path=%2FTelegram%3D%40AmyraxVPN&security=&encryption=none&host=88.80.135.65&type=httpupgrade#@Capoit",
       "protocol": "vless",
@@ -97440,6 +98540,17 @@
       "flag": "🇷🇴",
       "source": "@Capoit",
       "first_seen": "2026-11-02T07:49:19Z"
+    },
+    {
+      "key": "vless:5dad7a8e3c4ca09a2a694d75a23d2448420ab97fb9cba5762c9bf8a9a37f818e",
+      "config": "vless://89f361ea-a370-4cbe-b2b3-d3e9c0b7c4c1@193.168.140.228:443?security=reality&sni=www.vodafone.ro&fp=firefox&pbk=UGeXXP0IS2_P7AWPDbbk_w7BzZLoPPrk3ha7OgI_0D4&type=xhttp&host=www.vodafone.ro&path=/&mode=auto&extra={\"xPaddingBytes\":\"100-1000\",\"xmux\":{\"cMaxReuseTimes\":\"64-128\",\"hKeepAlivePeriod\":0,\"hMaxRequestTimes\":\"800-1200\",\"hMaxReusableSecs\":\"1800-3600\",\"maxConcurrency\":\"16-32\"}}#🇷🇴 286 - RO - VLESS/XHTTP/REALITY/PBK/UTLS - 443",
+      "protocol": "vless",
+      "ip": "193.168.140.228",
+      "port": "443",
+      "country_code": "RO",
+      "flag": "🇷🇴",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
     },
     {
       "key": "vless:605345cabee4611afc1ff03a822be62a55e2cec846a679c6e14fb0b8a4f91fea",
@@ -97561,6 +98672,17 @@
       "flag": "🇷🇴",
       "source": "@persianvpnhub",
       "first_seen": "2026-11-23T03:49:52Z"
+    },
+    {
+      "key": "vless:a95720f98a1144dbfad37f7d75c7a084794d6dc9dfb1053944cdb1dd372c6137",
+      "config": "vless://89f361ea-a370-4cbe-b2b3-d3e9c0b7c4c1@193.168.140.228:443?security=reality&sni=www.vodafone.ro&fp=firefox&pbk=UGeXXP0IS2_P7AWPDbbk_w7BzZLoPPrk3ha7OgI_0D4&type=xhttp&host=www.vodafone.ro&path=/&mode=auto&extra={",
+      "protocol": "vless",
+      "ip": "193.168.140.228",
+      "port": "443",
+      "country_code": "RO",
+      "flag": "🇷🇴",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
     },
     {
       "key": "vless:adcdac46a1883b12353a7014e4f51cc6539d221d1787ed711f5115f742a6307c",
@@ -99147,6 +100269,17 @@
       "first_seen": "2026-11-11T06:47:40Z"
     },
     {
+      "key": "vless:1fe46a2aeb7eed883f0152bd9ea13513e2a6a15b1b7f3ca31dd9aaa55d540807",
+      "config": "vless://7aa77858-f235-0003-9434-7ab060848b17@92.63.189.39:8443?security=tls&encryption=none&insecure=0&headerType=none&type=tcp&allowInsecure=0&flow=xtls-rprx-vision&sni=avelon.onl#🇷🇺",
+      "protocol": "vless",
+      "ip": "92.63.189.39",
+      "port": "8443",
+      "country_code": "RU",
+      "flag": "🇷🇺",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
+    },
+    {
       "key": "vless:20b42af8f952779a8cabe05bec903389c27c3b3dac3b605e2291dbe9a0c52e0c",
       "config": "vless://8e370a16-7771-420f-bbc0-a53926322f91@94.139.245.200:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=chrome&sni=rbc.ru&pbk=7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg&sid=2715592069f36fe7#[",
       "protocol": "vless",
@@ -99937,6 +101070,17 @@
       "flag": "🇷🇺",
       "source": "SUB#2",
       "first_seen": "2026-11-06T07:09:38Z"
+    },
+    {
+      "key": "vless:38d2c9ead34a57818595304d109009b72f859c241eed50faaef589d5e33cb744",
+      "config": "vless://9a9f167d-b461-466f-be50-f0ffd598a6f8@de.ggssstreaming.ru:443?mode=auto&amp;path=%2Fee445bf63ce1%2F9a8d6ac6&amp;security=reality&amp;encryption=none&amp;pbk=n5lmV54wCCknNYie638Ug2NDO-WCqtqVo3Yb7IJ_YkI&amp;host=de.ggssstreaming.ru&amp;fp=firefox&amp;type=xhttp&amp;sni=de.ggssstreaming.ru&amp;sid=f49f0d53a52920da#Telegram%20%40Proxy_mtm%20",
+      "protocol": "vless",
+      "ip": "de.ggssstreaming.ru",
+      "port": "443",
+      "country_code": "RU",
+      "flag": "🇷🇺",
+      "source": "@proxy_mtm",
+      "first_seen": "2026-11-27T12:49:08Z"
     },
     {
       "key": "vless:38dc9d44ac9cbdeb53c20e482566b7d6240369ee301b386ea6da16c492f93294",
@@ -101037,6 +102181,17 @@
       "flag": "🇷🇺",
       "source": "@meliproxyy",
       "first_seen": "2026-11-08T21:16:37Z"
+    },
+    {
+      "key": "vless:5e2f474ddbc86a9ff75017b008881ada6e23cae7e90e27010854c6523e4f67b8",
+      "config": "vless://b432a23a-acff-425c-bf69-70480cd6ed09@188.225.33.67:443?alpn=http/1.1&encryption=none&fp=chrome&host=devcdn.icu&path=/edge/chunk/b2265efffa29/&security=tls&sni=devcdn.icu&type=ws#🇷🇺",
+      "protocol": "vless",
+      "ip": "188.225.33.67",
+      "port": "443",
+      "country_code": "RU",
+      "flag": "🇷🇺",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
     },
     {
       "key": "vless:5eb8c02f2614738e212fb9ea072b88fb4002376d5cf4a237b519c8b14e9da94a",
@@ -102304,6 +103459,17 @@
       "first_seen": "2026-11-02T07:49:17Z"
     },
     {
+      "key": "vless:89377e800a7ca6993fa50348f984e3cb2e6f041f906910fa7f94bc657a38abb7",
+      "config": "vless://9a9f167d-b461-466f-be50-f0ffd598a6f8@136.234.179.213:443?mode=auto&amp;path=%2Fee445bf63ce1%2F9a8d6ac6&amp;security=reality&amp;encryption=none&amp;pbk=n5lmV54wCCknNYie638Ug2NDO-WCqtqVo3Yb7IJ_YkI&amp;host=de.ggssstreaming.ru&amp;fp=firefox&amp;type=xhttp&amp;sni=de.ggssstreaming.ru&amp;sid=f49f0d53a52920da#Telegram%20%40Proxy_mtm%20",
+      "protocol": "vless",
+      "ip": "136.234.179.213",
+      "port": "443",
+      "country_code": "RU",
+      "flag": "🇷🇺",
+      "source": "@proxy_mtm",
+      "first_seen": "2026-11-27T12:49:08Z"
+    },
+    {
       "key": "vless:8a7d7662b4cff56cb07f75c6019459369da094dcfb3ecc45f1aaeec7ea36af29",
       "config": "vless://5f1c2e83-d4aa-4f10-81e9-e0ccc018974c@188.225.83.133:443?encryption=none&fp=firefox&mode=gun&pbk=JqmkP6Fys7jN2Fu1iDJuWKVNPhlgHfy_pj1DHFVKVhw&security=reality&sid=a1b2c3d4e5f6a7b8&sni=xnodtwx.artemida.live&type=grpc#🇷🇺",
       "protocol": "vless",
@@ -102656,6 +103822,17 @@
       "first_seen": "2026-11-06T07:09:38Z"
     },
     {
+      "key": "vless:968f02495e1b280a600ce33a49c3510920acbab740a26ddb2f68fc9f0f13383c",
+      "config": "vless://0173d52e-8e1b-4681-831e-11529677b72f@165.231.157.126:8443?security=tls&encryption=none&insecure=0&host=%2F%3FTelegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET&headerType=none&fp=chrome&type=tcp&allowInsecure=0&flow=xtls-rprx-vision&sni=api-6b04608f.adhil.uk#[",
+      "protocol": "vless",
+      "ip": "165.231.157.126",
+      "port": "8443",
+      "country_code": "RU",
+      "flag": "🇷🇺",
+      "source": "@ConfigsHUB",
+      "first_seen": "2026-11-27T12:49:06Z"
+    },
+    {
       "key": "vless:96a7d5257f76f864668254e7a8bfbfbc121dcba0e0efa8bb101ebc88f150fc35",
       "config": "vless://57b61e1c-5768-479f-972b-816c131a6b16@185.86.147.184:9449?encryption=none&flow=xtls-rprx-vision&fp=firefox&pbk=SsPslLCfw2CGDmCs17gTLRSUOsOfv0KgnuLnkyTqCzA&security=reality&sid=62002c0a685ac208&sni=passport.yandex.ru&spx=/&type=raw#🇷🇺",
       "protocol": "vless",
@@ -102854,6 +104031,17 @@
       "first_seen": "2026-11-12T20:58:39Z"
     },
     {
+      "key": "vless:9bc6a13f2676ee39a9a39877fde95e9012271b977bfe01d7b75cb429fb40a4ef",
+      "config": "vless://0173d52e-8e1b-4681-831e-11529677b72f@165.231.157.150:8443?sni=api-6b04608f.adhil.uk&flow=xtls-rprx-vision-udp443&fp=chrome&security=tls#🏳[openproxylist.com]",
+      "protocol": "vless",
+      "ip": "165.231.157.150",
+      "port": "8443",
+      "country_code": "RU",
+      "flag": "🇷🇺",
+      "source": "SUB#4",
+      "first_seen": "2026-11-27T12:49:09Z"
+    },
+    {
       "key": "vless:9c46bf282c8c210fd7905c1f25ca13cb45ac94e01ebb3f3bb95a47d380bc18c3",
       "config": "vless://6d622d0d-2572-456a-8daf-b2f01698aa37@135.106.175.19:443?flow=xtls-rprx-vision&amp;encryption=none&amp;security=reality&amp;sni=roshia.anime-together.club&amp;fp=safari&amp;pbk=102QGNfisDfTEw5BcC0u61i6mY6UFcZ2qCMJzNxDtXc&amp;type=tcp&amp;headerType=none#@meliproxyy",
       "protocol": "vless",
@@ -103017,6 +104205,17 @@
       "flag": "🇷🇺",
       "source": "@meliproxyy",
       "first_seen": "2026-11-18T22:10:22Z"
+    },
+    {
+      "key": "vless:a0e9f9abaf61c57ff51d785fac20ad06e626f05eb60901dfa5ca0b6cd8fec66a",
+      "config": "vless://b432a23a-acff-425c-bf69-70480cd6ed09@188.225.56.100:443?alpn=http/1.1&encryption=none&fp=random&host=e2.cdnwh.icu&path=/stream/segment/3078a41dd7eb/&security=tls&sni=e2.cdnwh.icu&type=ws#🇷🇺",
+      "protocol": "vless",
+      "ip": "188.225.56.100",
+      "port": "443",
+      "country_code": "RU",
+      "flag": "🇷🇺",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
     },
     {
       "key": "vless:a12d73ef82e59023079356a539631a26e6ffa33386dba64d1dde7c45e473bc22",
@@ -103613,6 +104812,17 @@
       "first_seen": "2026-11-23T14:58:43Z"
     },
     {
+      "key": "vless:b315cb874f462c4b43dca8bb16d8e7f7009bfc2de4ea61bc1f4ff279e7c65d96",
+      "config": "vless://9a9f167d-b461-466f-be50-f0ffd598a6f8@de.ggssstreaming.ru:443?mode=auto&path=%2Fee445bf63ce1%2F9a8d6ac6&security=reality&encryption=none&pbk=n5lmV54wCCknNYie638Ug2NDO-WCqtqVo3Yb7IJ_YkI&host=de.ggssstreaming.ru&fp=firefox&type=xhttp&sni=de.ggssstreaming.ru&sid=f49f0d53a52920da#Telegram%20%40Proxy_mtm%20",
+      "protocol": "vless",
+      "ip": "de.ggssstreaming.ru",
+      "port": "443",
+      "country_code": "RU",
+      "flag": "🇷🇺",
+      "source": "@proxy_mtm",
+      "first_seen": "2026-11-27T12:49:08Z"
+    },
+    {
       "key": "vless:b38c50296cbb9455237b3a225a567bedad8d8309140f39a2c8787b012ded6e20",
       "config": "vless://e2173ce2-e74d-45e4-ac39-5ca22ad6bc04@213.219.215.243:8443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=random&sni=sni.pl-dp-01.online&pbk=9Y-_jCI3Z1x6SXK2tHdZ6V1CN9IJPNPnoxSW0cbXxD8&sid=50e09046c0c00159#[",
       "protocol": "vless",
@@ -103952,6 +105162,17 @@
       "flag": "🇷🇺",
       "source": "SUB#2",
       "first_seen": "2026-11-21T11:28:30Z"
+    },
+    {
+      "key": "vless:bbf8417ed3845c7879b20709ad835c923bd9de73fbe743f108ca43f89be16b55",
+      "config": "vless://0173d52e-8e1b-4681-831e-11529677b72f@165.231.157.126:8443?security=tls&amp;encryption=none&amp;insecure=0&amp;host=%2F%3FTelegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET&amp;headerType=none&amp;fp=chrome&amp;type=tcp&amp;allowInsecure=0&amp;flow=xtls-rprx-vision&amp;sni=api-6b04608f.adhil.uk#[",
+      "protocol": "vless",
+      "ip": "165.231.157.126",
+      "port": "8443",
+      "country_code": "RU",
+      "flag": "🇷🇺",
+      "source": "@ConfigsHUB",
+      "first_seen": "2026-11-27T12:49:06Z"
     },
     {
       "key": "vless:bd776a85e09e97b5e86e796f65ee36aba654668c55a031147505c52714ef7607",
@@ -105087,6 +106308,17 @@
       "first_seen": "2026-11-27T03:00:15Z"
     },
     {
+      "key": "vless:e058864f9b5b5e52e96db38ceeb4aa0ef614f16c0be31c46d462fec35871bca3",
+      "config": "vless://749b1c56-e658-4bf5-94bd-5c3286a4aed1@bookend.filnex.baby:443?&security=tls&fp=firefox&alpn=http%2F1.1&sni=ferncrest.gerqix.online&type=ws&headerType=none&host=bookend.filnex.baby&path=%2Fapi%2Fde1%2Fstream#🇩🇪[openproxylist.com]",
+      "protocol": "vless",
+      "ip": "bookend.filnex.baby",
+      "port": "443",
+      "country_code": "RU",
+      "flag": "🇷🇺",
+      "source": "SUB#4",
+      "first_seen": "2026-11-27T12:49:09Z"
+    },
+    {
       "key": "vless:e099e333e34f1e088118a0812cb2af568329e32e5c06f6de4396b3290b180302",
       "config": "vless://c0c949fc-2ed6-4597-b680-a1a3276ebf87@188.225.24.62:443?encryption=none&flow=xtls-rprx-vision&fp=firefox&security=tls&sni=img.bokovskay.app&type=raw#🇷🇺",
       "protocol": "vless",
@@ -105118,6 +106350,17 @@
       "flag": "🇷🇺",
       "source": "SUB#2",
       "first_seen": "2026-11-06T07:09:38Z"
+    },
+    {
+      "key": "vless:e13f637f44ed5bb81d2e9a67a988c798d5adc945c6d4782f04a973b6341cefbb",
+      "config": "vless://9a9f167d-b461-466f-be50-f0ffd598a6f8@136.234.179.213:443?mode=auto&path=%2Fee445bf63ce1%2F9a8d6ac6&security=reality&encryption=none&pbk=n5lmV54wCCknNYie638Ug2NDO-WCqtqVo3Yb7IJ_YkI&host=de.ggssstreaming.ru&fp=firefox&type=xhttp&sni=de.ggssstreaming.ru&sid=f49f0d53a52920da#Telegram%20%40Proxy_mtm%20",
+      "protocol": "vless",
+      "ip": "136.234.179.213",
+      "port": "443",
+      "country_code": "RU",
+      "flag": "🇷🇺",
+      "source": "@proxy_mtm",
+      "first_seen": "2026-11-27T12:49:08Z"
     },
     {
       "key": "vless:e171fe6fd18e624f35ff7d45f0bd24f9be715c0724bc90a6e48e3985e83eff97",
@@ -109245,6 +110488,17 @@
       "first_seen": "2026-11-08T21:16:35Z"
     },
     {
+      "key": "vless:f64a9fc2c3f1ed861fd7c0bfd804213b70a9e9bc3f789e444d4491d2eeba65d0",
+      "config": "vless://95580a09-cce7-4b62-af74-a514083ba9e4@leviko-se8320.shopingggg.ir:8444?mode=stream-one&path=/xh&security=reality&encryption=none&pbk=jgf0wWpgkEJZzu9wu45Ms33SNZpibtx507rpvzfz3mQ&type=xhttp&sni=www.amd.com&sid=635a76c25a4b1820#🇸🇪",
+      "protocol": "vless",
+      "ip": "leviko-se8320.shopingggg.ir",
+      "port": "8444",
+      "country_code": "SE",
+      "flag": "🇸🇪",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
+    },
+    {
       "key": "vless:f8482db0090706cd3058a46e414630a22daf1eca2e8be4d09027d0fea5f82c48",
       "config": "vless://e61bb397-dfc2-4d58-b40f-63932846976b@tsaujxjdj.zefmul.ir:8021?security=reality&encryption=none&pbk=ILnZwALWgpb1HZ2eE58jgNCbUt8ul73tSNXmr05SNgU&headerType=none&fp=qq&type=tcp&sni=play.google.com&sid=05d15772f3cb403a#@meliproxyy",
       "protocol": "vless",
@@ -110499,6 +111753,17 @@
       "first_seen": "2026-11-11T22:51:38Z"
     },
     {
+      "key": "vless:7a5cd20c3211ea11dad94695d4dc58c247b579662f57d5eb3ebb6c4764131812",
+      "config": "vless://49b91402-f8e3-4390-9d7b-b7eddc2684a4@47.84.226.221:443?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=www.samsung.com&security=reality&pbk=gVQsvRtzd77zlvKW4Gk0dAOJNPRa7cfN1-jVe_AJ8Bo&sid=e1c483f9d4437d42#🇸🇬",
+      "protocol": "vless",
+      "ip": "47.84.226.221",
+      "port": "443",
+      "country_code": "SG",
+      "flag": "🇸🇬",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
+    },
+    {
       "key": "vless:7c5b5647dad8a6784672583c36a3269b86db10f67d75bb94816e852ee5e5a58a",
       "config": "vless://327ad26c-1501-41b3-9f33-12b85de39d5f@urfddtest-production.up.railway.app:443?encryption=none&security=tls&sni=urfddtest-production.up.railway.app&fp=chrome&alpn=http%2F1.1&type=ws&host=urfddtest-production.up.railway.app&path=%2Fapi%2Fx0-C9f#[",
       "protocol": "vless",
@@ -111236,6 +112501,17 @@
       "first_seen": "2026-11-19T22:19:46Z"
     },
     {
+      "key": "vless:c817ec56b1ec1e2256c8f3eddfb9d00fb1d57101406e0420fc13b4c5813e4b9c",
+      "config": "vless://5807f1c4-b50e-4ec0-8d01-274045da0da5@dddz-1-x.473221.xyz:43113?&security=reality&flow=xtls-rprx-vision&pbk=EK3prcfF8VKm3CoTXWQguRj67LxGbkPIpKmEUKsMKGs&sid=ff2c978a0b&fp=edge&packet-encoding=xudp&sni=v1-dy.ixigua.com&type=tcp&headerType=none&host=v1-dy.ixigua.com&path=%2F#🇸🇬[openproxylist.com]",
+      "protocol": "vless",
+      "ip": "dddz-1-x.473221.xyz",
+      "port": "43113",
+      "country_code": "SG",
+      "flag": "🇸🇬",
+      "source": "SUB#4",
+      "first_seen": "2026-11-27T12:49:09Z"
+    },
+    {
       "key": "vless:cdc981345597a71598f2b7bdc4b1751df484c58cb44d155c3619ea91c2d22ee3",
       "config": "vless://e9a8144e-5237-488a-afb1-9ca3d8d54c80@45.77.40.28:443?security=tls&type=tcp&packetEncoding=none&allowInsecure=1&sni=sg003.zestapp778.com&fp=firefox#🏳[openproxylist.com]",
       "protocol": "vless",
@@ -111300,6 +112576,17 @@
       "flag": "🇸🇬",
       "source": "SUB#4",
       "first_seen": "2026-11-04T15:36:17Z"
+    },
+    {
+      "key": "vless:d3aec801a1caabec6ba26137f21ab0c1ed55a1a1458a1f5a69f476d695f636a4",
+      "config": "vless://100cfbe2-afd5-40cf-84df-063b010ee759@194.233.67.103:2053?security=reality&encryption=none&pbk=un_9X4oh5ODWIcXl_jiuUaox4XOJE7oZpSPWGb46tRI&headerType=none&fp=firefox&type=tcp&sni=www.apple.com&sid=07a66150eac3db28#🇸🇬",
+      "protocol": "vless",
+      "ip": "194.233.67.103",
+      "port": "2053",
+      "country_code": "SG",
+      "flag": "🇸🇬",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
     },
     {
       "key": "vless:d3b665e71d2c3e6d4c7302a5d6a2f3956c0b301b0d950345a8f9300cdb6b2360",
@@ -119222,6 +120509,17 @@
       "first_seen": "2026-11-02T07:49:16Z"
     },
     {
+      "key": "vless:29d279305ef1f3ef40f0d5c812f33d3c18955aba47879d6addbc637d033eb4e6",
+      "config": "vless://1fd2e2d1-96f5-2056-19fd-b375b1a9d851@xray-b8ct4r2f-sahdon-hosaindoost.cloady.io:443?&security=tls&fp=chrome&sni=xray-b8ct4r2f-sahdon-hosaindoost.cloady.io&type=ws&headerType=none&host=xray-b8ct4r2f-sahdon-hosaindoost.cloady.io&path=%2Fffad70ffdfc3bcda#🇺🇸[openproxylist.com]",
+      "protocol": "vless",
+      "ip": "xray-b8ct4r2f-sahdon-hosaindoost.cloady.io",
+      "port": "443",
+      "country_code": "US",
+      "flag": "🇺🇸",
+      "source": "SUB#4",
+      "first_seen": "2026-11-27T12:49:09Z"
+    },
+    {
       "key": "vless:29d656a349c7c6d75707e4ab513b81468b226051857845e736b0d5d3354ac007",
       "config": "vless://ce18d0eb-5c71-41f9-96e5-1632e22456e4@195.123.240.65:443?encryption=none&security=reality&flow=xtls-rprx-vision&type=tcp&sni=www.cloudflare.com&fp=firefox&pbk=StPbcmBuzpuYUfa4oZ5SI3Bq1OSF_-oU1vp2AcyvQVE&sid=19296c9f1bf9c7b1#[",
       "protocol": "vless",
@@ -119451,6 +120749,17 @@
       "flag": "🇺🇸",
       "source": "@proxy_kafee",
       "first_seen": "2026-11-16T11:47:22Z"
+    },
+    {
+      "key": "vless:2c87f6ded42968105f93566644d3aed8fd3b005625ed05c5543adcb693534c24",
+      "config": "vless://16b6e5a8-1b90-42d2-9726-30945bd80f4b@ipfast.kingmna.com:443?pcs=CD6E838B9BFE31CAB8B3D5C858B0D6223FE84ECE236C1FDB281BE93C302E1E6E&amp;path=%2F&amp;security=tls&amp;encryption=none&amp;insecure=0&amp;host=looabnetheroijji.global.ssl.fastly.net.&amp;fp=chrome&amp;type=ws&amp;allowInsecure=0&amp;sni=community.fastly.steamstatic.com#%F0%9F%87%B3%F0%9F%87%B1%40FreakConfig",
+      "protocol": "vless",
+      "ip": "ipfast.kingmna.com",
+      "port": "443",
+      "country_code": "US",
+      "flag": "🇺🇸",
+      "source": "@FreakConfig",
+      "first_seen": "2026-11-27T12:49:06Z"
     },
     {
       "key": "vless:2c9741843ce32034efd11d15ac7dcdfdd3b9cd3d92596e30891bb1fea1d57dc2",
@@ -122984,6 +124293,17 @@
       "first_seen": "2026-11-04T22:00:40Z"
     },
     {
+      "key": "vless:4d2d80b010ea40d488c75606575e53fc26b65e9d90052d105f62a7953f3e81c3",
+      "config": "vless://a47d9818-d2cc-4b03-a358-712b2f5fc21b@render.com:443?mode=stream-one&amp;path=%2F&amp;security=tls&amp;encryption=none&amp;insecure=0&amp;fp=chrome&amp;type=xhttp&amp;allowInsecure=0&amp;sni=germ2-orng-bye-god-xn--fhq0la447aac5504dea701axr1g.maniyadg7shard.ir#Telegram%20%40Proxy_mtm%20",
+      "protocol": "vless",
+      "ip": "render.com",
+      "port": "443",
+      "country_code": "US",
+      "flag": "🇺🇸",
+      "source": "@proxy_mtm",
+      "first_seen": "2026-11-27T12:49:08Z"
+    },
+    {
       "key": "vless:4d3a6237ce7638daa002335f1dd7d8d7c345ac63efb49c5331d3ebe81cb58d3d",
       "config": "vless://79105268-2a3f-4b02-a299-839c8919b365@146.75.57.120:443?mode=auto&pcs=CD6E838B9BFE31CAB8B3D5C858B0D6223FE84ECE236C1FDB281BE93C302E1E6E&path=%2F&security=tls&encryption=none&insecure=0&host=Lxxn-speed.global.ssl.fastly.net&fp=firefox&type=xhttp&allowInsecure=0&sni=cdn.akamai.steamstatic.com#Channel%20%3A%20%40Daily_Configs%20",
       "protocol": "vless",
@@ -124194,6 +125514,17 @@
       "first_seen": "2026-11-02T07:49:24Z"
     },
     {
+      "key": "vless:5ac2456141de48f83e175371bf520869bcfc38a80f2948fb795a368265ddafdc",
+      "config": "vless://7d1a74fd-8a38-4a29-863f-5da53a9e557e@api.ferrin.uk:443?mode=stream-one&amp;path=%2Fes%2F%3FTELEGRAM--B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub--TELEGRAM%3Fed%3D2048&amp;security=tls&amp;alpn=h2&amp;encryption=none&amp;extra=%7B%22xmux%22%3A%7B%22hMaxReusableSecs%22%3A%221140-1260%22%2C%22maxConnections%22%3A%223%22%7D%7D&amp;insecure=0&amp;fp=android&amp;type=xhttp&amp;allowInsecure=0&amp;sni=7d1a74fd.ferrin.uk#@meliproxyy",
+      "protocol": "vless",
+      "ip": "api.ferrin.uk",
+      "port": "443",
+      "country_code": "US",
+      "flag": "🇺🇸",
+      "source": "@meliproxyy",
+      "first_seen": "2026-11-27T12:49:07Z"
+    },
+    {
       "key": "vless:5ac9c2d2c1ddb4425ca6edf78ec0d1bc655aa4e67b5805d741140e48ea47ca53",
       "config": "vless://48ff2b70-e180-582f-8866-d9a2edeed5f5@15.204.97.216:23576/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=fuck.rkn&fp=chrome&security=reality&pbk=1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s&sid=01#%3E%3E%40oneclickvpnkeys%3A%3AUS",
       "protocol": "vless",
@@ -124392,6 +125723,17 @@
       "first_seen": "2026-11-10T02:18:24Z"
     },
     {
+      "key": "vless:5c14040f6519da66f0d06aec37c04d4919d8ce1a8397ab57c1bc9b21e5268036",
+      "config": "vless://364fc00d-9960-4099-ba72-a6665cf40f4c@48.103.230.114:443?path=%2Faccess&amp;security=tls&amp;encryption=none&amp;insecure=0&amp;fp=firefox&amp;type=ws&amp;allowInsecure=0&amp;sni=api.cdn-mirror.net#Telegram%20%40Proxy_mtm%20",
+      "protocol": "vless",
+      "ip": "48.103.230.114",
+      "port": "443",
+      "country_code": "US",
+      "flag": "🇺🇸",
+      "source": "@proxy_mtm",
+      "first_seen": "2026-11-27T12:49:08Z"
+    },
+    {
       "key": "vless:5c35716a3ef54c8b5776932f68e922818c36529f5f0daae61b5e1b81bed66298",
       "config": "vless://414b00e3-cc5e-4378-a895-04242f27a757@ipfast.kingmna.com:443?pcs=CD6E838B9BFE31CAB8B3D5C858B0D6223FE84ECE236C1FDB281BE93C302E1E6E&security=tls&encryption=none&insecure=0&host=looabnetheroijji.global.ssl.fastly.net.&type=ws&allowInsecure=0&sni=community.fastly.steamstatic.com#@meliproxyy",
       "protocol": "vless",
@@ -124500,6 +125842,17 @@
       "flag": "🇺🇸",
       "source": "SUB#1",
       "first_seen": "2026-11-04T06:44:02Z"
+    },
+    {
+      "key": "vless:5d89029cde77e130298672f9d0c4a583f8342595acbcae6f5b657e6340d0e19b",
+      "config": "vless://16b6e5a8-1b90-42d2-9726-30945bd80f4b@ipfast.kingmna.com:443?pcs=CD6E838B9BFE31CAB8B3D5C858B0D6223FE84ECE236C1FDB281BE93C302E1E6E&path=%2F&security=tls&encryption=none&insecure=0&host=looabnetheroijji.global.ssl.fastly.net.&fp=chrome&type=ws&allowInsecure=0&sni=community.fastly.steamstatic.com#%F0%9F%87%B3%F0%9F%87%B1%40FreakConfig",
+      "protocol": "vless",
+      "ip": "ipfast.kingmna.com",
+      "port": "443",
+      "country_code": "US",
+      "flag": "🇺🇸",
+      "source": "@FreakConfig",
+      "first_seen": "2026-11-27T12:49:06Z"
     },
     {
       "key": "vless:5d9085c7c42de74391da06335861a070a51fda48d543cd7dff236490252a39be",
@@ -129199,6 +130552,17 @@
       "first_seen": "2026-11-11T22:51:38Z"
     },
     {
+      "key": "vless:8828a7e5ea3b42916993bc981663a35fbaa4a84e7a9914e71d5b527dd5d32ce3",
+      "config": "vless://1f8cf47a-b66a-4916-979f-26edfcf44eea@185.95.231.156:443?security=reality&encryption=none&pbk=8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To&host=www.apple.com/?TELEGRAM---MARAMBASHI---MARAMBASHI---MARAMBASHI---MARAMBASHI&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=www.apple.com&sid=a3a578ab#🇺🇸",
+      "protocol": "vless",
+      "ip": "185.95.231.156",
+      "port": "443",
+      "country_code": "US",
+      "flag": "🇺🇸",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
+    },
+    {
       "key": "vless:8836d9cd3c8e739c96221469a0fd1a4f2c698008f1e9f7b0aaa5f4c79f26a094",
       "config": "vless://b566e589-1c53-4c6f-ba99-5633c552cdb5@146.75.59.186:443?pcs=CD6E838B9BFE31CAB8B3D5C858B0D6223FE84ECE236C1FDB281BE93C302E1E6E&amp;path=%2F&amp;security=tls&amp;encryption=none&amp;insecure=0&amp;host=ukji.global.ssl.fastly.net&amp;type=ws&amp;allowInsecure=0&amp;sni=community.fastly.steamstatic.com#Channel%20%3A%20%40proxy_kafew%20",
       "protocol": "vless",
@@ -130024,6 +131388,17 @@
       "first_seen": "2026-11-04T15:36:17Z"
     },
     {
+      "key": "vless:8e9691e5c39201f929e9a6b0b3e334f5cc6030f44ebc3749c43f0d361f6e8a48",
+      "config": "vless://a35c508f-4d5d-4531-842e-6e9d43c762c0@leviko-se7853.shopingggg.ir:4443?mode=auto&path=/api/v1/sync/&security=tls&encryption=none&insecure=0&host=swo2.nexfile.net&fp=chrome&type=xhttp&allowInsecure=0&sni=swo2.nexfile.net#🇺🇸",
+      "protocol": "vless",
+      "ip": "leviko-se7853.shopingggg.ir",
+      "port": "4443",
+      "country_code": "US",
+      "flag": "🇺🇸",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
+    },
+    {
       "key": "vless:8ea5f7c6cb7e819f6a01e6138d44d837e61a4a50730d1b068f6f429579fec7c3",
       "config": "vless://9fbda291-4892-44c1-87a3-d0ca48fcb1dc@199.232.78.159:443?encryption=none&amp;security=tls&amp;sni=community.fastly.steamstatic.com&amp;pcs=CD6E838B9BFE31CAB8B3D5C858B0D6223FE84ECE236C1FDB281BE93C302E1E6E&amp;type=ws&amp;host=looabturkeyeoijji.global.ssl.fastly.net.&amp;path=%2F#Channel%20%3A%20%40Daily_Configs",
       "protocol": "vless",
@@ -130750,6 +132125,17 @@
       "first_seen": "2026-11-06T15:13:13Z"
     },
     {
+      "key": "vless:95906ec15e8c0fdd7083abc413ccf53b093f114f6470eb4d002b3594ae125bc0",
+      "config": "vless://a47d9818-d2cc-4b03-a358-712b2f5fc21b@render.com:443?mode=stream-one&path=%2F&security=tls&encryption=none&insecure=0&fp=chrome&type=xhttp&allowInsecure=0&sni=germ2-orng-bye-god-xn--fhq0la447aac5504dea701axr1g.maniyadg7shard.ir#Telegram%20%40Proxy_mtm%20",
+      "protocol": "vless",
+      "ip": "render.com",
+      "port": "443",
+      "country_code": "US",
+      "flag": "🇺🇸",
+      "source": "@proxy_mtm",
+      "first_seen": "2026-11-27T12:49:08Z"
+    },
+    {
       "key": "vless:95cf5e2673a4daee08c78b56078bab37e31c52f756317a5da5e65c82580616bc",
       "config": "vless://e668c236-dead-4ea2-8a99-812a738afd13@panel.paytiktok.com:20000?encryption=none&amp;security=reality&amp;type=tcp&amp;sni=tesla.com&amp;fp=chrome&amp;pbk=aCKxBnWGJSFRLP1TC7cvV6lwNBsEdrW3fIqRnVD131w&amp;sid=144d7588628c0387#[",
       "protocol": "vless",
@@ -130794,6 +132180,17 @@
       "first_seen": "2026-11-04T22:00:41Z"
     },
     {
+      "key": "vless:961dcb91f1f601a0a6234069e4a8326ba800d11c2bf32e0e251ecd5e38d92ff6",
+      "config": "vless://7d1a74fd-8a38-4a29-863f-5da53a9e557e@api.ferrin.uk:443?mode=stream-one&path=%2Fes%2F%3FTELEGRAM--B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub--TELEGRAM%3Fed%3D2048&security=tls&alpn=h2&encryption=none&extra=%7B%22xmux%22%3A%7B%22hMaxReusableSecs%22%3A%221140-1260%22%2C%22maxConnections%22%3A%223%22%7D%7D&insecure=0&fp=android&type=xhttp&allowInsecure=0&sni=7d1a74fd.ferrin.uk#@meliproxyy",
+      "protocol": "vless",
+      "ip": "api.ferrin.uk",
+      "port": "443",
+      "country_code": "US",
+      "flag": "🇺🇸",
+      "source": "@meliproxyy",
+      "first_seen": "2026-11-27T12:49:07Z"
+    },
+    {
       "key": "vless:963db1f04072ba7d816a5d46eb6e69b21b7beabf40bd6987677e575dc31e528e",
       "config": "vless://46cb8a26-0712-4e85-89bf-2538a2788652@146.75.59.186:443?pcs=CD6E838B9BFE31CAB8B3D5C858B0D6223FE84ECE236C1FDB281BE93C302E1E6E&amp;security=tls&amp;encryption=none&amp;insecure=0&amp;host=copy_az_channel_NUFiLTER_6i.global.ssl.fastly.net.&amp;type=ws&amp;allowInsecure=0&amp;sni=firefox.com#%F0%9F%94%B0%20%40prrofile_purple%20%28%D8%AA%D9%84%DA%AF%D8%B1%D8%A7%D9%85%29",
       "protocol": "vless",
@@ -130825,6 +132222,17 @@
       "flag": "🇺🇸",
       "source": "@ConfigsHUB",
       "first_seen": "2026-11-07T07:21:14Z"
+    },
+    {
+      "key": "vless:96849f696a490f3d59fe3e900eefd89ef089880088f14eb1b2bc3f08121a349e",
+      "config": "vless://6cd3dbe2-5bb8-4115-aad9-d50b238ce841@48.103.230.114:443?path=%2Faccess&security=tls&encryption=none&insecure=0&fp=firefox&type=ws&allowInsecure=0&sni=api.cdn-mirror.net#Telegram%20%40Proxy_mtm%20",
+      "protocol": "vless",
+      "ip": "48.103.230.114",
+      "port": "443",
+      "country_code": "US",
+      "flag": "🇺🇸",
+      "source": "@proxy_mtm",
+      "first_seen": "2026-11-27T12:49:08Z"
     },
     {
       "key": "vless:96cdac33ea5edf41a1ea09c743e7c88598f9788edceafb831771c37cf8ebd119",
@@ -131166,6 +132574,17 @@
       "flag": "🇺🇸",
       "source": "@ConfigsHUB",
       "first_seen": "2026-11-17T23:01:29Z"
+    },
+    {
+      "key": "vless:9a07a64929d46fbf18aabf863dc2db878931b7e0421a11559714e87ffe06b3d6",
+      "config": "vless://6cd3dbe2-5bb8-4115-aad9-d50b238ce841@48.103.230.114:443?path=%2Faccess&amp;security=tls&amp;encryption=none&amp;insecure=0&amp;fp=firefox&amp;type=ws&amp;allowInsecure=0&amp;sni=api.cdn-mirror.net#Telegram%20%40Proxy_mtm%20",
+      "protocol": "vless",
+      "ip": "48.103.230.114",
+      "port": "443",
+      "country_code": "US",
+      "flag": "🇺🇸",
+      "source": "@proxy_mtm",
+      "first_seen": "2026-11-27T12:49:08Z"
     },
     {
       "key": "vless:9a092f053b3599d01b92f949e4caed87b4364c89e7731cce3bfa6492eabc6465",
@@ -131837,6 +133256,17 @@
       "flag": "🇺🇸",
       "source": "@proxy_kafee",
       "first_seen": "2026-11-02T15:23:55Z"
+    },
+    {
+      "key": "vless:a0b6e736a1ec55fd8a802385549799a2873b5101afc3ae1487288809ed05b771",
+      "config": "vless://364fc00d-9960-4099-ba72-a6665cf40f4c@48.103.230.114:443?path=%2Faccess&security=tls&encryption=none&insecure=0&fp=firefox&type=ws&allowInsecure=0&sni=api.cdn-mirror.net#Telegram%20%40Proxy_mtm%20",
+      "protocol": "vless",
+      "ip": "48.103.230.114",
+      "port": "443",
+      "country_code": "US",
+      "flag": "🇺🇸",
+      "source": "@proxy_mtm",
+      "first_seen": "2026-11-27T12:49:08Z"
     },
     {
       "key": "vless:a0b7b5be2656a8340d4926a11049c1f85015902d81046230fcc5d78ec1e81282",
@@ -140375,6 +141805,17 @@
       "first_seen": "2026-11-25T05:32:20Z"
     },
     {
+      "key": "vless:ec014f7a757ebe3196d23e26ce3f15a6e06939b0982e8e9aa0289a1fa798ce17",
+      "config": "vless://0ca80064-0265-44ec-aaec-a8f7d799f293@wryly-messiest.video-streams.org:443?&security=tls&fp=chrome&sni=wryly-messiest.video-streams.org&type=ws&headerType=none&host=wryly-messiest.video-streams.org&path=%2Fws#🏳[openproxylist.com]",
+      "protocol": "vless",
+      "ip": "wryly-messiest.video-streams.org",
+      "port": "443",
+      "country_code": "US",
+      "flag": "🇺🇸",
+      "source": "SUB#4",
+      "first_seen": "2026-11-27T12:49:09Z"
+    },
+    {
       "key": "vless:ec12bedadac658f9ec36f4b308fc24907a43bb4585cb9d0163095225a15d369d",
       "config": "vless://72881b3f-76f7-4cae-912d-e95e602a5ca4@wwww.qarvian.ir:443?pcs=cd6e838b9bfe31cab8b3d5c858b0d6223fe84ece236c1fdb281be93c302e1e6e&security=tls&encryption=none&insecure=0&host=copy_az_channel_NUFiLTER_7i.global.ssl.fastly.net.&type=ws&allowInsecure=0&sni=cdn.akamai.steamstatic.com#%F0%9F%94%B0%20%40prrofile_purple%20%28%D8%AA%D9%84%DA%AF%D8%B1%D8%A7%D9%85%29",
       "protocol": "vless",
@@ -142971,6 +144412,17 @@
       "first_seen": "2026-11-14T23:08:43Z"
     },
     {
+      "key": "vmess:2fdb57f99c01b190f21d56d77baa8fbcc039fb91a8ad257350b013104d1f8658",
+      "config": "vmess://eyJhZGQiOiAiMTAzLjE0LjI3LjIwNyIsICJhaWQiOiAiMCIsICJhbHBuIjogIiIsICJmcCI6ICIiLCAiaG9zdCI6ICIiLCAiaWQiOiAiNWMwNDBmMWQtNDVkYi00M2JkLThkNDYtZTQ5NTBlNDMzNzM1IiwgImluc2VjdXJlIjogIjAiLCAibmV0IjogInRjcCIsICJwYXRoIjogIiIsICJwY3MiOiAiIiwgInBvcnQiOiAxMjcwLCAicHMiOiAi8J+Hp/Cfh7cgNTMgLSBCUiAtIFZNZXNzL1RMUyAtIDEyNzAiLCAic2N5IjogImF1dG8iLCAic25pIjogInhtZmhscHkuY29tIiwgInRscyI6ICJ0bHMiLCAidHlwZSI6ICJub25lIiwgInYiOiAiMiIsICJ2Y24iOiAiIiwgIm5hbWUiOiAi8J+Hp/Cfh7cgQlIgfCBWTUVTUyB8IEBvdXRsaW5lcmVsZWFzZWRrZXkgIzEgW2Zhc3RdIn0=",
+      "protocol": "vmess",
+      "ip": "103.14.27.207",
+      "port": "1270",
+      "country_code": "BR",
+      "flag": "🇧🇷",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
+    },
+    {
       "key": "vmess:3bef594173fa883309600fdc4dcbaf0e4174894e98d365b505f59b8befbe47d4",
       "config": "vmess://eyJhZGQiOiJsZXZpa28tYnI2MTg4LnNob3BpbmdnZ2cuaXIiLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6IiIsImlkIjoiNWMwNDBmMWQtNDVkYi00M2JkLThkNDYtZTQ5NTBlNDMzNzM1IiwibmV0IjoidGNwIiwicGF0aCI6IiIsInBvcnQiOiIxMjcwIiwicHMiOiJAbWVsaXByb3h5Iiwic2N5IjoiYXV0byIsInNuaSI6InhtZmhscHkuY29tIiwidGxzIjoidGxzIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiJ9",
       "protocol": "vmess",
@@ -143024,6 +144476,17 @@
       "flag": "🇧🇷",
       "source": "SUB#2",
       "first_seen": "2026-11-06T00:27:06Z"
+    },
+    {
+      "key": "vmess:647f26996de8086cc263395079327b9a771e6a006b55c3e9bf8834c534ec1a88",
+      "config": "vmess://eyJhZGQiOiAiMTAzLjE0LjI3LjIwNyIsICJhaWQiOiAiMCIsICJhbHBuIjogIiIsICJmcCI6ICIiLCAiaG9zdCI6ICJ4bWZobHB5LmNvbSIsICJpZCI6ICI1YzA0MGYxZC00NWRiLTQzYmQtOGQ0Ni1lNDk1MGU0MzM3MzUiLCAiaW5zZWN1cmUiOiAiMCIsICJuYW1lIjogInYyZ28gfCDwn4en8J+HtyBCUiB8IFZNRVNTIHwgMzAiLCAibmV0IjogInRjcCIsICJwYXRoIjogIiIsICJwY3MiOiAiIiwgInBvcnQiOiAxMjcwLCAicHMiOiAi8J+Hp/Cfh7cgNTQgLSBCUiAtIFZNZXNzL1RMUyAtIDEyNzAiLCAic2N5IjogImF1dG8iLCAic25pIjogInhtZmhscHkuY29tIiwgInRscyI6ICJ0bHMiLCAidHlwZSI6ICJub25lIiwgInYiOiAiMiIsICJ2Y24iOiAiIn0=",
+      "protocol": "vmess",
+      "ip": "103.14.27.207",
+      "port": "1270",
+      "country_code": "BR",
+      "flag": "🇧🇷",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
     },
     {
       "key": "vmess:893db26ef08062f16c636fedb0b2fa3f573e34b8b34a33ccb6af4cd3e0254509",
@@ -143101,6 +144564,17 @@
       "flag": "🇧🇷",
       "source": "SUB#4",
       "first_seen": "2026-11-19T22:19:48Z"
+    },
+    {
+      "key": "vmess:b42f4a5081f105ab4fdea75da510020c75f1553f7b0018feaacbe4a466c27427",
+      "config": "vmess://eyJhZGQiOiAiMTAzLjg4LjIzMi41NSIsICJhaWQiOiAiMCIsICJhbHBuIjogIiIsICJmcCI6ICIiLCAiaG9zdCI6ICJ4bWZobHB5LmNvbSIsICJpZCI6ICI1YzA0MGYxZC00NWRiLTQzYmQtOGQ0Ni1lNDk1MGU0MzM3MzUiLCAiaW5zZWN1cmUiOiAiMCIsICJuYW1lIjogInYyZ28gfCDwn4en8J+HtyBCUiB8IFZNRVNTIHwgMjkiLCAibmV0IjogInRjcCIsICJwYXRoIjogIiIsICJwY3MiOiAiIiwgInBvcnQiOiAxMjcwLCAicHMiOiAi8J+Hp/Cfh7cgNTUgLSBCUiAtIFZNZXNzL1RMUyAtIDEyNzAiLCAic2N5IjogImF1dG8iLCAic25pIjogInhtZmhscHkuY29tIiwgInRscyI6ICJ0bHMiLCAidHlwZSI6ICJub25lIiwgInYiOiAiMiIsICJ2Y24iOiAiIn0=",
+      "protocol": "vmess",
+      "ip": "103.88.232.55",
+      "port": "1270",
+      "country_code": "BR",
+      "flag": "🇧🇷",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
     },
     {
       "key": "vmess:b5351f484ad18cdf7a5f79c285f349b4434841fee694665de6f73e48173ef7e2",
@@ -143532,6 +145006,17 @@
       "first_seen": "2026-11-26T01:54:07Z"
     },
     {
+      "key": "vmess:20f0bd502871c7afb0d26d8dfd0278d3d2e43b9f3ca013bdcb8f93e29a7e4894",
+      "config": "vmess://eyJhZGQiOiAiMjMuMTYyLjIwMC4xOTgiLCAiYWlkIjogMCwgImhvc3QiOiAiMjMuMTYyLjIwMC4xOTgiLCAiaWQiOiAiZjhjOGRjM2QtMGQzNy00NmIwLThiMzQtYTcyMzI4ODJmY2ZlIiwgIm5hbWUiOiAidjJnbyB8IPCfh6jwn4emIENBIHwgVk1FU1MgfCA1MyIsICJuZXQiOiAidGNwIiwgInBhdGgiOiAiIiwgInBvcnQiOiAxODAwMCwgInBzIjogIvCfh6jwn4emIDk0IC0gQ0EgLSBWTWVzcyAtIDE4MDAwIiwgInNjeSI6ICJhdXRvIiwgInNuaSI6ICIyMy4xNjIuMjAwLjE5OCIsICJ0bHMiOiAibm9uZSIsICJ0eXBlIjogIm5vbmUiLCAidiI6ICIyIn0=",
+      "protocol": "vmess",
+      "ip": "23.162.200.198",
+      "port": "18000",
+      "country_code": "CA",
+      "flag": "🇨🇦",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
+    },
+    {
       "key": "vmess:2113ed58db3368e350d3e2d85b0b0c854b912dab6c95658287581a71baa7b5e1",
       "config": "vmess://eyJhZGQiOiJ3d3cud2luZG93c3NlYXJjaHRvb2xzLmNvbSIsImFpZCI6IjAiLCJhbHBuIjoiIiwiZnAiOiJjaHJvbWUiLCJob3N0IjoiIiwiaWQiOiJiYTExMTZlMi04YzJmLTRlM2QtOGU1MC1jOTU0MzYwY2Y5NzAiLCJpbnNlY3VyZSI6IjAiLCJuZXQiOiJ3cyIsInBhdGgiOiIvdHJ1dGgiLCJwb3J0IjoiNDQzIiwicHMiOiJDaGFubmVsIDogQHByb3h5X2thZmVlIiwic2N5IjoiYXV0byIsInNuaSI6Ind3dy53aW5kb3dzc2VhcmNodG9vbHMuY29tIiwidGxzIjoidGxzIiwidHlwZSI6Ii0tLSIsInYiOiIyIn0=",
       "protocol": "vmess",
@@ -143915,6 +145400,17 @@
       "flag": "🇨🇦",
       "source": "SUB#4",
       "first_seen": "2026-11-03T23:31:37Z"
+    },
+    {
+      "key": "vmess:44783987489e6e797587d4450a63e83e650f6adef65eca33f5ea6b0f2f07dd4b",
+      "config": "vmess://eyJhZGQiOiAiMTM0LjE5NS4xOTYuMjExIiwgImFpZCI6IDAsICJob3N0IjogIjEzNC4xOTUuMTk2LjIxMSIsICJpZCI6ICJmOGM4ZGMzZC0wZDM3LTQ2YjAtOGIzNC1hNzIzMjg4MmZjZmUiLCAibmFtZSI6ICJ2MmdvIHwg8J+HqPCfh6YgQ0EgfCBWTUVTUyB8IDMyIiwgIm5ldCI6ICJ0Y3AiLCAicGF0aCI6ICIvIiwgInBvcnQiOiAxODAwMCwgInBzIjogIvCfh6jwn4emIDY1IC0gQ0EgLSBWTWVzcyAtIDE4MDAwIiwgInNjeSI6ICJhdXRvIiwgInNuaSI6ICIxMzQuMTk1LjE5Ni4yMTEiLCAidGxzIjogIm5vbmUiLCAidHlwZSI6ICJub25lIiwgInYiOiAiMiJ9",
+      "protocol": "vmess",
+      "ip": "134.195.196.211",
+      "port": "18000",
+      "country_code": "CA",
+      "flag": "🇨🇦",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
     },
     {
       "key": "vmess:458dc3fe403a53e0c5b5f2834a2f9edd56858911102b410ce926ef6a83b791e3",
@@ -145380,6 +146876,17 @@
       "first_seen": "2026-11-26T20:19:43Z"
     },
     {
+      "key": "vmess:e663c273f65affd68f9e3794bbd7c77155d269137781bd3b268bb33438a60873",
+      "config": "vmess://eyJhZGQiOiIxMzQuMTk1LjE5Ni4yMTEiLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6Ii8/VGVsZWdyYW0tLS1tZWhyb3NhYm9yYW4iLCJpZCI6ImY4YzhkYzNkLTBkMzctNDZiMC04YjM0LWE3MjMyODgyZmNmZSIsImluc2VjdXJlIjoiMCIsIm5ldCI6InRjcCIsInBhdGgiOiIvZXlKcWRXNXJJam9pTlVaVldtZFBOV05wVFc1TE9DSXNJbkJ5YjNSdlkyOXNJam9pZG13aUxDSnRiMlJsSWpvaWNISmxabWw0SWl3aWNHRnVaV3hKVUhNaU9sc2lXekkyTURJNlptTTFPVHBpTURvMk5EbzZYU0pkZlEiLCJwb3J0IjoiMTgwMDAiLCJwcyI6IkNoYW5uZWwgOiBAcHJveHlfa2FmZWUiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiJ9",
+      "protocol": "vmess",
+      "ip": "134.195.196.211",
+      "port": "18000",
+      "country_code": "CA",
+      "flag": "🇨🇦",
+      "source": "@proxy_kafee",
+      "first_seen": "2026-11-27T12:49:04Z"
+    },
+    {
       "key": "vmess:e73c854a25b903abe0764b11d57d85702aa2588a9dd7fab0efde462d661854a9",
       "config": "vmess://eyJhZGQiOiJndWFud2FuZy5hd3Nuby5jb20iLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6IiIsImlkIjoiNmE4OWEyMTUtMjJiZi00YmQ3LTk2NDItYjk1YjJlMDk1ODNhIiwiaW5zZWN1cmUiOiIwIiwibmV0IjoidGNwIiwicGF0aCI6IiIsInBjcyI6IiIsInBvcnQiOiI0NDMiLCJwcyI6Ij4+QEZyZWFrQ29uZmlnOjpYWDo6WFgiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoidGxzIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiIsInZjbiI6IiJ9",
       "protocol": "vmess",
@@ -145721,6 +147228,17 @@
       "first_seen": "2026-11-24T02:23:01Z"
     },
     {
+      "key": "vmess:7d1f76d978ad1d72e7082b7822a7848b1431b562befa231800b2011f793f1a0a",
+      "config": "vmess://eyJhZGQiOiAiMTg2LjE5MC4yMTUuNCIsICJhaWQiOiAiMCIsICJhbHBuIjogIiIsICJmcCI6ICIiLCAiaG9zdCI6ICIiLCAiaWQiOiAiNWMwNDBmMWQtNDVkYi00M2JkLThkNDYtZTQ5NTBlNDMzNzM1IiwgImluc2VjdXJlIjogIjAiLCAibmFtZSI6ICJ2MmdvIHwg8J+HqPCfh60gQ0ggfCBWTUVTUyB8IDUyIiwgIm5ldCI6ICJ0Y3AiLCAicGF0aCI6ICIiLCAicGNzIjogIiIsICJwb3J0IjogMTI3MCwgInBzIjogIvCfh6jwn4etIDg4IC0gQ0ggLSBWTWVzcy9UTFMgLSAxMjcwIiwgInNjeSI6ICJhdXRvIiwgInNuaSI6ICJ4bWZobHB5LmNvbSIsICJ0bHMiOiAidGxzIiwgInR5cGUiOiAibm9uZSIsICJ2IjogIjIiLCAidmNuIjogIiJ9",
+      "protocol": "vmess",
+      "ip": "186.190.215.4",
+      "port": "1270",
+      "country_code": "CH",
+      "flag": "🇨🇭",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
+    },
+    {
       "key": "vmess:cd2591202752371118e3ffe6af57d6da388289933747221a8b02df71d1d11c81",
       "config": "vmess://eyJhZGQiOiAiMTg2LjE5MC4yMTUuNCIsICJhaWQiOiAiMCIsICJhbHBuIjogIiIsICJob3N0IjogIiIsICJpZCI6ICI1YzA0MGYxZC00NWRiLTQzYmQtOGQ0Ni1lNDk1MGU0MzM3MzUiLCAibmV0IjogInRjcCIsICJwYXRoIjogIiIsICJwb3J0IjogMTI3MCwgInBzIjogIvCfh6jwn4etIDEwNiAtIENIIC0gVk1lc3MvVExTIC0gMTI3MCIsICJzY3kiOiAiYXV0byIsICJzbmkiOiAieG1maGxweS5jb20iLCAidGxzIjogInRscyIsICJ0eXBlIjogIm5vbmUiLCAidiI6ICIyIiwgIm5hbWUiOiAidjJnbyB8IPCfh6jwn4etIENIIHwgVk1FU1MgfCAzNTgifQ==",
       "protocol": "vmess",
@@ -145840,6 +147358,17 @@
       "flag": "🇩🇪",
       "source": "SUB#4",
       "first_seen": "2026-11-23T14:58:43Z"
+    },
+    {
+      "key": "vmess:10dc098101047caa9fbb9650c6ca4ca7a811c12808334fb2f0636921c26fe474",
+      "config": "vmess://eyJhZGQiOiAiMTkzLjEwOC4xMTcuNjEiLCAiYWlkIjogIjAiLCAiYWxwbiI6ICIiLCAiZnAiOiAiIiwgImhvc3QiOiAiIiwgImlkIjogIjVjMDQwZjFkLTQ1ZGItNDNiZC04ZDQ2LWU0OTUwZTQzMzczNSIsICJuYW1lIjogInYyZ28gfCDwn4ep8J+HqiBERSB8IFZNRVNTIHwgNTEiLCAibmV0IjogInRjcCIsICJwYXRoIjogIiIsICJwb3J0IjogMTI3MCwgInBzIjogIvCfh6nwn4eqIDkwIC0gREUgLSBWTWVzcy9UTFMgLSAxMjcwIiwgInNjeSI6ICJhdXRvIiwgInNuaSI6ICJ4bWZobHB5LmNvbSIsICJ0bHMiOiAidGxzIiwgInR5cGUiOiAiIiwgInYiOiAiMiJ9",
+      "protocol": "vmess",
+      "ip": "193.108.117.61",
+      "port": "1270",
+      "country_code": "DE",
+      "flag": "🇩🇪",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
     },
     {
       "key": "vmess:11d006e0348ebe39d124217c26bca049f8ed996fff0c15666100f8fef7ec57f7",
@@ -146401,6 +147930,17 @@
       "flag": "🇩🇪",
       "source": "SUB#4",
       "first_seen": "2026-11-02T15:24:01Z"
+    },
+    {
+      "key": "vmess:79738b6f73755da31656a8c16045359df664d65f85d738ce0bd12ab6654fd616",
+      "config": "vmess://eyJhZGQiOiAiOTEuMTA3LjE2OS4yMjQiLCAiaG9zdCI6ICJnb29nbGUud2hhdHNhcHAuc25hcHAudG9yb2IuYmFzYWxhbS5kbnMtbG9vay5zcGFjZS4iLCAiaWQiOiAiMDE0ZjhiZjYtOTIyMS00Zjk5LTgzOGYtNGMxNmNhOTAzMzRmIiwgIm5hbWUiOiAidjJnbyB8IPCfh6nwn4eqIERFIHwgVk1FU1MgfCA3NyIsICJuZXQiOiAiaHR0cHVwZ3JhZGUiLCAicGF0aCI6ICIvIiwgInBvcnQiOiA4MCwgInBzIjogIvCfh6nwn4eqIDQ5IC0gREUgLSBWTWVzcy9IVFRQVVBHUkFERSAtIDgwIiwgInNjeSI6ICJhdXRvIiwgInRscyI6ICJub25lIiwgInYiOiAiMiJ9",
+      "protocol": "vmess",
+      "ip": "91.107.169.224",
+      "port": "80",
+      "country_code": "DE",
+      "flag": "🇩🇪",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
     },
     {
       "key": "vmess:7e6a8d2a2570d8636dd4b90e299b2a24565dee2f7bdea57f15cb9b8f971bb226",
@@ -147371,6 +148911,17 @@
       "first_seen": "2026-11-25T05:32:23Z"
     },
     {
+      "key": "vmess:50c82d679573cc7b135681b9ceb2a258f828b2caee47ab1872287e95794afa0b",
+      "config": "vmess://eyJhZGQiOiAiMjMuMTYyLjE1Mi4xMjciLCAiYWlkIjogIjAiLCAiYWxwbiI6ICIiLCAiaG9zdCI6ICIiLCAiaWQiOiAiNWMwNDBmMWQtNDVkYi00M2JkLThkNDYtZTQ5NTBlNDMzNzM1IiwgIm5hbWUiOiAidjJnbyB8IPCfh6vwn4e3IEZSIHwgVk1FU1MgfCA1NSIsICJuZXQiOiAidGNwIiwgInBhdGgiOiAiIiwgInBvcnQiOiAxMjcwLCAicHMiOiAi8J+Hq/Cfh7cgOTMgLSBGUiAtIFZNZXNzL1RMUyAtIDEyNzAiLCAic2N5IjogImF1dG8iLCAic25pIjogInhtZmhscHkuY29tIiwgInRscyI6ICJ0bHMiLCAidHlwZSI6ICJub25lIiwgInYiOiAiMiJ9",
+      "protocol": "vmess",
+      "ip": "23.162.152.127",
+      "port": "1270",
+      "country_code": "FR",
+      "flag": "🇫🇷",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
+    },
+    {
       "key": "vmess:5286ac69081e15963dc08b4b94f1996c702c9f2c6ed368e15ec3b0511dafe6ed",
       "config": "vmess://eyJhZGQiOiAiMTcyLjk5LjE4OS4yMzkiLCAiYWlkIjogIjAiLCAiYWxwbiI6ICIiLCAiaG9zdCI6ICIiLCAiaWQiOiAiNWMwNDBmMWQtNDVkYi00M2JkLThkNDYtZTQ5NTBlNDMzNzM1IiwgIm5ldCI6ICJ0Y3AiLCAicGF0aCI6ICIiLCAicG9ydCI6IDEyNzAsICJwcyI6ICLwn4er8J+HtyA3MCAtIEZSIC0gVk1lc3MvVExTIC0gMTI3MCIsICJzY3kiOiAiYXV0byIsICJzbmkiOiAieG1maGxweS5jb20iLCAidGxzIjogInRscyIsICJ0eXBlIjogIm5vbmUiLCAidiI6ICIyIiwgIm5hbWUiOiAidjJnbyB8IPCfh6vwn4e3IEZSIHwgVk1FU1MgfCAzNyJ9",
       "protocol": "vmess",
@@ -147492,6 +149043,17 @@
       "first_seen": "2026-11-26T01:54:07Z"
     },
     {
+      "key": "vmess:6e17614a900b6d6cd84686ac9f0af75467f38861c8e80916641309f35bef990d",
+      "config": "vmess://eyJhZGQiOiAiNDYuMTA1LjIyMi4xNTMiLCAiYWlkIjogIjAiLCAiaWQiOiAiNWMwNDBmMWQtNDVkYi00M2JkLThkNDYtZTQ5NTBlNDMzNzM1IiwgIm5ldCI6ICJ0Y3AiLCAicG9ydCI6IDEyNzAsICJwcyI6ICLwn4er8J+HtyAzMSAtIEZSIC0gVk1lc3MvVExTIC0gMTI3MCIsICJzY3kiOiAiYXV0byIsICJzbmkiOiAieG1maGxweS5jb20iLCAidGxzIjogInRscyIsICJ0eXBlIjogIiIsICJ2IjogIjIiLCAibmFtZSI6ICJ2MmdvIHwg8J+Hq/Cfh7cgRlIgfCBWTUVTUyB8IDY4In0=",
+      "protocol": "vmess",
+      "ip": "46.105.222.153",
+      "port": "1270",
+      "country_code": "FR",
+      "flag": "🇫🇷",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
+    },
+    {
       "key": "vmess:704987e3757bd186cb41501f4bd4bd63355dccab5f85e1602c9dd6e73719218c",
       "config": "vmess://eyJ2IjoiMiIsInBzIjoiXHVkODNjXHVkZGViXHVkODNjXHVkZGY3W29wZW5wcm94eWxpc3QuY29tXSB2bWVzcy1GUiIsImFkZCI6IjQ2LjEwNS4yMjIuMTU3IiwicG9ydCI6IjEyNzAiLCJpZCI6IjVjMDQwZjFkLTQ1ZGItNDNiZC04ZDQ2LWU0OTUwZTQzMzczNSIsImFpZCI6IjAiLCJzY3kiOiJhdXRvIiwibmV0IjoidGNwIiwidHlwZSI6Im5vbmUiLCJob3N0IjoiIiwicGF0aCI6IiIsInRscyI6InRscyIsInNuaSI6InhtZmhscHkuY29tIiwiYWxwbiI6IiIsImZwIjoiIiwiaW5zZWN1cmUiOiIwIiwicGNzIjoiIiwidmNuIjoiIiwiZWNoIjoiIiwicHF2IjoiIiwic2tpcC1jZXJ0LXZlcmlmeSI6dHJ1ZX0=",
       "protocol": "vmess",
@@ -147580,6 +149142,17 @@
       "first_seen": "2026-11-24T23:08:31Z"
     },
     {
+      "key": "vmess:7f2d4113a5d0bb4846b96c0c192deb56ecb443c7778b559adb3379774b1ca841",
+      "config": "vmess://eyJhZGQiOiAiOTEuMTM0LjM1LjcyIiwgImFpZCI6ICIwIiwgImlkIjogIjVjMDQwZjFkLTQ1ZGItNDNiZC04ZDQ2LWU0OTUwZTQzMzczNSIsICJuZXQiOiAidGNwIiwgInBvcnQiOiAxMjcwLCAicHMiOiAi8J+Hq/Cfh7cgNTAgLSBGUiAtIFZNZXNzL1RMUyAtIDEyNzAiLCAic2N5IjogImF1dG8iLCAic25pIjogInhtZmhscHkuY29tIiwgInRscyI6ICJ0bHMiLCAidHlwZSI6ICIiLCAidiI6ICIyIiwgIm5hbWUiOiAidjJnbyB8IPCfh6vwn4e3IEZSIHwgVk1FU1MgfCA3OCJ9",
+      "protocol": "vmess",
+      "ip": "91.134.35.72",
+      "port": "1270",
+      "country_code": "FR",
+      "flag": "🇫🇷",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
+    },
+    {
       "key": "vmess:84c5d90daf27364a319a8a3542ebcc45d58521b83262d67f28f332c109d600ca",
       "config": "vmess://eyJhZGQiOiAiMTcyLjk5LjE4OS4yMzkiLCAiYWlkIjogIjAiLCAiYWxwbiI6ICIiLCAiaG9zdCI6ICIiLCAiaWQiOiAiNWMwNDBmMWQtNDVkYi00M2JkLThkNDYtZTQ5NTBlNDMzNzM1IiwgIm5hbWUiOiAidjJnbyB8IPCfh6vwn4e3IEZSIHwgVk1FU1MgfCA0MzciLCAibmV0IjogInRjcCIsICJwYXRoIjogIiIsICJwb3J0IjogMTI3MCwgInBzIjogIvCfh6vwn4e3IDEwNCAtIEZSIC0gVk1lc3MvVExTIC0gMTI3MCIsICJzY3kiOiAiYXV0byIsICJzbmkiOiAieG1maGxweS5jb20iLCAidGxzIjogInRscyIsICJ0eXBlIjogIm5vbmUiLCAidiI6ICIyIn0=",
       "protocol": "vmess",
@@ -147611,6 +149184,17 @@
       "flag": "🇫🇷",
       "source": "@meliproxyy",
       "first_seen": "2026-11-08T21:16:37Z"
+    },
+    {
+      "key": "vmess:8b0ceb450bd2b6bc7363eb6f2e4fe597d0991f3d4d1d62692da1f95a2628ccab",
+      "config": "vmess://eyJhZGQiOiAiMTcyLjk5LjE4OS4yMzkiLCAiYWlkIjogIjAiLCAiYWxwbiI6ICIiLCAiaG9zdCI6ICIiLCAiaWQiOiAiNWMwNDBmMWQtNDVkYi00M2JkLThkNDYtZTQ5NTBlNDMzNzM1IiwgIm5hbWUiOiAidjJnbyB8IPCfh6vwn4e3IEZSIHwgVk1FU1MgfCA1MCIsICJuZXQiOiAidGNwIiwgInBhdGgiOiAiIiwgInBvcnQiOiAxMjcwLCAicHMiOiAi8J+Hq/Cfh7cgODcgLSBGUiAtIFZNZXNzL1RMUyAtIDEyNzAiLCAic2N5IjogImF1dG8iLCAic25pIjogInhtZmhscHkuY29tIiwgInRscyI6ICJ0bHMiLCAidHlwZSI6ICJub25lIiwgInYiOiAiMiJ9",
+      "protocol": "vmess",
+      "ip": "172.99.189.239",
+      "port": "1270",
+      "country_code": "FR",
+      "flag": "🇫🇷",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
     },
     {
       "key": "vmess:8c133ae1542d58717ab7f88d908ac12206631032f91cca5fadc9b33d2ad5fafa",
@@ -147699,6 +149283,17 @@
       "flag": "🇫🇷",
       "source": "SUB#2",
       "first_seen": "2026-11-26T01:54:07Z"
+    },
+    {
+      "key": "vmess:9e164d545efe4d4c5c9c21ccd7764f16c46bd201900753e2e43ec66881968c07",
+      "config": "vmess://eyJhZGQiOiAiNDYuMTA1LjIyMi4xNTYiLCAiYWlkIjogIjAiLCAiaWQiOiAiNWMwNDBmMWQtNDVkYi00M2JkLThkNDYtZTQ5NTBlNDMzNzM1IiwgIm5ldCI6ICJ0Y3AiLCAicG9ydCI6IDEyNzAsICJwcyI6ICLwn4er8J+HtyAzMiAtIEZSIC0gVk1lc3MvVExTIC0gMTI3MCIsICJzY3kiOiAiYXV0byIsICJzbmkiOiAieG1maGxweS5jb20iLCAidGxzIjogInRscyIsICJ0eXBlIjogIiIsICJ2IjogIjIiLCAibmFtZSI6ICJ2MmdvIHwg8J+Hq/Cfh7cgRlIgfCBWTUVTUyB8IDY3In0=",
+      "protocol": "vmess",
+      "ip": "46.105.222.156",
+      "port": "1270",
+      "country_code": "FR",
+      "flag": "🇫🇷",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
     },
     {
       "key": "vmess:9f60ee072d7f7b1c4b77475939dbd93bc52fb7b6cfebc05e587a878234d1a062",
@@ -148603,6 +150198,17 @@
       "first_seen": "2026-11-06T20:59:14Z"
     },
     {
+      "key": "vmess:20565d69a31a0a935169d638c25094c8fbde476df7f1feacb79e920e4966d1bb",
+      "config": "vmess://eyJhZGQiOiAiMTU2LjIzOS4yMjQuMTA3IiwgImFpZCI6IDAsICJob3N0IjogIiIsICJpZCI6ICIxMjcwYmVkNS1mOTA4LTRlY2MtZjFjOC1kZTI0NjAzM2IxODYiLCAibmFtZSI6ICJ2MmdvIHwg8J+HqPCfh7EgQ0wgfCBWTUVTUyB8IDQ5IiwgIm5ldCI6ICJ3cyIsICJwYXRoIjogIi8iLCAicG9ydCI6IDU3Mjc4LCAicHMiOiAi8J+HrfCfh7AgNzIgLSBISyAtIFZNZXNzL1dTIC0gNTcyNzgiLCAic2N5IjogImF1dG8iLCAic25pIjogIiIsICJ0bHMiOiAibm9uZSIsICJ0eXBlIjogIm5vbmUiLCAidiI6ICIyIn0=",
+      "protocol": "vmess",
+      "ip": "156.239.224.107",
+      "port": "57278",
+      "country_code": "HK",
+      "flag": "🇭🇰",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
+    },
+    {
       "key": "vmess:228714d8667ff60ae01cea929c0c4282ecb68fcef6cc8a9e5bab80bf45b61227",
       "config": "vmess://eyJ2IjoiMiIsInBzIjoiXHVkODNjXHVkZGVkXHVkODNjXHVkZGYwW29wZW5wcm94eWxpc3QuY29tXSB2bWVzcy1ISyIsImFkZCI6IjE1Ni4yMzkuMjI0LjEwNyIsInBvcnQiOjU3Mjc4LCJpZCI6IjEyNzBiZWQ1LWY5MDgtNGVjYy1mMWM4LWRlMjQ2MDMzYjE4NiIsImFpZCI6MCwic2N5IjoiYXV0byIsIm5ldCI6IndzIiwidHlwZSI6IiIsInRscyI6IiIsInBhdGgiOiJcLyIsInNraXAtY2VydC12ZXJpZnkiOnRydWV9",
       "protocol": "vmess",
@@ -149065,6 +150671,17 @@
       "first_seen": "2026-11-02T07:49:24Z"
     },
     {
+      "key": "vmess:8dbe2e2fd3e3023798bfe309279b3d9ea4b8b5b92ed1130a16be0970cd534071",
+      "config": "vmess://eyJhZGQiOiAiMTU2LjI0NS4yMzIuMjM5IiwgImFpZCI6ICIwIiwgImFscG4iOiAiIiwgImZwIjogIiIsICJob3N0IjogIiIsICJpZCI6ICJiMTVlNDgxZC0xN2U0LTQxYTgtODRjMi0yM2Q0ZjA1MTRkOWEiLCAiaW5zZWN1cmUiOiAiMCIsICJuZXQiOiAid3MiLCAicGF0aCI6ICIvIiwgInBjcyI6ICIiLCAicG9ydCI6IDM1MDQzLCAicHMiOiAi8J+HrfCfh7AgNzMgLSBISyAtIFZNZXNzL1dTIC0gMzUwNDMiLCAic2N5IjogImF1dG8iLCAic25pIjogIiIsICJ0bHMiOiAibm9uZSIsICJ0eXBlIjogIi0tLSIsICJ2IjogIjIiLCAidmNuIjogIiIsICJuYW1lIjogInYyZ28gfCDwn4et8J+HsCBISyB8IFZNRVNTIHwgMzMifQ==",
+      "protocol": "vmess",
+      "ip": "156.245.232.239",
+      "port": "35043",
+      "country_code": "HK",
+      "flag": "🇭🇰",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
+    },
+    {
       "key": "vmess:96e680edb179b8efc07bae8984a3f99fd15c58de1b19c6b631adaaa172d132e5",
       "config": "vmess://eyJ2IjoiMiIsInBzIjoiXHVkODNjXHVkZGZhXHVkODNjXHVkZGY4W29wZW5wcm94eWxpc3QuY29tXSB2bWVzcy1VUyIsImFkZCI6ImQxZXl6LnhpYW95YW4uaW8iLCJwb3J0IjoiMTY2NDgiLCJ0eXBlIjoibm9uZSIsImlkIjoiOTA0ZjA1NjktODY5NS00NjZmLTk3Y2YtMGRlMmZhY2UxYjQ2IiwiYWlkIjoiMCIsIm5ldCI6IndzIiwicGF0aCI6IlwvIiwiaG9zdCI6ImY5MzA5Y2M4ODYzN2MyNmY1NTJhMWE2NGZiMzExY2FlLm1vYmdzbGIudGJjYWNoZS5jb20iLCJ0bHMiOiIiLCJza2lwLWNlcnQtdmVyaWZ5Ijp0cnVlfQ==",
       "protocol": "vmess",
@@ -149437,6 +151054,17 @@
       "flag": "🇭🇰",
       "source": "legacy:goololgoo.txt",
       "first_seen": "2026-11-02T07:28:53Z"
+    },
+    {
+      "key": "vmess:e801cb3732ea33a8e9dfb75c2cb40dd1be8884c03aa78f9fa833ce365b664949",
+      "config": "vmess://eyJhZGQiOiAiNDcuMjQ0LjEyMC4xOTciLCAiYWlkIjogIjAiLCAiaG9zdCI6ICI0Ny4yNDQuMTIwLjE5NyIsICJpZCI6ICI4NDVlNmIwOC0yOTE5LTQyOTAtYWRlMC01ZGM3ZGNlYTU5Y2EiLCAibmFtZSI6ICJ2MmdvIHwg8J+HrfCfh7AgSEsgfCBWTUVTUyB8IDcxIiwgIm5ldCI6ICJ3cyIsICJwYXRoIjogIi9hcmtpIiwgInBvcnQiOiA0NDg2NywgInBzIjogIvCfh63wn4ewIDM0IC0gSEsgLSBWTWVzcy9XUyAtIDQ0ODY3IiwgInNjeSI6ICJhdXRvIiwgInNraXAtY2VydC12ZXJpZnkiOiB0cnVlLCAidGxzIjogIm5vbmUiLCAidHlwZSI6ICJub25lIiwgInYiOiAiMiJ9",
+      "protocol": "vmess",
+      "ip": "47.244.120.197",
+      "port": "44867",
+      "country_code": "HK",
+      "flag": "🇭🇰",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
     },
     {
       "key": "vmess:ebfe367c279890e00efad00cdac685976a96e09d6dbd686d23169a284484b59e",
@@ -150154,6 +151782,17 @@
       "first_seen": "2026-11-03T10:08:42Z"
     },
     {
+      "key": "vmess:2b6479b79918760a3219f5544d471a0f563d63ae34e32ad4f69f08b9118cdee8",
+      "config": "vmess://eyJhZGQiOiIxNjguMTM4LjQzLjc1IiwiYWlkIjoiMCIsImFscG4iOiIiLCJmcCI6IiIsImhvc3QiOiJOb25lIiwiaWQiOiIxMWMzNjI3Zi0zMWU4LTQ2OTUtZGZiZC0zNDA3NmUyZjFmNWQiLCJpbnNlY3VyZSI6IjAiLCJuZXQiOiJ3cyIsInBhdGgiOiJcL2NjdHYxMy5tM3U4IiwicGNzIjoiIiwicG9ydCI6IjgwIiwicHMiOiJcdWQ4M2NcdWRkZWZcdWQ4M2NcdWRkZjVbb3BlbnByb3h5bGlzdC5jb21dIHZtZXNzLUpQIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiIiLCJ2IjoiMiIsInZjbiI6IiIsInNraXAtY2VydC12ZXJpZnkiOnRydWV9",
+      "protocol": "vmess",
+      "ip": "168.138.43.75",
+      "port": "80",
+      "country_code": "JP",
+      "flag": "🇯🇵",
+      "source": "SUB#4",
+      "first_seen": "2026-11-27T12:49:09Z"
+    },
+    {
       "key": "vmess:43e8dec976bb7b07ac6ba10875de7e100cf4af788c0df11365f53b75d64cb16c",
       "config": "vmess://eyJhZGQiOiAiNjQuMTc2LjM0LjEwMiIsICJhaWQiOiAiMCIsICJhbHBuIjogIiIsICJmcCI6ICIiLCAiaG9zdCI6ICIiLCAiaWQiOiAiNDc3MzUwYjItNzUzNi00ZjM4LWVlMjEtMDIwZWZkZGUyZDFkIiwgIm5hbWUiOiAidjJnbyB8IPCfh6/wn4e1IEpQIHwgVk1FU1MgfCAzMDciLCAibmV0IjogInRjcCIsICJwYXRoIjogIi8iLCAicG9ydCI6IDQ2MTMwLCAicHMiOiAi8J+Hr/Cfh7UgNzEgLSBKUCAtIFZNZXNzIC0gNDYxMzAiLCAic2N5IjogImF1dG8iLCAic25pIjogIiIsICJ0bHMiOiAibm9uZSIsICJ0eXBlIjogIm5vbmUiLCAidiI6ICIyIn0=",
       "protocol": "vmess",
@@ -150528,6 +152167,17 @@
       "first_seen": "2026-11-26T20:19:44Z"
     },
     {
+      "key": "vmess:31070e0ab96ac3306d42178339fc9fcdac534ffaa8f351897324be87fb294479",
+      "config": "vmess://eyJhZGQiOiAiMTI5LjE1NC42MS4xOTYiLCAiYWlkIjogIjAiLCAiYWxwbiI6ICIiLCAiaWQiOiAiYTkxNWIxZDYtY2YyOC00ZGM4LWU0YjQtZTA5YzQ4YzM3ZWMwIiwgIm5ldCI6ICJ0Y3AiLCAicG9ydCI6IDgwMCwgInBzIjogIvCfh7Dwn4e3IDYyIC0gS1IgLSBWTWVzcyAtIDgwMCIsICJzY3kiOiAiYXV0byIsICJ0bHMiOiAibm9uZSIsICJ0eXBlIjogIiIsICJ2IjogIjIiLCAibmFtZSI6ICJ2MmdvIHwg8J+HsPCfh7cgS1IgfCBWTUVTUyB8IDM0In0=",
+      "protocol": "vmess",
+      "ip": "129.154.61.196",
+      "port": "800",
+      "country_code": "KR",
+      "flag": "🇰🇷",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
+    },
+    {
       "key": "vmess:388713e0002b3b232dac544dccba6a6e9985b093614ff3f896f563fc30d97a61",
       "config": "vmess://eyJhZGQiOiAiMTQwLjIzOC4yLjI1MCIsICJhaWQiOiAiMCIsICJpZCI6ICI0MWE3MDg5YS0wNDBiLTQ1MzgtOGI4ZC0wMTA5MDI0MDViZGUiLCAibmV0IjogInRjcCIsICJwb3J0IjogNDQzLCAicHMiOiAi8J+HsPCfh7cgNDQgLSBLUiAtIFZNZXNzIC0gNDQzIiwgInNjeSI6ICJhdXRvIiwgInRscyI6ICJub25lIiwgInR5cGUiOiAiIiwgInYiOiAiMiIsICJuYW1lIjogInYyZ28gfCDwn4ew8J+HtyBLUiB8IFZNRVNTIHwgMjUifQ==",
       "protocol": "vmess",
@@ -150803,6 +152453,17 @@
       "first_seen": "2026-11-23T03:49:59Z"
     },
     {
+      "key": "vmess:8c47a3bfb68fa08cf1332ea7430de113c86d660a7bef593ac35f0efef7a7b63d",
+      "config": "vmess://eyJhZGQiOiAiMzguMTA3LjIzNC41NyIsICJhaWQiOiAiMCIsICJhbHBuIjogIiIsICJmcCI6ICIiLCAiaG9zdCI6ICIzOC4xMDcuMjM0LjU3IiwgImlkIjogIjU2N2Y0YmU1LTEyYWItNDJlMS1iOGQ5LWRiNmZkMWZkZDMxYyIsICJuYW1lIjogInYyZ28gfCDwn4ew8J+HvyBLWiB8IFZNRVNTIHwgNjYiLCAibmV0IjogIndzIiwgInBhdGgiOiAiL3ZtZXNzLyIsICJwb3J0IjogODAsICJwcyI6ICLwn4ew8J+HvyA5OSAtIEtaIC0gVk1lc3MvV1MgLSA4MCIsICJzY3kiOiAiYXV0byIsICJzbmkiOiAiIiwgInRscyI6ICJub25lIiwgInR5cGUiOiAibm9uZSIsICJ2IjogIjIifQ==",
+      "protocol": "vmess",
+      "ip": "38.107.234.57",
+      "port": "80",
+      "country_code": "KZ",
+      "flag": "🇰🇿",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
+    },
+    {
       "key": "vmess:8d21d05da7f2a36c85b20b20daa11a0d89996ef9a49437e76767a8239f5464dc",
       "config": "vmess://eyJ2IjogIjIiLCAicHMiOiAi8J+HsPCfh78gNCAtIEtaIC0gVk1lc3MvV1MgLSA4MCIsICJhZGQiOiAiM2gta2F6YWtoc3RhbjEuMDl2cG4uY29tIiwgInBvcnQiOiA4MCwgImlkIjogIjU2N2Y0YmU1LTEyYWItNDJlMS1iOGQ5LWRiNmZkMWZkZDMxYyIsICJhaWQiOiAiMCIsICJzY3kiOiAiYXV0byIsICJuZXQiOiAid3MiLCAidHlwZSI6ICJub25lIiwgImhvc3QiOiAiM2gta2F6YWtoc3RhbjEuMDl2cG4uY29tIiwgInBhdGgiOiAiL3ZtZXNzLyIsICJ0bHMiOiAibm9uZSIsICJzbmkiOiAiIiwgImFscG4iOiAiIiwgImZwIjogIiIsICJuYW1lIjogIjA4MjQtTGluay00NiJ9",
       "protocol": "vmess",
@@ -150823,6 +152484,17 @@
       "flag": "🇰🇿",
       "source": "SUB#2",
       "first_seen": "2026-11-16T02:54:45Z"
+    },
+    {
+      "key": "vmess:a7195f92d4a063c7238ce86e7d75ae7f8c9a8867c8e6f081a729014b5d13c3b3",
+      "config": "vmess://eyJhZGQiOiAiM2gta2F6YWtoc3RhbjEuMDl2cG4uY29tIiwgImFpZCI6ICIwIiwgImFscG4iOiBudWxsLCAiZnAiOiBudWxsLCAiaG9zdCI6ICIzaC1rYXpha2hzdGFuMS4wOXZwbi5jb20iLCAiaWQiOiAiNTY3ZjRiZTUtMTJhYi00MmUxLWI4ZDktZGI2ZmQxZmRkMzFjIiwgIm5hbWUiOiAidjJnbyB8IPCfh7Dwn4e/IEtaIHwgVk1FU1MgfCA2OSIsICJuZXQiOiAid3MiLCAicGF0aCI6ICIvdm1lc3MvIiwgInBvcnQiOiA4MCwgInBzIjogIvCfh7Dwn4e/IDEwNiAtIEtaIC0gVk1lc3MvV1MgLSA4MCIsICJzY3kiOiAiYXV0byIsICJzbmkiOiBudWxsLCAidGxzIjogIm5vbmUiLCAidHlwZSI6IG51bGwsICJ2IjogbnVsbH0=",
+      "protocol": "vmess",
+      "ip": "3h-kazakhstan1.09vpn.com",
+      "port": "80",
+      "country_code": "KZ",
+      "flag": "🇰🇿",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
     },
     {
       "key": "vmess:b577aa1d39b466fe0b684f3f0cf1565e19607f7a9a47ebfb797bdc8ee3360097",
@@ -151628,6 +153300,17 @@
       "first_seen": "2026-11-26T20:19:44Z"
     },
     {
+      "key": "vmess:5b3371fa1c5877c54684aeb6a6d808dbae92f2f81b706d44cece912d4abadbeb",
+      "config": "vmess://eyJhZGQiOiAibGV2aWtvLXNlMzMwNy5zaG9waW5nZ2dnLmlyIiwgImFpZCI6IDAsICJob3N0IjogIiIsICJpZCI6ICI1YzA0MGYxZC00NWRiLTQzYmQtOGQ0Ni1lNDk1MGU0MzM3MzUiLCAibmV0IjogInRjcCIsICJwYXRoIjogIiIsICJwb3J0IjogMTI3MCwgInBzIjogIvCfh7jwn4eqIDExNCAtIFNFIC0gVk1lc3MvVExTIC0gMTI3MCIsICJzY3kiOiAiYXV0byIsICJzbmkiOiAieG1maGxweS5jb20iLCAidGxzIjogInRscyIsICJ0eXBlIjogIm5vbmUiLCAidiI6ICIyIiwgIm5hbWUiOiAidjJnbyB8IPCfh7jwn4eqIFNFIHwgVk1FU1MgfCA4MCJ9",
+      "protocol": "vmess",
+      "ip": "leviko-se3307.shopingggg.ir",
+      "port": "1270",
+      "country_code": "SE",
+      "flag": "🇸🇪",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
+    },
+    {
       "key": "vmess:5e22705f25ab24d3e793fcfdba353a502dbbc78100e9d750736ae3df706e19c2",
       "config": "vmess://eyJhZGQiOiIxMzguMTk5LjU1LjIzMCIsImFpZCI6IjAiLCJhbHBuIjoiIiwiaG9zdCI6IiIsImlkIjoiNWMwNDBmMWQtNDVkYi00M2JkLThkNDYtZTQ5NTBlNDMzNzM1IiwibmV0IjoidGNwIiwicGF0aCI6IiIsInBvcnQiOiIxMjcwIiwicHMiOiJcdWQ4M2NcdWRmZjNbb3BlbnByb3h5bGlzdC5jb21dIHZtZXNzLSIsInNjeSI6ImF1dG8iLCJzbmkiOiJ4bWZobHB5LmNvbSIsInRscyI6InRscyIsInR5cGUiOiJub25lIiwidiI6IjIiLCJza2lwLWNlcnQtdmVyaWZ5Ijp0cnVlfQ==",
       "protocol": "vmess",
@@ -152046,6 +153729,17 @@
       "first_seen": "2026-11-10T17:59:14Z"
     },
     {
+      "key": "vmess:4bfa10cbf6cbdd297239e86bc2cdd7f756c06e0e94839980319eda4c7362867c",
+      "config": "vmess://eyJhZGQiOiAiMTQ5Ljg4LjIzLjIwNyIsICJhaWQiOiAiMCIsICJhbHBuIjogIiIsICJmcCI6ICIiLCAiaG9zdCI6ICIiLCAiaWQiOiAiZjhjOGRjM2QtMGQzNy00NmIwLThiMzQtYTcyMzI4ODJmY2ZlIiwgIm5ldCI6ICJ0Y3AiLCAicGF0aCI6ICIvIiwgInBvcnQiOiAxODAwMCwgInBzIjogIvCfh7jwn4esIDY5IC0gU0cgLSBWTWVzcyAtIDE4MDAwIiwgInNjeSI6ICJhdXRvIiwgInNuaSI6ICIiLCAidGxzIjogIm5vbmUiLCAidHlwZSI6ICJub25lIiwgInYiOiAiMiIsICJuYW1lIjogInYyZ28gfCDwn4e48J+HrCBTRyB8IFZNRVNTIHwgMzEifQ==",
+      "protocol": "vmess",
+      "ip": "149.88.23.207",
+      "port": "18000",
+      "country_code": "SG",
+      "flag": "🇸🇬",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
+    },
+    {
       "key": "vmess:4c321dea5c57abd1c31f233e27b19eb1366259197eec117e443848825f143bb8",
       "config": "vmess://eyJhZGQiOiJ3am9mSHNRdEV1RXl3eEVxLnYuM2Rucy52aXAiLCJhaWQiOjAsImhvc3QiOiJ3am9mSHNRdEV1RXl3eEVxLnYuM2Rucy52aXAiLCJpZCI6ImE5ZjRkZThiLTY4ZjEtNDRiNi1iNmEyLTFkYjYwOTQwNTAzYSIsIm5ldCI6IndzIiwicGF0aCI6Ilwvd3Mtdm1lc3MiLCJwb3J0Ijo0NDMsInBzIjoiXHVkODNjXHVkZGY4XHVkODNjXHVkZGVjW29wZW5wcm94eWxpc3QuY29tXSB2bWVzcy1TRyIsInRscyI6InRscyIsInR5cGUiOiJhdXRvIiwic2VjdXJpdHkiOiJhdXRvIiwic2tpcC1jZXJ0LXZlcmlmeSI6dHJ1ZSwic25pIjoid2pvZkhzUXRFdUV5d3hFcS52LjNkbnMudmlwIn0=",
       "protocol": "vmess",
@@ -152231,6 +153925,17 @@
       "flag": "🇸🇬",
       "source": "SUB#2",
       "first_seen": "2026-11-24T02:23:01Z"
+    },
+    {
+      "key": "vmess:75ad8e0fa3591b7f7fe51cd02335809201c70dadb84a9770374591ddacc59feb",
+      "config": "vmess://eyJhZGQiOiAiMTQ5Ljg4LjIzLjIwMiIsICJhaWQiOiAwLCAiaG9zdCI6ICIxNDkuODguMjMuMjAyIiwgImlkIjogImY4YzhkYzNkLTBkMzctNDZiMC04YjM0LWE3MjMyODgyZmNmZSIsICJuYW1lIjogInYyZ28gfCDwn4e48J+HrCBTRyB8IFZNRVNTIHwgNDAiLCAibmV0IjogInRjcCIsICJwYXRoIjogIiIsICJwb3J0IjogMTgwMDAsICJwcyI6ICLwn4e48J+HrCA3MCAtIFNHIC0gVk1lc3MgLSAxODAwMCIsICJzY3kiOiAiYXV0byIsICJzbmkiOiAiMTQ5Ljg4LjIzLjIwMiIsICJ0bHMiOiAibm9uZSIsICJ0eXBlIjogIm5vbmUiLCAidiI6ICIyIn0=",
+      "protocol": "vmess",
+      "ip": "149.88.23.202",
+      "port": "18000",
+      "country_code": "SG",
+      "flag": "🇸🇬",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
     },
     {
       "key": "vmess:775b6674a93b494e040ba72fa1bda42734daf4f057af4a263923b1312a071911",
@@ -152618,6 +154323,17 @@
       "first_seen": "2026-11-11T06:47:41Z"
     },
     {
+      "key": "vmess:e755a804d2f45b31f31562bfeb5b56a034b7ec3f0bf97565883d626a115b18d5",
+      "config": "vmess://eyJhZGQiOiAiMTQ5Ljg4LjEwNy41MSIsICJhaWQiOiAiMCIsICJhbHBuIjogIiIsICJmcCI6ICIiLCAiaG9zdCI6ICIiLCAiaWQiOiAiNWMwNDBmMWQtNDVkYi00M2JkLThkNDYtZTQ5NTBlNDMzNzM1IiwgImluc2VjdXJlIjogIjAiLCAibmFtZSI6ICJ2MmdvIHwg8J+HuPCfh6wgU0cgfCBWTUVTUyB8IDQxIiwgIm5ldCI6ICJ0Y3AiLCAicGF0aCI6ICIiLCAicGNzIjogIiIsICJwb3J0IjogMTI3MCwgInBzIjogIvCfh7jwn4esIDY4IC0gU0cgLSBWTWVzcy9UTFMgLSAxMjcwIiwgInNjeSI6ICJhdXRvIiwgInNuaSI6ICJ4bWZobHB5LmNvbSIsICJ0bHMiOiAidGxzIiwgInR5cGUiOiAiIiwgInYiOiAiMiIsICJ2Y24iOiAiIn0=",
+      "protocol": "vmess",
+      "ip": "149.88.107.51",
+      "port": "1270",
+      "country_code": "SG",
+      "flag": "🇸🇬",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
+    },
+    {
       "key": "vmess:e944b4a1769587fc973861faf30cc9bc0190fb1d83573cdc412b1779f922b326",
       "config": "vmess://eyJ2IjogbnVsbCwgInBzIjogIvCfh7jwn4esIDQwIC0gU0cgLSBWTWVzcyAtIDE4MDAwIiwgImFkZCI6ICIxNDkuODguMjMuMjA3IiwgInBvcnQiOiAxODAwMCwgImlkIjogImY4YzhkYzNkLTBkMzctNDZiMC04YjM0LWE3MjMyODgyZmNmZSIsICJhaWQiOiAiMCIsICJzY3kiOiAiYXV0byIsICJuZXQiOiAidGNwIiwgInR5cGUiOiBudWxsLCAiaG9zdCI6ICJ3dzExLmxldmlrb2dqZ2ZkZC5pciIsICJhbHBuIjogbnVsbCwgInBhdGgiOiAiLyIsICJ0bHMiOiAibm9uZSIsICJzbmkiOiBudWxsLCAiZnAiOiBudWxsLCAibmFtZSI6ICLwn4e48J+HrCBTRyAyIn0=",
       "protocol": "vmess",
@@ -152649,6 +154365,17 @@
       "flag": "🇸🇬",
       "source": "SUB#2",
       "first_seen": "2026-11-22T16:28:17Z"
+    },
+    {
+      "key": "vmess:f4e29d2dc4897ab014540aa453ec449a75c1bd30ec1657394ca4f61abd79588c",
+      "config": "vmess://eyJhZGQiOiAid3cxMS5sZXZpa29namdmZGQuaXIiLCAiYWlkIjogIjAiLCAiYWxwbiI6ICIiLCAiZnAiOiAiIiwgImhvc3QiOiAiVGVsZWdyYW0tTGV2aWtvX3YycmF5IiwgImlkIjogImY4YzhkYzNkLTBkMzctNDZiMC04YjM0LWE3MjMyODgyZmNmZSIsICJpbnNlY3VyZSI6ICIwIiwgIm5ldCI6ICJ0Y3AiLCAicGF0aCI6ICIiLCAicGNzIjogIiIsICJwb3J0IjogMTgwMDAsICJwcyI6ICLwn4e48J+HrCAxMDkgLSBTRyAtIFZNZXNzIC0gMTgwMDAiLCAic2N5IjogImF1dG8iLCAic25pIjogIiIsICJ0bHMiOiAibm9uZSIsICJ0eXBlIjogIm5vbmUiLCAidiI6ICIyIiwgInZjbiI6ICIiLCAibmFtZSI6ICJ2MmdvIHwg8J+HuPCfh6wgU0cgfCBWTUVTUyB8IDM5In0=",
+      "protocol": "vmess",
+      "ip": "ww11.levikogjgfdd.ir",
+      "port": "18000",
+      "country_code": "SG",
+      "flag": "🇸🇬",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
     },
     {
       "key": "vmess:f7a2995326e503b0fe02b4b0213de5769d82a7033aa501c3904a6961c3814299",
@@ -152737,6 +154464,17 @@
       "flag": "🇹🇭",
       "source": "SUB#2",
       "first_seen": "2026-11-26T20:19:44Z"
+    },
+    {
+      "key": "vmess:88e30b25428bfb620ab63b322e8794676ccaebbce09898a924065d3cbd49cc58",
+      "config": "vmess://eyJhZGQiOiAiMTE5LjQ2LjUxLjQ1IiwgImFpZCI6ICIwIiwgImFscG4iOiBudWxsLCAiZnAiOiBudWxsLCAiaG9zdCI6IG51bGwsICJpZCI6ICI5Yjc2YmMzMS0xN2E1LTQ0NTQtOTM0YS04ZDVmYjYwMmNkNzAiLCAibmFtZSI6ICJ2MmdvIHwg8J+HufCfh60gVEggfCBWTUVTUyB8IDM3IiwgIm5ldCI6ICJ0Y3AiLCAicGF0aCI6ICIvIiwgInBvcnQiOiAzNzUxNSwgInBzIjogIvCfh7nwn4etIDYwIC0gVEggLSBWTWVzcyAtIDM3NTE1IiwgInNjeSI6ICJhdXRvIiwgInNuaSI6IG51bGwsICJ0bHMiOiAibm9uZSIsICJ0eXBlIjogbnVsbCwgInYiOiBudWxsfQ==",
+      "protocol": "vmess",
+      "ip": "119.46.51.45",
+      "port": "37515",
+      "country_code": "TH",
+      "flag": "🇹🇭",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
     },
     {
       "key": "vmess:99b7b0bb23f1d48fb92e842918bfa042789315e8341818f1a852e23cbaee5419",
@@ -153091,6 +154829,17 @@
       "first_seen": "2026-11-24T02:23:01Z"
     },
     {
+      "key": "vmess:0846c01ac35cf9b50183545195a7c9a25e79b869248f77291f32ac444d270faf",
+      "config": "vmess://eyJhZGQiOiAiMzguMjIuMTcuMTk3IiwgImFpZCI6ICIwIiwgImFscG4iOiAiIiwgImhvc3QiOiAiIiwgImlkIjogIjVjMDQwZjFkLTQ1ZGItNDNiZC04ZDQ2LWU0OTUwZTQzMzczNSIsICJuYW1lIjogInYyZ28gfCDwn4e68J+HuCBVUyB8IFZNRVNTIHwgNjAiLCAibmV0IjogInRjcCIsICJwYXRoIjogIiIsICJwb3J0IjogMTI3MCwgInBzIjogIvCfh7rwn4e4IDEwNCAtIFVTIC0gVk1lc3MvVExTIC0gMTI3MCIsICJzY3kiOiAiYXV0byIsICJzbmkiOiAieG1maGxweS5jb20iLCAidGxzIjogInRscyIsICJ0eXBlIjogIm5vbmUiLCAidiI6ICIyIn0=",
+      "protocol": "vmess",
+      "ip": "38.22.17.197",
+      "port": "1270",
+      "country_code": "US",
+      "flag": "🇺🇸",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
+    },
+    {
       "key": "vmess:085fdb9965818be4e65fc250a7ac7452968cfb19efa781980aafca846a9e5295",
       "config": "vmess://eyJhZGQiOiAiMTY3Ljg4LjYzLjQ3IiwgImFpZCI6ICIwIiwgImFscG4iOiAiIiwgImhvc3QiOiAiIiwgImlkIjogIjVjMDQwZjFkLTQ1ZGItNDNiZC04ZDQ2LWU0OTUwZTQzMzczNSIsICJuYW1lIjogInYyZ28gfCDwn4e68J+HuCBVUyB8IFZNRVNTIHwgNDI3IiwgIm5ldCI6ICJ0Y3AiLCAicGF0aCI6ICIiLCAicG9ydCI6IDEyNzAsICJwcyI6ICLwn4e68J+HuCA4OCAtIFVTIC0gVk1lc3MvVExTIC0gMTI3MCIsICJzY3kiOiAiYXV0byIsICJzbmkiOiAieG1maGxweS5jb20iLCAidGxzIjogInRscyIsICJ0eXBlIjogIm5vbmUiLCAidiI6ICIyIn0=",
       "protocol": "vmess",
@@ -153210,6 +154959,17 @@
       "flag": "🇺🇸",
       "source": "SUB#2",
       "first_seen": "2026-11-24T02:23:01Z"
+    },
+    {
+      "key": "vmess:0d79f7b5fe46f90226fdcc083da6cbbb497fb0e7f22fd9549392ec2b3c9dd4f0",
+      "config": "vmess://eyJ2IjogbnVsbCwgInBzIjogIvCfh7rwn4e4IDI3IC0gVVMgLSBWTWVzcy9UTFMgLSAxMjcwIiwgImFkZCI6ICIxNzIuMTExLjM4LjI0NiIsICJwb3J0IjogMTI3MCwgImlkIjogIjVjMDQwZjFkLTQ1ZGItNDNiZC04ZDQ2LWU0OTUwZTQzMzczNSIsICJhaWQiOiAiMCIsICJzY3kiOiAiYXV0byIsICJuZXQiOiAidGNwIiwgInR5cGUiOiBudWxsLCAiaG9zdCI6ICIiLCAiYWxwbiI6IG51bGwsICJwYXRoIjogIi8iLCAidGxzIjogInRscyIsICJzbmkiOiAieG1maGxweS5jb20iLCAiZnAiOiBudWxsLCAibmFtZSI6ICLwn4e68J+HuCBVUyA3In0=",
+      "protocol": "vmess",
+      "ip": "172.111.38.246",
+      "port": "1270",
+      "country_code": "US",
+      "flag": "🇺🇸",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
     },
     {
       "key": "vmess:0dd9e510e3ae258756d50c9aab1efaafff5ea5b1082a203bf9b411f90a0b3743",
@@ -153707,6 +155467,17 @@
       "first_seen": "2026-11-10T02:18:26Z"
     },
     {
+      "key": "vmess:1dfacf72032ce385874c253221b8efa52a829a80cfce50545dc01dabd3333f20",
+      "config": "vmess://eyJhZGQiOiAiMzguMTI4LjY2LjI0MSIsICJhaWQiOiAiMCIsICJhbHBuIjogbnVsbCwgImZwIjogbnVsbCwgImhvc3QiOiAiIiwgImlkIjogIjVjMDQwZjFkLTQ1ZGItNDNiZC04ZDQ2LWU0OTUwZTQzMzczNSIsICJuYW1lIjogInYyZ28gfCDwn4e68J+HuCBVUyB8IFZNRVNTIHwgNTciLCAibmV0IjogInRjcCIsICJwYXRoIjogIi8iLCAicG9ydCI6IDEyNzAsICJwcyI6ICLwn4e68J+HuCAxMDIgLSBVUyAtIFZNZXNzL1RMUyAtIDEyNzAiLCAic2N5IjogImF1dG8iLCAic25pIjogInhtZmhscHkuY29tIiwgInRscyI6ICJ0bHMiLCAidHlwZSI6IG51bGwsICJ2IjogbnVsbH0=",
+      "protocol": "vmess",
+      "ip": "38.128.66.241",
+      "port": "1270",
+      "country_code": "US",
+      "flag": "🇺🇸",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
+    },
+    {
       "key": "vmess:1e0969a99e4cf860f551804c10a46e89c8d4b6c1530331ba44cc76d185b0d0c1",
       "config": "vmess://eyJhZGQiOiIxMjkuMTQ2LjE0My44MCIsImFpZCI6MCwiaWQiOiJkNDYwM2NjMi1lMGVlLTQ2NTEtODNmNS0xZGI1YjcxNjgxNzciLCJuZXQiOiJ0Y3AiLCJwb3J0Ijo0ODExMSwicHMiOiJVUyDwn4e68J+HuCB8IEBSYXlkaWthbHggfCAxODgxMUQiLCJzY3kiOiJhdXRvIiwic2tpcC1jZXJ0LXZlcmlmeSI6dHJ1ZSwidGxzIjoibm9uZSIsInR5cGUiOiIiLCJ2IjoiMiIsIm5hbWUiOiJVUyDwn4e68J+HuCB8IEBSYXlkaWthbHggfCAxODgxMUQifQ==",
       "protocol": "vmess",
@@ -153850,6 +155621,17 @@
       "first_seen": "2026-11-04T22:00:41Z"
     },
     {
+      "key": "vmess:25f5aab1c74254766506dc155b887fbd6698ed38dc144bdea67d0f61b51ecef4",
+      "config": "vmess://eyJ2IjogbnVsbCwgInBzIjogIvCfh7rwn4e4IDI1IC0gVVMgLSBWTWVzcy9UTFMgLSAxMjcwIiwgImFkZCI6ICIzOC42NC4xMzguMTM1IiwgInBvcnQiOiAxMjcwLCAiaWQiOiAiNWMwNDBmMWQtNDVkYi00M2JkLThkNDYtZTQ5NTBlNDMzNzM1IiwgImFpZCI6ICIwIiwgInNjeSI6ICJhdXRvIiwgIm5ldCI6ICJ0Y3AiLCAidHlwZSI6IG51bGwsICJob3N0IjogIiIsICJhbHBuIjogbnVsbCwgInBhdGgiOiAiLyIsICJ0bHMiOiAidGxzIiwgInNuaSI6ICJ4bWZobHB5LmNvbSIsICJmcCI6IG51bGwsICJuYW1lIjogIvCfh7rwn4e4IFVTIDIifQ==",
+      "protocol": "vmess",
+      "ip": "38.64.138.135",
+      "port": "1270",
+      "country_code": "US",
+      "flag": "🇺🇸",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
+    },
+    {
       "key": "vmess:260da8945820b5677fb6bfac525f66ded688fea141384f9422956151f52e101f",
       "config": "vmess://eyJhZGQiOiIzOC45MS4xMDcuNDkiLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6IiIsImlkIjoiZjhjOGRjM2QtMGQzNy00NmIwLThiMzQtYTcyMzI4ODJmY2ZlIiwiaW5zZWN1cmUiOiIwIiwibmV0IjoidGNwIiwicGF0aCI6IiIsInBvcnQiOiIxODAwMCIsInBzIjoiW/Cfh7rwn4e4XXQubWUvQ29uZmlnc0h1YiIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoiIiwidiI6IjIifQ==",
       "protocol": "vmess",
@@ -153936,6 +155718,17 @@
       "flag": "🇺🇸",
       "source": "SUB#2",
       "first_seen": "2026-11-25T05:32:23Z"
+    },
+    {
+      "key": "vmess:26b23551cd9d0243d96b79cf4db2f469bc15f6325fd0deebd08241cee13d282b",
+      "config": "vmess://eyJ2IjogbnVsbCwgInBzIjogIvCfh7rwn4e4IDI0IC0gVVMgLSBWTWVzcy9UTFMgLSAxMjcwIiwgImFkZCI6ICIzOC45MS4xMDYuMTgyIiwgInBvcnQiOiAxMjcwLCAiaWQiOiAiNWMwNDBmMWQtNDVkYi00M2JkLThkNDYtZTQ5NTBlNDMzNzM1IiwgImFpZCI6ICIwIiwgInNjeSI6ICJhdXRvIiwgIm5ldCI6ICJ0Y3AiLCAidHlwZSI6IG51bGwsICJob3N0IjogIiIsICJhbHBuIjogbnVsbCwgInBhdGgiOiAiLyIsICJ0bHMiOiAidGxzIiwgInNuaSI6ICJ4bWZobHB5LmNvbSIsICJmcCI6IG51bGwsICJuYW1lIjogIvCfh7rwn4e4IFVTIDEzIn0=",
+      "protocol": "vmess",
+      "ip": "38.91.106.182",
+      "port": "1270",
+      "country_code": "US",
+      "flag": "🇺🇸",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
     },
     {
       "key": "vmess:26fda65ac04c56d8d2b9fa5515ea49a6c15b5f0a7ebd175837360f02060055b7",
@@ -154167,6 +155960,17 @@
       "flag": "🇺🇸",
       "source": "@meliproxyy",
       "first_seen": "2026-11-24T02:23:00Z"
+    },
+    {
+      "key": "vmess:30aab080696232b9c76503d33e62061ea5022d2b3ed37281cc0434fbb325da8d",
+      "config": "vmess://eyJhZGQiOiAiMTI5LjE0Ni43Ny4yNDgiLCAiYWlkIjogIjAiLCAiaG9zdCI6ICIxMjkuMTQ2Ljc3LjI0OCIsICJpZCI6ICJmODM2YzczNi04N2ZjLTRmZGUtYWFiYy0wMDg1N2VjZGZmM2UiLCAibmV0IjogIndzIiwgInBhdGgiOiAiL2NjdHYxMy5tM3U4IiwgInBvcnQiOiAzOTQ5NSwgInBzIjogIvCfh7rwn4e4IDYxIC0gVVMgLSBWTWVzcy9XUyAtIDM5NDk1IiwgInNjeSI6ICJhdXRvIiwgInRscyI6ICJub25lIiwgInR5cGUiOiAiIiwgInYiOiAiMiIsICJuYW1lIjogInYyZ28gfCDwn4e68J+HuCBVUyB8IFZNRVNTIHwgMjYifQ==",
+      "protocol": "vmess",
+      "ip": "129.146.77.248",
+      "port": "39495",
+      "country_code": "US",
+      "flag": "🇺🇸",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
     },
     {
       "key": "vmess:326a01a7e0e50839ef5b27c4b6f7c60d6b394ad981665431ea41f2d0faacfa12",
@@ -154620,6 +156424,17 @@
       "first_seen": "2026-11-24T02:23:01Z"
     },
     {
+      "key": "vmess:46dcc3fb8dcca51db1f62bb3144272ceacbb823c504f7fc2ff7a808a34722f59",
+      "config": "vmess://eyJ2IjogbnVsbCwgInBzIjogIvCfh7rwn4e4IDE3IC0gVVMgLSBWTWVzcy9UTFMgLSAxMjcwIiwgImFkZCI6ICIzOC45MS4xMDcuODQiLCAicG9ydCI6IDEyNzAsICJpZCI6ICI1YzA0MGYxZC00NWRiLTQzYmQtOGQ0Ni1lNDk1MGU0MzM3MzUiLCAiYWlkIjogIjAiLCAic2N5IjogImF1dG8iLCAibmV0IjogInRjcCIsICJ0eXBlIjogbnVsbCwgImhvc3QiOiAiIiwgImFscG4iOiBudWxsLCAicGF0aCI6ICIvIiwgInRscyI6ICJ0bHMiLCAic25pIjogInhtZmhscHkuY29tIiwgImZwIjogbnVsbCwgIm5hbWUiOiAi8J+HuvCfh7ggVVMgMTQifQ==",
+      "protocol": "vmess",
+      "ip": "38.91.107.84",
+      "port": "1270",
+      "country_code": "US",
+      "flag": "🇺🇸",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
+    },
+    {
       "key": "vmess:47f0a092ef82177a5ac4e0d99cc498aac574132f6551301913b04c8ae06993e3",
       "config": "vmess://eyJ2IjpudWxsLCJwcyI6IlVTIPCfh7rwn4e4IHwgQFJheWRpa2FseCB8IDUyODhEMCIsImFkZCI6InJpYjlqeGF5b3FqZ24ya3cudi4zZG5zLnZpcCIsInBvcnQiOjQ0MywiaWQiOiI5YjMxNDkwZC0xOTBlLTRlZjEtYWYwYS03Y2NhYjNlN2MzYjUiLCJhaWQiOiIwIiwic2N5IjoiYXV0byIsIm5ldCI6IndzIiwidHlwZSI6bnVsbCwiaG9zdCI6IiIsImFscG4iOm51bGwsInBhdGgiOiIvd3Mtdm1lc3MiLCJ0bHMiOiJ0bHMiLCJzbmkiOiIiLCJmcCI6bnVsbCwibmFtZSI6IlVTIPCfh7rwn4e4IHwgQFJheWRpa2FseCB8IDUyODhEMCJ9",
       "protocol": "vmess",
@@ -154862,6 +156677,17 @@
       "first_seen": "2026-11-06T20:59:09Z"
     },
     {
+      "key": "vmess:4fc42637ba469a6622da39923aa12ef87e1ee87e600a5e9e9050518e8afa1e7e",
+      "config": "vmess://eyJhZGQiOiI2Ny4yMjAuOTUuMyIsImFpZCI6IjAiLCJhbHBuIjoiIiwiZnAiOiIiLCJob3N0IjoiNjcuMjIwLjk1LjMiLCJpZCI6ImY4YzhkYzNkLTBkMzctNDZiMC04YjM0LWE3MjMyODgyZmNmZSIsImluc2VjdXJlIjoiMCIsIm5ldCI6InRjcCIsInBhdGgiOiIiLCJwY3MiOiIiLCJwb3J0IjoiMTgwMDAiLCJwcyI6IkBtZWxpcHJveHkiLCJzY3kiOiJhdXRvIiwic25pIjoiNjcuMjIwLjk1LjMiLCJ0bHMiOiIiLCJ0eXBlIjoibm9uZSIsInYiOiIyIiwidmNuIjoiIn0=",
+      "protocol": "vmess",
+      "ip": "67.220.95.3",
+      "port": "18000",
+      "country_code": "US",
+      "flag": "🇺🇸",
+      "source": "@meliproxyy",
+      "first_seen": "2026-11-27T12:49:07Z"
+    },
+    {
       "key": "vmess:51a14f4c3dea6f0af6142bf1288ccd6488ed43c7c78f72050f5cd2f113077721",
       "config": "vmess://eyJhZGQiOiIxNjkuMTk3LjE0Mi42OCIsImFpZCI6IjAiLCJhbHBuIjoiIiwiaG9zdCI6IiIsImlkIjoiNWMwNDBmMWQtNDVkYi00M2JkLThkNDYtZTQ5NTBlNDMzNzM1IiwibmV0IjoidGNwIiwicGF0aCI6IiIsInBvcnQiOiIxMjcwIiwicHMiOiJcdWQ4M2NcdWRkZmFcdWQ4M2NcdWRkZjhbb3BlbnByb3h5bGlzdC5jb21dIHZtZXNzLVVTIiwic2N5IjoiYXV0byIsInNuaSI6InhtZmhscHkuY29tIiwidGxzIjoidGxzIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiIsInNraXAtY2VydC12ZXJpZnkiOnRydWV9",
       "protocol": "vmess",
@@ -154926,6 +156752,17 @@
       "flag": "🇺🇸",
       "source": "SUB#1",
       "first_seen": "2026-11-22T00:29:17Z"
+    },
+    {
+      "key": "vmess:541ecee96632c595a63ab1e590658555ac6c4e42df4ef02eb1b970d492343f0f",
+      "config": "vmess://eyJhZGQiOiAiMzguNjQuMTM4LjE4NyIsICJhaWQiOiAiMCIsICJhbHBuIjogIiIsICJob3N0IjogIiIsICJpZCI6ICI1YzA0MGYxZC00NWRiLTQzYmQtOGQ0Ni1lNDk1MGU0MzM3MzUiLCAibmFtZSI6ICJ2MmdvIHwg8J+HuvCfh7ggVVMgfCBWTUVTUyB8IDYzIiwgIm5ldCI6ICJ0Y3AiLCAicGF0aCI6ICIiLCAicG9ydCI6IDEyNzAsICJwcyI6ICLwn4e68J+HuCA5NSAtIFVTIC0gVk1lc3MvVExTIC0gMTI3MCIsICJzY3kiOiAiYXV0byIsICJzbmkiOiAieG1maGxweS5jb20iLCAidGxzIjogInRscyIsICJ0eXBlIjogIm5vbmUiLCAidiI6ICIyIn0=",
+      "protocol": "vmess",
+      "ip": "38.64.138.187",
+      "port": "1270",
+      "country_code": "US",
+      "flag": "🇺🇸",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
     },
     {
       "key": "vmess:54f4f5519153f4b93edfa0546d19a42a6f74dd8264d45d21cd3b55ccc70eab8f",
@@ -155179,6 +157016,17 @@
       "flag": "🇺🇸",
       "source": "SUB#2",
       "first_seen": "2026-11-24T12:43:01Z"
+    },
+    {
+      "key": "vmess:5b9fe13ea509f7a9e4e75dcddcb7ba77b3dcb3200ab0fcdd11a1a175ac1e4518",
+      "config": "vmess://eyJ2IjogbnVsbCwgInBzIjogIvCfh7rwn4e4IDE4IC0gVVMgLSBWTWVzcy9UTFMgLSAxMjcwIiwgImFkZCI6ICIyMTYuMTA2LjE4Mi4yMjUiLCAicG9ydCI6IDEyNzAsICJpZCI6ICI1YzA0MGYxZC00NWRiLTQzYmQtOGQ0Ni1lNDk1MGU0MzM3MzUiLCAiYWlkIjogIjAiLCAic2N5IjogImF1dG8iLCAibmV0IjogInRjcCIsICJ0eXBlIjogbnVsbCwgImhvc3QiOiAiIiwgImFscG4iOiBudWxsLCAicGF0aCI6ICIvIiwgInRscyI6ICJ0bHMiLCAic25pIjogInhtZmhscHkuY29tIiwgImZwIjogbnVsbCwgIm5hbWUiOiAi8J+HuvCfh7ggVVMgMTUifQ==",
+      "protocol": "vmess",
+      "ip": "216.106.182.225",
+      "port": "1270",
+      "country_code": "US",
+      "flag": "🇺🇸",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
     },
     {
       "key": "vmess:5bd9f297f359a4b117b00e3245993b060d75bd1b0d222de25546f9c9be3b77a9",
@@ -155830,6 +157678,17 @@
       "first_seen": "2026-11-04T06:44:02Z"
     },
     {
+      "key": "vmess:708493168b0c48dc715cdf02f2666d5543f61af7c73f172fcf75a8754b92ff41",
+      "config": "vmess://eyJhZGQiOiAiMTY3Ljg4LjYzLjQ3IiwgImFpZCI6ICIwIiwgImFscG4iOiAiIiwgImhvc3QiOiAiIiwgImlkIjogIjVjMDQwZjFkLTQ1ZGItNDNiZC04ZDQ2LWU0OTUwZTQzMzczNSIsICJuYW1lIjogInYyZ28gfCDwn4e68J+HuCBVUyB8IFZNRVNTIHwgNDMiLCAibmV0IjogInRjcCIsICJwYXRoIjogIiIsICJwb3J0IjogMTI3MCwgInBzIjogIvCfh7rwn4e4IDc4IC0gVVMgLSBWTWVzcy9UTFMgLSAxMjcwIiwgInNjeSI6ICJhdXRvIiwgInNuaSI6ICJ4bWZobHB5LmNvbSIsICJ0bHMiOiAidGxzIiwgInR5cGUiOiAibm9uZSIsICJ2IjogIjIifQ==",
+      "protocol": "vmess",
+      "ip": "167.88.63.47",
+      "port": "1270",
+      "country_code": "US",
+      "flag": "🇺🇸",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
+    },
+    {
       "key": "vmess:719eb1c2a46e8e447b29128741c4e1e6377401d427d9ed9b325fe40271bf18f1",
       "config": "vmess://eyJhZGQiOiAiMTYyLjI1MS42Mi40MiIsICJhaWQiOiAiMCIsICJhbHBuIjogbnVsbCwgImZwIjogbnVsbCwgImhvc3QiOiAiIiwgImlkIjogIjVjMDQwZjFkLTQ1ZGItNDNiZC04ZDQ2LWU0OTUwZTQzMzczNSIsICJuYW1lIjogInYyZ28gfCDwn4e68J+HuCBVUyB8IFZNRVNTIHwgNDAwIiwgIm5ldCI6ICJ0Y3AiLCAicGF0aCI6ICIvIiwgInBvcnQiOiAxMjcwLCAicHMiOiAi8J+HuvCfh7ggODQgLSBVUyAtIFZNZXNzL1RMUyAtIDEyNzAiLCAic2N5IjogImF1dG8iLCAic25pIjogInhtZmhscHkuY29tIiwgInRscyI6ICJ0bHMiLCAidHlwZSI6IG51bGwsICJ2IjogbnVsbH0=",
       "protocol": "vmess",
@@ -156226,6 +158085,17 @@
       "first_seen": "2026-11-01T07:46:37Z"
     },
     {
+      "key": "vmess:7da2aa565b62e0f711f44d1c6244eae438a46f2e087d23a7c696af2c5457d19f",
+      "config": "vmess://eyJhZGQiOiIxNjIuMjUxLjYxLjQ2IiwiYWlkIjoiMCIsImFscG4iOiIiLCJmcCI6IiIsImhvc3QiOiJ4bWZobHB5LmNvbSIsImlkIjoiNWMwNDBmMWQtNDVkYi00M2JkLThkNDYtZTQ5NTBlNDMzNzM1IiwiaW5zZWN1cmUiOiIwIiwibmV0IjoidGNwIiwicGF0aCI6IiIsInBjcyI6IiIsInBvcnQiOiIxMjcwIiwicHMiOiJVUyDwn4e68J+HuCB8IEBSYXlkaWthbHggfCAxNTQxQkUiLCJzY3kiOiJhdXRvIiwic25pIjoieG1maGxweS5jb20iLCJ0bHMiOiJ0bHMiLCJ0eXBlIjoibm9uZSIsInYiOiIyIiwidmNuIjoiIn0=",
+      "protocol": "vmess",
+      "ip": "162.251.61.46",
+      "port": "1270",
+      "country_code": "US",
+      "flag": "🇺🇸",
+      "source": "SUB#1",
+      "first_seen": "2026-11-27T12:49:09Z"
+    },
+    {
       "key": "vmess:7dc547a708397e2f24d48eee7776dad61ad2cd9a9b5bec3916989372bc3455a3",
       "config": "vmess://eyJhZGQiOiI4NC4xNy40MS4yIiwiYWlkIjowLCJob3N0IjoiIiwiaWQiOiJmOGM4ZGMzZC0wZDM3LTQ2YjAtOGIzNC1hNzIzMjg4MmZjZmUiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiIiwicG9ydCI6IjE4MDAwIiwicHMiOiLwn4e68J+HuCBAZ29vbG9sZ29vIPCflJAg2YjbjOKAjNm+24zigIzYp9mGINix2KfbjNqv2KfZhiB8IEZyZWUgUHJveHnwn5KlIiwic25pIjoiYmoxYWEyenlqeHlhbXl1ay52LjNkbnMudmlwIiwidGxzIjoiIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiJ9",
       "protocol": "vmess",
@@ -156323,6 +158193,17 @@
       "flag": "🇺🇸",
       "source": "SUB#2",
       "first_seen": "2026-11-26T20:19:44Z"
+    },
+    {
+      "key": "vmess:80b15452436ea09a78820365ee591c76b0c85cecb5805892df93fa5dfc7933b8",
+      "config": "vmess://eyJ2IjogbnVsbCwgInBzIjogIvCfh7rwn4e4IDIxIC0gVVMgLSBWTWVzcy9UTFMgLSAxMjcwIiwgImFkZCI6ICIzOC45MS4xMDAuMTYiLCAicG9ydCI6IDEyNzAsICJpZCI6ICI1YzA0MGYxZC00NWRiLTQzYmQtOGQ0Ni1lNDk1MGU0MzM3MzUiLCAiYWlkIjogIjAiLCAic2N5IjogImF1dG8iLCAibmV0IjogInRjcCIsICJ0eXBlIjogbnVsbCwgImhvc3QiOiAiIiwgImFscG4iOiBudWxsLCAicGF0aCI6ICIvIiwgInRscyI6ICJ0bHMiLCAic25pIjogInhtZmhscHkuY29tIiwgImZwIjogbnVsbCwgIm5hbWUiOiAi8J+HuvCfh7ggVVMgMSJ9",
+      "protocol": "vmess",
+      "ip": "38.91.100.16",
+      "port": "1270",
+      "country_code": "US",
+      "flag": "🇺🇸",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
     },
     {
       "key": "vmess:811a5f12a46656b6a0ce689dd83380477d1771e0d6c85e666df0b3e83c253412",
@@ -156477,6 +158358,17 @@
       "flag": "🇺🇸",
       "source": "SUB#1",
       "first_seen": "2026-11-27T03:00:15Z"
+    },
+    {
+      "key": "vmess:84530cede5d7af2afed949adc41b610ff566eec7a91544ce9fee56b3fb2f4b3a",
+      "config": "vmess://eyJhZGQiOiAiNjcuMjIwLjg1LjQ2IiwgImFpZCI6ICIwIiwgImhvc3QiOiAiNjcuMjIwLjg1LjQ2IiwgImlkIjogImY4YzhkYzNkLTBkMzctNDZiMC04YjM0LWE3MjMyODgyZmNmZSIsICJuYW1lIjogInYyZ28gfCDwn4e68J+HuCBVUyB8IFZNRVNTIHwgNzUiLCAibmV0IjogInRjcCIsICJwYXRoIjogIiIsICJwb3J0IjogMTgwMDAsICJwcyI6ICLwn4e68J+HuCA0MiAtIFVTIC0gVk1lc3MgLSAxODAwMCIsICJzY3kiOiAiYXV0byIsICJzbmkiOiAiNjcuMjIwLjg1LjQ2IiwgInRscyI6ICJub25lIiwgInR5cGUiOiAibm9uZSIsICJ2IjogIjIifQ==",
+      "protocol": "vmess",
+      "ip": "67.220.85.46",
+      "port": "18000",
+      "country_code": "US",
+      "flag": "🇺🇸",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
     },
     {
       "key": "vmess:848261a49cfc1a7870667793272964de85bb54059d2af72ff888bfabb12785c0",
@@ -157007,6 +158899,17 @@
       "first_seen": "2026-11-24T02:23:01Z"
     },
     {
+      "key": "vmess:9700e54ef4f3b846b9dc210b4ac79284e97c463d777667bea4f8fc98bc8dec18",
+      "config": "vmess://eyJhZGQiOiAiMzguMTEwLjEuMjQ2IiwgImFpZCI6ICIwIiwgImFscG4iOiAiIiwgImZwIjogIiIsICJob3N0IjogIjM4LjExMC4xLjI0NiIsICJpZCI6ICJmOGM4ZGMzZC0wZDM3LTQ2YjAtOGIzNC1hNzIzMjg4MmZjZmUiLCAiaW5zZWN1cmUiOiAiMCIsICJuYW1lIjogInYyZ28gfCDwn4e68J+HuCBVUyB8IFZNRVNTIHwgNTYiLCAibmV0IjogInRjcCIsICJwYXRoIjogIiIsICJwY3MiOiAiIiwgInBvcnQiOiAxODAwMCwgInBzIjogIvCfh7rwn4e4IDEwMCAtIFVTIC0gVk1lc3MgLSAxODAwMCIsICJzY3kiOiAiYXV0byIsICJzbmkiOiAiMzguMTEwLjEuMjQ2IiwgInRscyI6ICJub25lIiwgInR5cGUiOiAibm9uZSIsICJ2IjogIjIiLCAidmNuIjogIiJ9",
+      "protocol": "vmess",
+      "ip": "38.110.1.246",
+      "port": "18000",
+      "country_code": "US",
+      "flag": "🇺🇸",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
+    },
+    {
       "key": "vmess:9704cb2982d287846e4e2007dabeb4aaa2a3451d70bc90ca79c9dc0ea6d6b783",
       "config": "vmess://eyJ2IjogbnVsbCwgInBzIjogIvCfh7rwn4e4IDE5IC0gVVMgLSBWTWVzcyAtIDE4MDAwIiwgImFkZCI6ICIzOC4xMTAuMS4yNDYiLCAicG9ydCI6IDE4MDAwLCAiaWQiOiAiZjhjOGRjM2QtMGQzNy00NmIwLThiMzQtYTcyMzI4ODJmY2ZlIiwgImFpZCI6ICIwIiwgInNjeSI6ICJhdXRvIiwgIm5ldCI6ICJ0Y3AiLCAidHlwZSI6IG51bGwsICJob3N0IjogIiIsICJhbHBuIjogbnVsbCwgInBhdGgiOiAiLyIsICJ0bHMiOiAibm9uZSIsICJzbmkiOiBudWxsLCAiZnAiOiBudWxsLCAibmFtZSI6ICLwn4e68J+HuCBVUyAyMiJ9",
       "protocol": "vmess",
@@ -157161,6 +159064,17 @@
       "first_seen": "2026-11-27T03:00:12Z"
     },
     {
+      "key": "vmess:9c569d0c3f3833e31fc6d8522df81c699fe40bf68dd962b54c86effcdac50e11",
+      "config": "vmess://eyJhZGQiOiAiMzguMjIuMTcuNjQiLCAiYWlkIjogIjAiLCAiYWxwbiI6IG51bGwsICJmcCI6IG51bGwsICJob3N0IjogIiIsICJpZCI6ICI1YzA0MGYxZC00NWRiLTQzYmQtOGQ0Ni1lNDk1MGU0MzM3MzUiLCAibmFtZSI6ICJ2MmdvIHwg8J+HuvCfh7ggVVMgfCBWTUVTUyB8IDYxIiwgIm5ldCI6ICJ0Y3AiLCAicGF0aCI6ICIvIiwgInBvcnQiOiAxMjcwLCAicHMiOiAi8J+HuvCfh7ggMTAzIC0gVVMgLSBWTWVzcy9UTFMgLSAxMjcwIiwgInNjeSI6ICJhdXRvIiwgInNuaSI6ICJ4bWZobHB5LmNvbSIsICJ0bHMiOiAidGxzIiwgInR5cGUiOiBudWxsLCAidiI6IG51bGx9",
+      "protocol": "vmess",
+      "ip": "38.22.17.64",
+      "port": "1270",
+      "country_code": "US",
+      "flag": "🇺🇸",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
+    },
+    {
       "key": "vmess:9d2b6f2b6e68f5cb3bf2ba6eba610064f19a7b9913450e96430ca7b53e1f004e",
       "config": "vmess://eyJhZGQiOiAiMTYyLjI1MS42MC45NyIsICJhaWQiOiAiMCIsICJhbHBuIjogIiIsICJob3N0IjogIiIsICJpZCI6ICI1YzA0MGYxZC00NWRiLTQzYmQtOGQ0Ni1lNDk1MGU0MzM3MzUiLCAibmFtZSI6ICJ2MmdvIHwg8J+HuvCfh7ggVVMgfCBWTUVTUyB8IDE5OCIsICJuZXQiOiAidGNwIiwgInBhdGgiOiAiIiwgInBvcnQiOiAxMjcwLCAicHMiOiAi8J+HuvCfh7ggNzIgLSBVUyAtIFZNZXNzL1RMUyAtIDEyNzAiLCAic2N5IjogImF1dG8iLCAic25pIjogInhtZmhscHkuY29tIiwgInRscyI6ICJ0bHMiLCAidHlwZSI6ICJub25lIiwgInYiOiAiMiJ9",
       "protocol": "vmess",
@@ -157280,6 +159194,17 @@
       "flag": "🇺🇸",
       "source": "SUB#2",
       "first_seen": "2026-11-04T22:00:41Z"
+    },
+    {
+      "key": "vmess:a4769ac501b87b671353299969fd59b19dc053a17362095e2cd90c148208477e",
+      "config": "vmess://eyJhZGQiOiAiODQuMTcuNDEuMiIsICJhaWQiOiAwLCAiaG9zdCI6ICI4NC4xNy40MS4yIiwgImlkIjogImY4YzhkYzNkLTBkMzctNDZiMC04YjM0LWE3MjMyODgyZmNmZSIsICJuYW1lIjogInYyZ28gfCDwn4e68J+HuCBVUyB8IFZNRVNTIHwgNzYiLCAibmV0IjogInRjcCIsICJwYXRoIjogIiIsICJwb3J0IjogMTgwMDAsICJwcyI6ICLwn4e68J+HuCA0OCAtIFVTIC0gVk1lc3MgLSAxODAwMCIsICJzY3kiOiAiYXV0byIsICJzbmkiOiAiODQuMTcuNDEuMiIsICJ0bHMiOiAibm9uZSIsICJ0eXBlIjogIm5vbmUiLCAidiI6ICIyIn0=",
+      "protocol": "vmess",
+      "ip": "84.17.41.2",
+      "port": "18000",
+      "country_code": "US",
+      "flag": "🇺🇸",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
     },
     {
       "key": "vmess:a4fa355f71465d93b1e4dd9247fbe64fae493c06c2fac1ffcf00e72068394c6c",
@@ -157414,6 +159339,17 @@
       "first_seen": "2026-11-22T22:36:00Z"
     },
     {
+      "key": "vmess:a9e6827bb0193d01083aa82b6a20b2ad71c9fc7e833de66d394ba04505f73a66",
+      "config": "vmess://eyJhZGQiOiAiMTY5LjE5Ny4xNDIuMjIiLCAiYWlkIjogIjAiLCAiYWxwbiI6ICIiLCAiZnAiOiAiIiwgImhvc3QiOiAiMTY5LjE5Ny4xNDIuMjIiLCAiaWQiOiAiZjhjOGRjM2QtMGQzNy00NmIwLThiMzQtYTcyMzI4ODJmY2ZlIiwgImluc2VjdXJlIjogIjAiLCAibmFtZSI6ICJ2MmdvIHwg8J+HuvCfh7ggVVMgfCBWTUVTUyB8IDQ1IiwgIm5ldCI6ICJ0Y3AiLCAicGF0aCI6ICIiLCAicGNzIjogIiIsICJwb3J0IjogMTgwMDAsICJwcyI6ICLwn4e68J+HuCA4MCAtIFVTIC0gVk1lc3MgLSAxODAwMCIsICJzY3kiOiAiYXV0byIsICJzbmkiOiAiMTY5LjE5Ny4xNDIuMjIiLCAidGxzIjogIm5vbmUiLCAidHlwZSI6ICJub25lIiwgInYiOiAiMiIsICJ2Y24iOiAiIn0=",
+      "protocol": "vmess",
+      "ip": "169.197.142.22",
+      "port": "18000",
+      "country_code": "US",
+      "flag": "🇺🇸",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
+    },
+    {
       "key": "vmess:aa1415eafce7ef0f49364b95dbca3118a20d05a57bb7216ffaddddc6b8e2b937",
       "config": "vmess://eyJhZGQiOiI2Ny4yMjAuODUuNDYiLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6IiIsImlkIjoiZjhjOGRjM2QtMGQzNy00NmIwLThiMzQtYTcyMzI4ODJmY2ZlIiwiaW5zZWN1cmUiOiIwIiwibmV0IjoidGNwIiwicGF0aCI6IiIsInBvcnQiOiIxODAwMCIsInBzIjoiQ2hhbm5lbCA6IEBwcm94eV9rYWZlZSIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoibm9uZSIsInYiOiIyIn0=",
       "protocol": "vmess",
@@ -157467,6 +159403,28 @@
       "flag": "🇺🇸",
       "source": "SUB#2",
       "first_seen": "2026-11-26T01:54:07Z"
+    },
+    {
+      "key": "vmess:ab336eb5fcb5efe6e94660cea77af109c46ddec5b2c005aab2505c60708cf5df",
+      "config": "vmess://eyJ2IjogbnVsbCwgInBzIjogIvCfh7rwn4e4IDIwIC0gVVMgLSBWTWVzcyAtIDE4MDAwIiwgImFkZCI6ICIzOC4xMTAuMS4yNDYiLCAicG9ydCI6IDE4MDAwLCAiaWQiOiAiZjhjOGRjM2QtMGQzNy00NmIwLThiMzQtYTcyMzI4ODJmY2ZlIiwgImFpZCI6ICIwIiwgInNjeSI6ICJhdXRvIiwgIm5ldCI6ICJ0Y3AiLCAidHlwZSI6IG51bGwsICJob3N0IjogIiIsICJhbHBuIjogbnVsbCwgInBhdGgiOiAiLyIsICJ0bHMiOiAibm9uZSIsICJzbmkiOiBudWxsLCAiZnAiOiBudWxsLCAibmFtZSI6ICLwn4e68J+HuCBVUyAxNyJ9",
+      "protocol": "vmess",
+      "ip": "38.110.1.246",
+      "port": "18000",
+      "country_code": "US",
+      "flag": "🇺🇸",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
+    },
+    {
+      "key": "vmess:abb4e2c561a44cc83e788e24003a2738e3cc847d91c349e0f2b29583b5686912",
+      "config": "vmess://eyJhZGQiOiAiMzguMTI4LjY2LjIxMiIsICJhaWQiOiAiMCIsICJhbHBuIjogbnVsbCwgImZwIjogbnVsbCwgImhvc3QiOiAiIiwgImlkIjogIjVjMDQwZjFkLTQ1ZGItNDNiZC04ZDQ2LWU0OTUwZTQzMzczNSIsICJuYW1lIjogInYyZ28gfCDwn4e68J+HuCBVUyB8IFZNRVNTIHwgNTkiLCAibmV0IjogInRjcCIsICJwYXRoIjogIi8iLCAicG9ydCI6IDEyNzAsICJwcyI6ICLwn4e68J+HuCAxMDEgLSBVUyAtIFZNZXNzL1RMUyAtIDEyNzAiLCAic2N5IjogImF1dG8iLCAic25pIjogInhtZmhscHkuY29tIiwgInRscyI6ICJ0bHMiLCAidHlwZSI6IG51bGwsICJ2IjogbnVsbH0=",
+      "protocol": "vmess",
+      "ip": "38.128.66.212",
+      "port": "1270",
+      "country_code": "US",
+      "flag": "🇺🇸",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
     },
     {
       "key": "vmess:abb89b66a556273568461cd4d5887dfd1e0b61f81c4610c562c7d09936eab45d",
@@ -157654,6 +159612,17 @@
       "flag": "🇺🇸",
       "source": "SUB#2",
       "first_seen": "2026-11-04T22:00:41Z"
+    },
+    {
+      "key": "vmess:b44622a2dadec42636a99784bb427f6ee46f02ecf414e7aa7523b8647d6bb7e9",
+      "config": "vmess://eyJhZGQiOiAiNjcuMjIwLjk1LjMiLCAiYWlkIjogMCwgImhvc3QiOiAiNjcuMjIwLjk1LjMiLCAiaWQiOiAiZjhjOGRjM2QtMGQzNy00NmIwLThiMzQtYTcyMzI4ODJmY2ZlIiwgIm5hbWUiOiAidjJnbyB8IPCfh7rwn4e4IFVTIHwgVk1FU1MgfCA3NCIsICJuZXQiOiAidGNwIiwgInBhdGgiOiAiLyIsICJwb3J0IjogMTgwMDAsICJwcyI6ICLwn4e68J+HuCA0NCAtIFVTIC0gVk1lc3MgLSAxODAwMCIsICJzY3kiOiAiYXV0byIsICJzbmkiOiAiNjcuMjIwLjk1LjMiLCAidGxzIjogIm5vbmUiLCAidHlwZSI6ICJub25lIiwgInYiOiAiMiJ9",
+      "protocol": "vmess",
+      "ip": "67.220.95.3",
+      "port": "18000",
+      "country_code": "US",
+      "flag": "🇺🇸",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
     },
     {
       "key": "vmess:b4a5daad81687067f8890a48278c9115aec4e0ffdf7c1889d1fa086183af4f7e",
@@ -158074,6 +160043,17 @@
       "first_seen": "2026-11-25T05:32:23Z"
     },
     {
+      "key": "vmess:c4108e16133ceff2214857f21c9785320311efecb59d197ac29f9d30db093712",
+      "config": "vmess://eyJhZGQiOiAiMzguOTEuMTAwLjY5IiwgImFpZCI6ICIwIiwgImFscG4iOiAiIiwgImhvc3QiOiAiIiwgImlkIjogIjVjMDQwZjFkLTQ1ZGItNDNiZC04ZDQ2LWU0OTUwZTQzMzczNSIsICJuYW1lIjogInYyZ28gfCDwn4e68J+HuCBVUyB8IFZNRVNTIHwgNjQiLCAibmV0IjogInRjcCIsICJwYXRoIjogIiIsICJwb3J0IjogMTI3MCwgInBzIjogIvCfh7rwn4e4IDk2IC0gVVMgLSBWTWVzcy9UTFMgLSAxMjcwIiwgInNjeSI6ICJhdXRvIiwgInNuaSI6ICJ4bWZobHB5LmNvbSIsICJ0bHMiOiAidGxzIiwgInR5cGUiOiAibm9uZSIsICJ2IjogIjIifQ==",
+      "protocol": "vmess",
+      "ip": "38.91.100.69",
+      "port": "1270",
+      "country_code": "US",
+      "flag": "🇺🇸",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
+    },
+    {
       "key": "vmess:c4466456bd3abf154062ae4751566b33c2b59b70461a158e01d47da7598d2043",
       "config": "vmess://eyJhZGQiOiIxNjIuMjUxLjYyLjMxIiwiYWlkIjoiMCIsImFscG4iOiIiLCJob3N0IjoiIiwiaWQiOiI1YzA0MGYxZC00NWRiLTQzYmQtOGQ0Ni1lNDk1MGU0MzM3MzUiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiIiwicG9ydCI6IjEyNzAiLCJwcyI6IlVTIPCfh7rwn4e4IHwgQFJheWRpa2FseCB8IDYwQkM0RSIsInNjeSI6ImF1dG8iLCJzbmkiOiJ4bWZobHB5LmNvbSIsInRscyI6InRscyIsInR5cGUiOiJub25lIiwidiI6IjIifQ==",
       "protocol": "vmess",
@@ -158215,6 +160195,17 @@
       "flag": "🇺🇸",
       "source": "SUB#1",
       "first_seen": "2026-11-03T23:31:36Z"
+    },
+    {
+      "key": "vmess:c7d7038f2cd5afdfd01454c2984e5c3cdbaf992da11c151093561765199c1537",
+      "config": "vmess://eyJ2IjogbnVsbCwgInBzIjogIvCfh7rwn4e4IDIzIC0gVVMgLSBWTWVzcy9UTFMgLSAxMjcwIiwgImFkZCI6ICIxNjIuMjUxLjYyLjMxIiwgInBvcnQiOiAxMjcwLCAiaWQiOiAiNWMwNDBmMWQtNDVkYi00M2JkLThkNDYtZTQ5NTBlNDMzNzM1IiwgImFpZCI6ICIwIiwgInNjeSI6ICJhdXRvIiwgIm5ldCI6ICJ0Y3AiLCAidHlwZSI6IG51bGwsICJob3N0IjogIiIsICJhbHBuIjogbnVsbCwgInBhdGgiOiAiLyIsICJ0bHMiOiAidGxzIiwgInNuaSI6ICJ4bWZobHB5LmNvbSIsICJmcCI6IG51bGwsICJuYW1lIjogIvCfh7rwn4e4IFVTIDEyIn0=",
+      "protocol": "vmess",
+      "ip": "162.251.62.31",
+      "port": "1270",
+      "country_code": "US",
+      "flag": "🇺🇸",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
     },
     {
       "key": "vmess:c7ecac971b425af08888e4d8516a8a27556bb361408185d8a9920df2a9c87ace",
@@ -158679,6 +160670,17 @@
       "first_seen": "2026-11-05T17:48:55Z"
     },
     {
+      "key": "vmess:d652556af9fea2e8a1ade8550033cae3af03062832a5b206c2e5c139a3586018",
+      "config": "vmess://eyJhZGQiOiAiMzguOTEuMTA3LjQ5IiwgImFpZCI6IDAsICJob3N0IjogIjM4LjkxLjEwNy40OSIsICJpZCI6ICJmOGM4ZGMzZC0wZDM3LTQ2YjAtOGIzNC1hNzIzMjg4MmZjZmUiLCAibmFtZSI6ICJ2MmdvIHwg8J+HuvCfh7ggVVMgfCBWTUVTUyB8IDY1IiwgIm5ldCI6ICJ0Y3AiLCAicGF0aCI6ICIiLCAicG9ydCI6IDE4MDAwLCAicHMiOiAi8J+HuvCfh7ggOTcgLSBVUyAtIFZNZXNzIC0gMTgwMDAiLCAic2N5IjogImF1dG8iLCAic25pIjogIjM4LjkxLjEwNy40OSIsICJ0bHMiOiAibm9uZSIsICJ0eXBlIjogIm5vbmUiLCAidiI6ICIyIn0=",
+      "protocol": "vmess",
+      "ip": "38.91.107.49",
+      "port": "18000",
+      "country_code": "US",
+      "flag": "🇺🇸",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
+    },
+    {
       "key": "vmess:d6b3c5fd801f6df4e2b41d6800e20a572106be9108a39fe283e20291e6616606",
       "config": "vmess://eyJhZGQiOiI2Ny4yMjAuODUuNDYiLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6IiIsImlkIjoiZjhjOGRjM2QtMGQzNy00NmIwLThiMzQtYTcyMzI4ODJmY2ZlIiwiaW5zZWN1cmUiOiIwIiwibmV0IjoidGNwIiwicGF0aCI6IiIsInBjcyI6IiIsInBvcnQiOiIxODAwMCIsInBzIjoiQ2hhbm5lbCA6IEBEYWlseV9Db25maWdzICIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoiIiwidiI6IjIiLCJ2Y24iOiIifQ==",
       "protocol": "vmess",
@@ -158765,6 +160767,17 @@
       "flag": "🇺🇸",
       "source": "SUB#2",
       "first_seen": "2026-11-03T01:41:40Z"
+    },
+    {
+      "key": "vmess:d960d41ed913acbcb0d6d1a035aa9fd3531cdd40deae5398ba88131ef5c83363",
+      "config": "vmess://eyJhZGQiOiAiMzguMTA3LjIyNi41IiwgImFpZCI6ICIwIiwgImFscG4iOiBudWxsLCAiZnAiOiBudWxsLCAiaG9zdCI6ICIiLCAiaWQiOiAiNWMwNDBmMWQtNDVkYi00M2JkLThkNDYtZTQ5NTBlNDMzNzM1IiwgIm5hbWUiOiAidjJnbyB8IPCfh7rwn4e4IFVTIHwgVk1FU1MgfCA1OCIsICJuZXQiOiAidGNwIiwgInBhdGgiOiAiLyIsICJwb3J0IjogMTI3MCwgInBzIjogIvCfh7rwn4e4IDk4IC0gVVMgLSBWTWVzcy9UTFMgLSAxMjcwIiwgInNjeSI6ICJhdXRvIiwgInNuaSI6ICJ4bWZobHB5LmNvbSIsICJ0bHMiOiAidGxzIiwgInR5cGUiOiBudWxsLCAidiI6IG51bGx9",
+      "protocol": "vmess",
+      "ip": "38.107.226.5",
+      "port": "1270",
+      "country_code": "US",
+      "flag": "🇺🇸",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
     },
     {
       "key": "vmess:d9d64758ca1b9dbbef8269412771195bc2fd3c9e12b648253dafb7659a57de2f",
@@ -159020,6 +161033,17 @@
       "first_seen": "2026-11-22T16:28:17Z"
     },
     {
+      "key": "vmess:e0c68e18d2bc369ea7fcaf83dc7692d3d2ce7893af1e149464c7597f076d717f",
+      "config": "vmess://eyJ2IjogbnVsbCwgInBzIjogIvCfh7rwn4e4IDIyIC0gVVMgLSBWTWVzcy9UTFMgLSAxMjcwIiwgImFkZCI6ICIxNjcuODguNjMuMzkiLCAicG9ydCI6IDEyNzAsICJpZCI6ICI1YzA0MGYxZC00NWRiLTQzYmQtOGQ0Ni1lNDk1MGU0MzM3MzUiLCAiYWlkIjogIjAiLCAic2N5IjogImF1dG8iLCAibmV0IjogInRjcCIsICJ0eXBlIjogbnVsbCwgImhvc3QiOiAiIiwgImFscG4iOiBudWxsLCAicGF0aCI6ICIvIiwgInRscyI6ICJ0bHMiLCAic25pIjogInhtZmhscHkuY29tIiwgImZwIjogbnVsbCwgIm5hbWUiOiAi8J+HuvCfh7ggVVMgMTAifQ==",
+      "protocol": "vmess",
+      "ip": "167.88.63.39",
+      "port": "1270",
+      "country_code": "US",
+      "flag": "🇺🇸",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
+    },
+    {
       "key": "vmess:e0eaadd1fdb436e9e2b5faf68ce90d50a10bd1ce34b19fe963e270d5f5650561",
       "config": "vmess://eyJhZGQiOiAiODQuMTcuNDEuMiIsICJhaWQiOiAiMCIsICJhbHBuIjogIiIsICJmcCI6ICIiLCAiaG9zdCI6ICJzZXJ2ZXIyMi45OTY2MzM4Lnh5eiIsICJpZCI6ICJmOGM4ZGMzZC0wZDM3LTQ2YjAtOGIzNC1hNzIzMjg4MmZjZmUiLCAiaW5zZWN1cmUiOiAiMCIsICJuZXQiOiAidGNwIiwgInBhdGgiOiAiL3NlcmhyZGZ0c2hnP2VkPTI1NjAiLCAicGNzIjogIiIsICJwb3J0IjogIjE4MDAwIiwgInBzIjogIiVGMCU5RiU4NyVCQSVGMCU5RiU4NyVCOFVTXzlfQFN1cmZib2FyZHYycmF5IiwgInNjeSI6ICJhdXRvIiwgInNuaSI6ICJzZXJ2ZXIyMi45OTY2MzM4Lnh5eiIsICJ0bHMiOiAiIiwgInR5cGUiOiAibm9uZSIsICJ2IjogIjIiLCAidmNuIjogIiJ9",
       "protocol": "vmess",
@@ -159075,6 +161099,17 @@
       "first_seen": "2026-11-21T11:28:30Z"
     },
     {
+      "key": "vmess:e2325de0fdc5c43b1dc34edfd236c35d1549ea63c035d06d669239ed805f3017",
+      "config": "vmess://eyJhZGQiOiAiMzguMjIuMTcuMjUxIiwgImFpZCI6ICIwIiwgImFscG4iOiAiIiwgImhvc3QiOiAiIiwgImlkIjogIjVjMDQwZjFkLTQ1ZGItNDNiZC04ZDQ2LWU0OTUwZTQzMzczNSIsICJuYW1lIjogInYyZ28gfCDwn4e68J+HuCBVUyB8IFZNRVNTIHwgNjIiLCAibmV0IjogInRjcCIsICJwYXRoIjogIiIsICJwb3J0IjogMTI3MCwgInBzIjogIvCfh7rwn4e4IDEwNSAtIFVTIC0gVk1lc3MvVExTIC0gMTI3MCIsICJzY3kiOiAiYXV0byIsICJzbmkiOiAieG1maGxweS5jb20iLCAidGxzIjogInRscyIsICJ0eXBlIjogIm5vbmUiLCAidiI6ICIyIn0=",
+      "protocol": "vmess",
+      "ip": "38.22.17.251",
+      "port": "1270",
+      "country_code": "US",
+      "flag": "🇺🇸",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
+    },
+    {
       "key": "vmess:e2571e1034b377c2bedffdf62b6c9b934173d45ced1ed0706200dd33721b1629",
       "config": "vmess://eyJhZGQiOiAiMjMuMTUwLjE1Mi42NSIsICJhaWQiOiAiMCIsICJhbHBuIjogbnVsbCwgImZwIjogbnVsbCwgImhvc3QiOiAiIiwgImlkIjogIjVjMDQwZjFkLTQ1ZGItNDNiZC04ZDQ2LWU0OTUwZTQzMzczNSIsICJuYW1lIjogInYyZ28gfCDwn4e68J+HuCBVUyB8IFZNRVNTIHwgMzk3IiwgIm5ldCI6ICJ0Y3AiLCAicGF0aCI6ICIvIiwgInBvcnQiOiAxMjcwLCAicHMiOiAi8J+HuvCfh7ggMTE3IC0gVVMgLSBWTWVzcy9UTFMgLSAxMjcwIiwgInNjeSI6ICJhdXRvIiwgInNuaSI6ICJ4bWZobHB5LmNvbSIsICJ0bHMiOiAidGxzIiwgInR5cGUiOiBudWxsLCAidiI6IG51bGx9",
       "protocol": "vmess",
@@ -159117,6 +161152,17 @@
       "flag": "🇺🇸",
       "source": "SUB#2",
       "first_seen": "2026-11-24T02:23:01Z"
+    },
+    {
+      "key": "vmess:e36d2898e4c0d28c783a1357e6841aa9e3b06ffd39edfbc43913d274d5a8e518",
+      "config": "vmess://eyJhZGQiOiI2Ny4yMjAuODUuNDYiLCJhaWQiOiIwIiwiYWxwbiI6IiIsImVjaCI6IiIsImZwIjoiIiwiaG9zdCI6Ii8/VGVsZWdyYW0tLS1QTEFOQl9ORVQtLS1QTEFOQl9ORVQtLS1QTEFOQl9ORVQtLS1QTEFOQl9ORVQiLCJpZCI6ImY4YzhkYzNkLTBkMzctNDZiMC04YjM0LWE3MjMyODgyZmNmZSIsImluc2VjdXJlIjoiIiwibmV0IjoidGNwIiwicGF0aCI6IiIsInBjcyI6IiIsInBvcnQiOjE4MDAwLCJwcXYiOiIiLCJwcyI6IlVTIPCfh7rwn4e4IHwgQFJheWRpa2FseCB8IEJBNDNBMyIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiJub25lIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiIsInZjbiI6IiIsIm5hbWUiOiJVUyDwn4e68J+HuCB8IEBSYXlkaWthbHggfCBCQTQzQTMifQ==",
+      "protocol": "vmess",
+      "ip": "67.220.85.46",
+      "port": "18000",
+      "country_code": "US",
+      "flag": "🇺🇸",
+      "source": "SUB#1",
+      "first_seen": "2026-11-27T12:49:09Z"
     },
     {
       "key": "vmess:e44e3dd4d42c5a41e16b76dc36ff16a58affb81ed7651e8d251a24dc3675cf14",
@@ -159592,6 +161638,17 @@
       "first_seen": "2026-11-27T03:00:15Z"
     },
     {
+      "key": "vmess:f4f9d40ce6e97fbf06c5f1bc977666c18cea167893b6e289eb92c8142e8ae4d7",
+      "config": "vmess://eyJhZGQiOiAiNjcuMjIwLjk1LjMiLCAiYWlkIjogIjAiLCAiYWxwbiI6ICIiLCAiZnAiOiAiIiwgImhvc3QiOiAiIiwgImlkIjogImY4YzhkYzNkLTBkMzctNDZiMC04YjM0LWE3MjMyODgyZmNmZSIsICJpbnNlY3VyZSI6ICIwIiwgIm5ldCI6ICJ0Y3AiLCAicGF0aCI6ICIiLCAicGNzIjogIiIsICJwb3J0IjogMTgwMDAsICJwcyI6ICLwn4e68J+HuCA0MyAtIFVTIC0gVk1lc3MgLSAxODAwMCIsICJzY3kiOiAiYXV0byIsICJzbmkiOiAiIiwgInRscyI6ICJub25lIiwgInR5cGUiOiAibm9uZSIsICJ2IjogIjIiLCAidmNuIjogIiIsICJuYW1lIjogIkBGYXJhelYycmF5ICJ9",
+      "protocol": "vmess",
+      "ip": "67.220.95.3",
+      "port": "18000",
+      "country_code": "US",
+      "flag": "🇺🇸",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
+    },
+    {
       "key": "vmess:f4fbf5cc71f420f45757d0039f2687c94d23e1c16e7ae312b6147a4d16fda3cd",
       "config": "vmess://eyJhZGQiOiIzOC4xMjguNjYuMjEyIiwiYWlkIjoiMCIsImFscG4iOiIiLCJob3N0IjoiIiwiaWQiOiI1YzA0MGYxZC00NWRiLTQzYmQtOGQ0Ni1lNDk1MGU0MzM3MzUiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiIiwicG9ydCI6IjEyNzAiLCJwcyI6IlVTIPCfh7rwn4e4IHwgQFJheWRpa2FseCB8IDg4MkE3RiIsInNjeSI6ImF1dG8iLCJzbmkiOiJ4bWZobHB5LmNvbSIsInRscyI6InRscyIsInR5cGUiOiJub25lIiwidiI6IjIifQ==",
       "protocol": "vmess",
@@ -159845,6 +161902,17 @@
       "first_seen": "2026-11-04T15:36:17Z"
     },
     {
+      "key": "vmess:fd5f09b39edaf1149a9c4afd54e234348b27f4f8a7351632a031ac38077cb7e3",
+      "config": "vmess://eyJhZGQiOiAiMTcyLjExMS4zNi4yNDQiLCAiYWlkIjogIjAiLCAiYWxwbiI6ICIiLCAiZnAiOiAiIiwgImhvc3QiOiAiIiwgImlkIjogIjVjMDQwZjFkLTQ1ZGItNDNiZC04ZDQ2LWU0OTUwZTQzMzczNSIsICJpbnNlY3VyZSI6ICIwIiwgIm5hbWUiOiAidjJnbyB8IPCfh7rwn4e4IFVTIHwgVk1FU1MgfCA0OCIsICJuZXQiOiAidGNwIiwgInBhdGgiOiAiIiwgInBjcyI6ICIiLCAicG9ydCI6IDEyNzAsICJwcyI6ICLwn4e68J+HuCA4MSAtIFVTIC0gVk1lc3MvVExTIC0gMTI3MCIsICJzY3kiOiAiYXV0byIsICJzbmkiOiAieG1maGxweS5jb20iLCAidGxzIjogInRscyIsICJ0eXBlIjogIm5vbmUiLCAidiI6ICIyIiwgInZjbiI6ICIifQ==",
+      "protocol": "vmess",
+      "ip": "172.111.36.244",
+      "port": "1270",
+      "country_code": "US",
+      "flag": "🇺🇸",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
+    },
+    {
       "key": "vmess:fdd5470143dafc40528621c664e70bafa3a5a7c62381c2b4d915abb8358aee83",
       "config": "vmess://eyJhZGQiOiIxODguMTE0Ljk5LjEzNyIsImFpZCI6IjAiLCJhbHBuIjoiIiwiZnAiOiIiLCJob3N0IjoiIiwiaWQiOiI2YTg5YTIxNS0yMmJmLTRiZDctOTY0Mi1iOTViMmUwOTU4M2EiLCJpbnNlY3VyZSI6IjAiLCJuZXQiOiJ3cyIsInBhdGgiOiIvaGxzL2NjdHY1cGhkLm0zdTgiLCJwY3MiOiIiLCJwb3J0IjoiNDQzIiwicHMiOiJVUyDwn4e68J+HuCB8IEBSYXlkaWthbHggfCBGNjQyREEiLCJzY3kiOiJhdXRvIiwic25pIjoiZ3VhbndhbmcuYXdzbm8uY29tIiwidGxzIjoidGxzIiwidHlwZSI6ImF1dG8iLCJ2IjoiMiIsInZjbiI6IiJ9",
       "protocol": "vmess",
@@ -159854,6 +161922,17 @@
       "flag": "🇺🇸",
       "source": "SUB#1",
       "first_seen": "2026-11-26T01:54:07Z"
+    },
+    {
+      "key": "vmess:fe06a84da8d193a1fa173df1d78966d7b77cb6de4f7dd58c301ca9e700fc396b",
+      "config": "vmess://eyJhZGQiOiAiMTY3Ljg4LjYzLjM3IiwgImFpZCI6ICIwIiwgImFscG4iOiAiIiwgImhvc3QiOiAiIiwgImlkIjogIjVjMDQwZjFkLTQ1ZGItNDNiZC04ZDQ2LWU0OTUwZTQzMzczNSIsICJuYW1lIjogInYyZ28gfCDwn4e68J+HuCBVUyB8IFZNRVNTIHwgNDIiLCAibmV0IjogInRjcCIsICJwYXRoIjogIiIsICJwb3J0IjogMTI3MCwgInBzIjogIvCfh7rwn4e4IDc3IC0gVVMgLSBWTWVzcy9UTFMgLSAxMjcwIiwgInNjeSI6ICJhdXRvIiwgInNuaSI6ICJ4bWZobHB5LmNvbSIsICJ0bHMiOiAidGxzIiwgInR5cGUiOiAibm9uZSIsICJ2IjogIjIifQ==",
+      "protocol": "vmess",
+      "ip": "167.88.63.37",
+      "port": "1270",
+      "country_code": "US",
+      "flag": "🇺🇸",
+      "source": "SUB#2",
+      "first_seen": "2026-11-27T12:49:09Z"
     },
     {
       "key": "vmess:ff02d47c2e8afdee2dc2f6d1f677dfb22bee3fb6666dc3db91f9221867a99ef1",
